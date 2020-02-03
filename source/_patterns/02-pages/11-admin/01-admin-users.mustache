@@ -1,0 +1,10 @@
+{{> components-side-nav }}
+<div class="page page-admin-users show-search">
+    {{> components-page-header}}
+    <main class="content">
+        {{#users}}
+            {{> components-admin-person-listing }}
+        {{/users}}
+    </main>
+    {{> components-admin-tap-bar }}
+</div>

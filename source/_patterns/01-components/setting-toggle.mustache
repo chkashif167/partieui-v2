@@ -1,0 +1,30 @@
+<div class="setting-toggle">
+    <div class="toggle-main">
+        <div class="label-group">
+            {{#steam}}
+                <img src="/images/icons/16px/steam-blue-muted.svg" class="disabled" alt="Steam Logo">
+                <img src="/images/icons/16px/steam.svg" class="enabled" alt="Steam Logo">
+            {{/steam}}
+            {{#xbox}}
+                <img src="/images/icons/16px/xbox-blue-muted.svg" class="disabled" alt="Xbox Logo">
+                <img src="/images/icons/16px/xbox.svg" class="enabled" alt="Xbox Logo">
+            {{/xbox}}
+            {{#playstation}}
+                <img src="/images/icons/16px/playstation-blue-muted.svg" class="disabled" alt="Playstation Logo">
+                <img src="/images/icons/16px/playstation.svg" class="enabled" alt="Playstation Logo">
+            {{/playstation}}
+            <span class="setting-toggle-label">{{ label }}</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleSettingClass(event)">
+            <span class="slider round"></span>
+            <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+            <img src="/images/icons/misc/check.svg" alt="Check Icon">
+        </label>
+    </div>
+    {{#helpText}}
+        <div class="toggle-help">
+            <p>{{ helpText }}</p>
+        </div>
+    {{/helpText}}
+</div>

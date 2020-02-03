@@ -1,0 +1,113 @@
+<div class="side-nav hide-mobile hide-tablet">
+    <div class="side-nav__header">
+        <img src="/images/side-nav-logo.svg" alt="Partie Logo" class="logo">
+        <div class="side-nav__actions">
+            <a href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html" onclick="toggleNotificationsTray(event)" class="btn btn-bare">
+                <img src="/images/icons/24px/notifications-on.svg"  alt="Notifications Pending Icon"/>
+            </a>
+        </div>
+    </div>
+    <nav class="side-nav__links">
+            <a href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html" class="nav-item active">
+                    <img src="/images/icons/24px/home-filled.svg" class="nav-item__icon"  alt="Home Icon"/>
+                <span class="nav-item__title">Home</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/partie.svg" class="nav-item__icon"  alt="Partie Icon"/>
+                <span class="nav-item__title">Partie</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/chat.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                <span class="nav-item__title">Messages</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/account.svg" class="nav-item__icon"  alt="Account Icon"/>
+                <span class="nav-item__title">Account</span>
+            </a>
+            <a href="" class="nav-item ">
+                    <img src="/images/icons/24px/store.svg" class="nav-item__icon"  alt="Store Icon"/>
+                <span class="nav-item__title">Store</span>
+            </a>
+
+    </nav>
+    <div class="side-nav__profile " onclick="window.location = '&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html'">
+            <div class="profile-avatar">
+    <svg class="level-indicator" data-percentage="64" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/avatar-large.png" alt="Avatar Alt Text" class="avatar">
+    <div class="online-indicator"></div>
+</div>
+
+            <span class="username">RandomDash</span>
+            <span class="user-level">Level 64</span>
+            <button class="btn btn-bare" onclick="event.stopPropagation()">
+                <img src="/images/icons/32px/more-dots.svg" alt="Menu Icon">
+                <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+            </button>
+
+    </div>
+</div>
+
+<div class="page page-home page-new-post">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare link-back" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Create Post</h1>
+            <div class="actions--right">
+                    <a href="#" class="btn btn-bare btn-disabled link-post" id="post" onclick="postStatus(event)"><img src="/images/icons/24px/post.svg" alt="Post Icon"></a>
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+        <div class="new-post-header">
+    <img src="/images/avatar-anton.png" alt="Avatar Alt Text" class="avatar">
+    <button class="btn btn-outline muted" data-visibility="public">Public</button>
+    <span class="visibility">Visible to everyone</span>
+</div>
+
+        <form action="#">
+            <div class="form-control">
+                <textarea name="post-content" id="post-content" class="new-post-input" placeholder="What's going on?" oninput="resizeTextarea(event)"></textarea>
+            </div>
+        </form>
+        <button class="btn btn-bare" onclick="addImageToNewPost()">
+            <img src="/images/icons/camera.svg" alt="Camera Icon" />
+            <span>New Media</span>
+        </button>
+    </main>
+    <div class="image-selector">
+    <div class="image-buttons">
+        <button class="btn btn-cta--icon"><img src="/images/icons/misc/camera.svg" alt="Camera Icon"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-1.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-2.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-3.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-1.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-2.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-3.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-1.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-2.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-3.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-1.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-2.png" alt="Image Alt Text"></button>
+        <button onclick="addImageToNewPost()" class="btn btn-bare"><img src="/images/camera-3.png" alt="Image Alt Text"></button>
+    </div>
+</div>
+
+</div>

@@ -1,0 +1,918 @@
+<div class="side-nav hide-mobile hide-tablet">
+    <div class="side-nav__header">
+        <img src="/images/side-nav-logo.svg" alt="Partie Logo" class="logo">
+        <div class="side-nav__actions">
+            <a href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html" onclick="toggleNotificationsTray(event)" class="btn btn-bare">
+                <img src="/images/icons/24px/notifications-on.svg"  alt="Notifications Pending Icon"/>
+            </a>
+        </div>
+    </div>
+    <nav class="side-nav__links">
+            <a href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/home.svg" class="nav-item__icon"  alt="Home Icon"/>
+                <span class="nav-item__title">Home</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html" class="nav-item active">
+                    <img src="/images/icons/24px/partie-filled.svg" class="nav-item__icon"  alt="Partie Icon"/>
+                <span class="nav-item__title">Partie</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/chat.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                <span class="nav-item__title">Messages</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/account.svg" class="nav-item__icon"  alt="Account Icon"/>
+                <span class="nav-item__title">Account</span>
+            </a>
+            <a href="" class="nav-item ">
+                    <img src="/images/icons/24px/store.svg" class="nav-item__icon"  alt="Store Icon"/>
+                <span class="nav-item__title">Store</span>
+            </a>
+
+    </nav>
+    <div class="side-nav__profile " onclick="window.location = '&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html'">
+            <div class="profile-avatar">
+    <svg class="level-indicator" data-percentage="64" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/avatar-large.png" alt="Avatar Alt Text" class="avatar">
+    <div class="online-indicator"></div>
+</div>
+
+            <span class="username">RandomDash</span>
+            <span class="user-level">Level 64</span>
+            <button class="btn btn-bare" onclick="event.stopPropagation()">
+                <img src="/images/icons/32px/more-dots.svg" alt="Menu Icon">
+                <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+            </button>
+
+    </div>
+</div>
+
+<div class="page page-chat page-partie-room show-user-list">
+    <header class="subtitle">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare link-back" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Yoe Flash Wolves</h1>
+            <div class="actions--right">
+                    <button class="btn btn-bare link-more" onclick="toggleFeedMenu(); activateUserActionsPopper(event);">
+                        <img src="/images/icons/24px/more.svg" alt="More Icon">
+                        <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+                    </button>
+                    <a class="btn btn-bare link-notifications" href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+            <p class="header-subtitle t-center">Apex Legends</p>
+            <div class="chat-user-list">
+    <div class="users" onclick="openModal('#participants-modal')">
+        <span class="user-names">HostName, Username, Username, Username, Username</span>
+        <span class="users-more">+4 more</span>
+    </div>
+    <div class="user-actions">
+            <button class="btn btn-circle bg-teal" onclick="openModal('#requests-modal')"><span>8</span></button>
+            <button class="btn btn-bare" onclick="openModal('#invite-modal')"><img src="/images/icons/24px/add.svg"
+                                                                                   alt="Add Icon"></button>
+    </div>
+</div>
+
+</header>
+
+    <div class="chat-side-bar bg-dark">
+        <div class="partie-item partie-item--detailed   " onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="&#x2F;images&#x2F;partie-1.png" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">12 / 20</span>
+            <span class="time-remaining ">
+                
+                00:56:01
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">PartieNameTitle</span>
+        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                    <div class="tag bg-blue">PVE</div>
+            </div>
+            <span class="partie-game">Apex Legends</span>
+        </div>
+    </div>
+</div>
+
+    <h3>Users</h3>
+    <div class="content-scrollable">
+            <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RomanNin1</a>
+            <div class="tag bg-orange"><span>Partner</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">AlphaEcho</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">User03993</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RosalinMU</a>
+            <div class="tag bg-teal"><span>Staff</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">xDeniCx</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">MeTeMeNeo</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Artur305</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Biohaz007</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+    </div>
+</div>
+
+    <main class="content">
+        <div class="user-list-container">
+            <div class="chat-user-list">
+    <div class="users" onclick="openModal('#participants-modal')">
+        <span class="user-names">HostName, Username, Username, Username, Username</span>
+        <span class="users-more">+4 more</span>
+    </div>
+    <div class="user-actions">
+            <button class="btn btn-circle bg-teal" onclick="openModal('#requests-modal')"><span>8</span></button>
+            <button class="btn btn-bare" onclick="openModal('#invite-modal')"><img src="/images/icons/24px/add.svg"
+                                                                                   alt="Add Icon"></button>
+    </div>
+</div>
+
+        </div>
+
+        <div class="chat-messages">
+                    <div class="chat-message cta">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html" class="avatar">
+            <img src="/images/icons/24px/partie-filled.svg" alt="Partie Logo">
+        </a>
+    <div class="chat-message-meta">
+        <a class="chat-message-author" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Partie</a>
+            <div class="tag bg-blue"><span>Bot</span></div>
+        <span class="chat-message-details">Nobody else can see this</span>
+    </div>
+    <div class="chat-message-content">
+        Feeling lonely in here? How about you start inviting some friends?
+    </div>
+        <button class="btn bg-teal chat-message-cta">Invite Friends</button>
+</div>
+
+        </div>
+        <div class="chat-input">
+    <div class="form-control">
+        <textarea name="chat-message" id="message-input" placeholder="Say anything you want, be nice." onkeydown="chatKeydownHandler(event)"></textarea>
+    </div>
+    <button class="btn" onclick="postMessage(event)">Send</button>
+</div>
+
+    </main>
+
+    <div class="modal" id="participants-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">9 Participants</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RomanNin1</a>
+            <div class="tag bg-orange"><span>Partner</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">AlphaEcho</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">User03993</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RosalinMU</a>
+            <div class="tag bg-teal"><span>Staff</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">xDeniCx</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">MeTeMeNeo</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Artur305</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Biohaz007</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal" id="requests-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">8 Requests</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RomanNin1</a>
+            <div class="tag bg-orange"><span>Partner</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/check.svg" alt="Approve"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">AlphaEcho</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/check.svg" alt="Approve"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">User03993</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/check.svg" alt="Approve"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RosalinMU</a>
+            <div class="tag bg-teal"><span>Staff</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/check.svg" alt="Approve"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">xDeniCx</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/check.svg" alt="Approve"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">MeTeMeNeo</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/check.svg" alt="Approve"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Artur305</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/check.svg" alt="Approve"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Biohaz007</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/check.svg" alt="Approve"></button>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal show-search" id="invite-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Invite Friends</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="search-input search-settings">
+    <div class="content search__main">
+        <img class="o-30" src="/images/icons/16px/search.svg" alt="Search Icon">
+        <input type="text" name="search" id="search" placeholder="Search friends" />
+        <a href="#" class="cancel">Cancel</a>
+    </div>
+    <div class="content search__options">
+            <a href="#" data-filter="feed" onclick="updateSearchResults(event)" class="btn btn-bare active">Feed</a>
+            <a href="#" data-filter="profiles" onclick="updateSearchResults(event)" class="btn btn-bare">Profiles</a>
+            <a href="#" data-filter="parties" onclick="updateSearchResults(event)" class="btn btn-bare">Parties</a>
+            <a href="#" data-filter="clubs" onclick="updateSearchResults(event)" class="btn btn-bare">Clubs</a>
+            <a href="#" data-filter="likes" onclick="updateSearchResults(event)" class="btn btn-bare">Likes</a>
+
+    </div>
+</div>
+
+        <div class="modal-content">
+            <div class="content-scrollable">
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RomanNin1</a>
+            <div class="tag bg-orange"><span>Partner</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt="Add"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">AlphaEcho</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt="Add"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">User03993</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt="Add"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RosalinMU</a>
+            <div class="tag bg-teal"><span>Staff</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-outline btn-fit">Pending...</button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">xDeniCx</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt="Add"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">MeTeMeNeo</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt="Add"></button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Artur305</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-outline btn-fit">Pending...</button>
+</div>
+
+                    <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Biohaz007</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt="Add"></button>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal removal-modal dynamic-height" id="removal-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Reason for removal</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+                    <div class="checkbox-group">
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Inactivity</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Behavior</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+</div>
+
+
+                <button class="btn bg-teal btn-fit btn-remove">Remove</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="menu-drawer">
+    <div class="content">
+        <button class="btn btn-bare btn-menu-item" onclick="toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/commence-partie.svg" alt="Commence Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/commence-partie-blue.svg" alt="Commence Partie">
+                <span class="action-title">Commence Partie</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#partie-settings-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/partie-settings.svg" alt="Share Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/partie-settings-blue.svg" alt="Share Partie">
+                <span class="action-title">Partie Settings</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#twitter-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/share-partie.svg" alt="Share Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/share-partie-blue.svg" alt="Share Partie">
+                <span class="action-title">Share Partie</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#leave-partie-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/end-partie.svg" alt="Share Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/end-partie-blue.svg" alt="Share Partie">
+                <span class="action-title">End Partie</span>
+                <span class="action-description">Lorem ipsum dolor  consectetur adipi</span>
+            </div>
+        </button>
+    </div>
+</div>
+
+    <div class="modal host-modal dynamic-height" id="partie-settings-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Apex Legends</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="form-control input-lg">
+    <label for="partie-name"></label>
+    <input type="text" name="" placeholder="Enter Partie name" value=""required/>
+</div>
+
+            <div class="tag-selection mb-24">
+                <div class="tag tag-lg active" onclick="this.classList.toggle('active')">PVE</div>
+                <div class="tag tag-lg active" onclick="this.classList.toggle('active')">PVP</div>
+                <div class="tag tag-lg" onclick="this.classList.toggle('active')">TAG</div>
+                <div class="tag tag-lg" onclick="this.classList.toggle('active')">TAG</div>
+                <div class="tag tag-lg" onclick="this.classList.toggle('active')">TAG</div>
+            </div>
+            <div class="form-control ">
+    <label for="partie-objective">Objective</label>
+    <input type="text" name="" placeholder="Enter your Partie's objective" value=""required/>
+</div>
+
+            <div class="setting-toggle pt-0">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Privacy</span>
+                    </div>
+                    <div class="switch-group">
+                        <span class="status-message on">Closed Partie</span>
+                        <span class="status-message off">Open Partie</span>
+                        <label class="switch icons-lg">
+                            <input type="checkbox" onchange="toggleSettingClass(event)">
+                            <span class="slider round"></span>
+                            <img src="/images/icons/16px/lock-green.svg" alt="Locked Icon">
+                            <img src="/images/icons/16px/unlocked.svg" alt="Unlocked Icon">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-fixed-bottom">
+        <button class="btn btn-fill bg-blue" onclick="closeModal()">Save</button>
+    </div>
+</div>
+
+    <div class="modal leave-modal dynamic-height" id="leave-partie-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title"></h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <h2>Are you sure you want to leave this Partie?</h2>
+            <div class="btn-group">
+                <button class="btn btn-outline" onclick="closeModal()">Cancel</button>
+                <button class="btn bg-teal" onclick="closeModal()">Leave Partie</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="social-share-modal" id="twitter-modal">
+    <div class="back" onclick="closeShareModal()">
+        <div class="arrow"></div>
+        <span>Partie</span>
+    </div>
+    <div class="share-header">
+        <button class="btn btn-bare">Cancel</button>
+        <button class="btn btn-send">Tweet</button>
+    </div>
+    <div class="share-content">
+        <img src="/images/avatar-dash.png" alt="Avatar Alt Text" class="avatar">
+        <div class="form-control">
+            <textarea name="share-text" id="share-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus </textarea>
+        </div>
+    </div>
+    <!-- <div class="share-footer">
+        <div class="attach-actions">
+            <button class="btn btn-bare"></button>
+            <button class="btn btn-bare"></button>
+            <button class="btn btn-bare"></button>
+            <button class="btn btn-bare"></button>
+        </div>
+        <div class="other-actions">
+
+        </div>
+    </div> -->
+</div>
+
+
+
+        <div class="modal feedback-modal dynamic-height active" id="feedback-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title"></h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <h2>How can we improve?</h2>
+            <p>Your feedback is important to us. Let us know how we can improve the next Partie, lorem ipsum some text here.</p>
+            <div class="form-control">
+                <textarea name="feedback" id="feedback" placeholder="Enter your feedback"></textarea>
+            </div>
+            <button class="btn bg-teal submit" onclick="closeModal()">Submit</button>
+        </div>
+    </div>
+</div>
+
+
+    <div class="tap-bar">
+    <nav>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html">
+                <img src="/images/icons/24px/home.svg" alt="Home Icon">
+            <span class="t-nav">Home</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html">
+                <img src="/images/icons/24px/partie-filled.svg" alt="Partie Icon">
+            <span class="t-nav">Partie</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html">
+                <img src="/images/icons/24px/chat.svg" alt="Chat Icon">
+            <span class="t-nav">Messages</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html">
+                <img src="/images/icons/24px/account.svg" alt="Account Icon">
+            <span class="t-nav">Account</span>
+        </a>
+    </nav>
+</div>
+
+</div>
+
+<template id="new-chat-message">
+    <div class="chat-message v-hidden" style="position: relative;">
+        <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+            <img src="/images/avatar-dash.png" alt="Avatar Alt Text">
+        </a>
+        <div class="chat-message-meta">
+            <a class="chat-message-author" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Arthur Flores</a>
+            <span class="chat-message-details">9:41 PM</span>
+        </div>
+        <div class="chat-message-content">
+            Lorem ipsum dolor sit amet, consecte!
+        </div>
+    </div>
+</template>

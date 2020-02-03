@@ -1,0 +1,17 @@
+<div class="modal preference-modal handle-modal dynamic-height" id="handle-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+        <button class="btn bg-black btn-close" onclick="closeModal('#handle-modal'); openModal('#platforms-modal')">
+                <img src="/images/icons/misc/back-carat.svg" alt="Back Icon">
+            </button>
+            <h2 class="modal-title">Enter your handle</h2>
+        </div>
+        <div class="modal-content">
+            {{#inputs}}
+                {{> elements-input }}
+            {{/inputs}}
+            <button class="btn bg-blue btn-fit" onclick="closeModal('#handle-modal')">Save</button>
+        </div>
+    </div>
+</div>

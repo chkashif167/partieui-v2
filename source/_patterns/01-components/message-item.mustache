@@ -1,0 +1,27 @@
+<div class="person-listing message-item">
+    <a class="avatar" href="{{ link.pages-public-profile }}">
+        <img src="{{ avatarUrl }}" alt="Avatar Alt Text">
+        {{#online}}
+            <div class="online-indicator"></div>
+        {{/online}}
+    </a>
+    <div class="person-name">
+        <a href="{{ link.pages-public-profile }}">{{ userName }}</a>
+        {{#tagLabel}}
+            <div class="tag {{ tagClass }}"><span>{{ tagLabel }}</span></div>
+        {{/tagLabel}}
+        {{#timeStamp}}
+            <span class="time-ago">{{ timeStamp }}</span>
+        {{/timeStamp}}
+    </div>
+    <div class="person-info">
+        <span>{{ messageText }}</span>
+    </div>
+    <button class="btn btn-bare remove">
+        <img src="/images/icons/32px/remove.svg" alt="Remove Icon">
+    </button>
+    <button class="btn btn-bare hide-mobile hide-tablet menu" onclick="openMessageOptions(event)">
+        <img src="/images/icons/32px/more-dots.svg" alt="Menu Icon">
+        <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+    </button>
+</div>

@@ -1,0 +1,253 @@
+{
+  "bodyClass": "bg-dark has-side-nav",
+  "sideNavAccount": true,
+  "tapBarAccount": true,
+  "pageHeader": {
+    "account": true,
+    "notifications": true,
+    "title": "Account"
+  },
+  "partnerProgressPercent": "23",
+  "progressChecklistItems": [
+    {
+      "complete": false,
+      "description": "Host 25 Successful Parties",
+      "requiredCount": "25",
+      "completedCount": "2"
+    }, {
+      "complete": false,
+      "description": "Reach 20 Followers",
+      "requiredCount": "20",
+      "completedCount": "1"
+    }, {
+      "complete": false,
+      "description": "Receive 50 Tokens",
+      "requiredCount": "50",
+      "completedCount": "7"
+    }, {
+      "complete": true,
+      "description": "Get 10 5-Star Ratings",
+      "requiredCount": "10",
+      "completedCount": "10"
+    }, {
+      "complete": false,
+      "description": "Do something 60 times",
+      "requiredCount": "60",
+      "completedCount": "2"
+    }
+  ],
+  "regionModal": {
+    "modalId": "region-modal",
+    "modalTitle": "Choose your region",
+    "modalOptions": {
+      "checkboxItems": [
+        { "label": "United States" },
+        { "label": "Japan" },
+        { "label": "Country" },
+        { "label": "Country" },
+        { "label": "Country" }
+      ]
+    }
+  },
+  "languageModal": {
+    "modalId": "language-modal",
+    "modalTitle": "Choose your language",
+    "modalOptions": {
+      "checkboxItems": [
+        { "label": "English" },
+        { "label": "Spanish" },
+        { "label": "Russian" },
+        { "label": "Japanese" },
+        { "label": "Italian" }
+      ]
+    }
+  },
+  "notificationSettings": [
+    {
+      "label": "Follow Requests",
+      "description": "Notify me of new follow requests",
+      "emailEnabled": false,
+      "pushEnabled": true
+    }, {
+      "label": "New Parties",
+      "description": "Notify me when friends start a Partie",
+      "emailEnabled": true,
+      "pushEnabled": true
+    }, {
+      "label": "Messages",
+      "description": "Notify me of new messages",
+      "emailEnabled": false,
+      "pushEnabled": true
+    }, {
+      "label": "Lorem Ipsum",
+      "description": "Insert short description",
+      "emailEnabled": false,
+      "pushEnabled": false
+    }, {
+      "label": "Lorem Ipsum Dolor",
+      "description": "Another type of notification",
+      "emailEnabled": true,
+      "pushEnabled": false
+    }, {
+      "label": "Dolor Ipsum Lorem",
+      "description": "Send this user more notifications",
+      "emailEnabled": false,
+      "pushEnabled": true
+    }, {
+      "label": "Ipsum Dolor Lorem",
+      "description": "Another notification right here",
+      "emailEnabled": false,
+      "pushEnabled": false
+    }
+  ],
+  "muted": {
+    "modalId": "muted-modal",
+    "modalTitle": "Muted Acccounts",
+    "people": [
+      {
+        "avatarUrl": "/images/avatar-roman.png",
+        "online": true,
+        "userName": "RomanNin1",
+        "tagClass": "bg-orange",
+        "tagLabel": "Partner",
+        "followersCount": "56",
+        "following": false,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-alpha.png",
+        "online": false,
+        "userName": "AlphaEcho",
+        "followersCount": "81",
+        "following": false,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-placeholder.png",
+        "online": true,
+        "userName": "User03993",
+        "followersCount": "827",
+        "following": false,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-rosalin.png",
+        "online": true,
+        "userName": "RosalinMU",
+        "tagClass": "bg-teal",
+        "tagLabel": "Staff",
+        "followersCount": "2,039",
+        "following": true,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-placeholder.png",
+        "online": false,
+        "userName": "xDeniCx",
+        "followersCount": "72",
+        "following": false,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-mete.png",
+        "online": true,
+        "userName": "MeTeMeNeo",
+        "followersCount": "88",
+        "following": false,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-placeholder.png",
+        "online": false,
+        "userName": "Artur305",
+        "followersCount": "32",
+        "following": true,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-anton.png",
+        "online": true,
+        "userName": "Biohaz007",
+        "followersCount": "23",
+        "following": false,
+        "remove": true
+      }
+    ]
+  },
+  "blocked": {
+    "modalId": "blocked-modal",
+    "modalTitle": "Blocked Accounts",
+    "people": [
+      {
+        "avatarUrl": "/images/avatar-roman.png",
+        "online": true,
+        "userName": "RomanNin1",
+        "tagClass": "bg-orange",
+        "tagLabel": "Partner",
+        "followersCount": "56",
+        "following": false,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-alpha.png",
+        "online": false,
+        "userName": "AlphaEcho",
+        "followersCount": "81",
+        "following": false,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-placeholder.png",
+        "online": true,
+        "userName": "User03993",
+        "followersCount": "827",
+        "following": false,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-rosalin.png",
+        "online": true,
+        "userName": "RosalinMU",
+        "tagClass": "bg-teal",
+        "tagLabel": "Staff",
+        "followersCount": "2,039",
+        "following": true,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-placeholder.png",
+        "online": false,
+        "userName": "xDeniCx",
+        "followersCount": "72",
+        "following": false,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-mete.png",
+        "online": true,
+        "userName": "MeTeMeNeo",
+        "followersCount": "88",
+        "following": false,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-placeholder.png",
+        "online": false,
+        "userName": "Artur305",
+        "followersCount": "32",
+        "following": true,
+        "remove": true
+      }, {
+        "avatarUrl": "/images/avatar-anton.png",
+        "online": true,
+        "userName": "Biohaz007",
+        "followersCount": "23",
+        "following": false,
+        "remove": true
+      }
+    ]
+  },
+  "post": {
+    "modalOptions": {
+      "checkboxItems": [
+        {
+          "hasDescription": true,
+          "label": "Public",
+          "description": "Post is visible to all users"
+        },
+        {
+          "hasDescription": true,
+          "label": "Protected",
+          "description": "Post only visible to user's followers"
+        }
+      ]
+    }
+  }
+}

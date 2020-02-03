@@ -1,0 +1,35 @@
+<div class="search-input search-settings">
+    <div class="content search__main">
+        <img class="o-30" src="/images/icons/16px/search.svg" alt="Search Icon">
+        <input type="text" name="search" id="search" placeholder="{{ searchPlaceholder }}" />
+        <a href="#" class="cancel">Cancel</a>
+        {{#searchSettings}}
+            <button class="btn btn-bare btn-settings" onclick="openModal('#search-settings-modal')"><img
+                    src="/images/icons/24px/settings.svg"
+                    alt="Settings Icon"></button>
+        {{/searchSettings}}
+        {{#partieSearchSettings}}
+            <button class="btn btn-bare btn-settings" onclick="openPartieSearch('{{ link.pages-new-search }}')"><img
+                    src="/images/icons/24px/settings.svg"
+                    alt="Settings Icon"></button>
+        {{/partieSearchSettings}}
+    </div>
+    <div class="content search__options">
+        {{^adminMenu}}
+            <a href="#" data-filter="feed" onclick="updateSearchResults(event)" class="btn btn-bare active">Feed</a>
+            <a href="#" data-filter="profiles" onclick="updateSearchResults(event)" class="btn btn-bare">Profiles</a>
+            <a href="#" data-filter="parties" onclick="updateSearchResults(event)" class="btn btn-bare">Parties</a>
+            <a href="#" data-filter="clubs" onclick="updateSearchResults(event)" class="btn btn-bare">Clubs</a>
+            <a href="#" data-filter="likes" onclick="updateSearchResults(event)" class="btn btn-bare">Likes</a>
+        {{/adminMenu}}
+
+        {{#adminMenu}}
+            <a href="#" class="btn btn-bare">All Users</a>
+            <a href="#" class="btn btn-bare">Pending Review</a>
+            <a href="#" class="btn btn-bare">Partners</a>
+        {{/adminMenu}}
+    </div>
+    {{#includeSearchResults}}
+        {{> components-search-results }}
+    {{/includeSearchResults}}
+</div>

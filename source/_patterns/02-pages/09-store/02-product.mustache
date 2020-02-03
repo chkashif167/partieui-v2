@@ -1,0 +1,20 @@
+{{> components-side-nav }}
+<div class="page page-product">
+    {{> components-page-header }}
+    <main class="content">
+        <div class="product-heading">
+            <div class="img-container"></div>
+            <div class="title-container">
+                <p class="title">Lorem ipsum dolor product name</p>
+            </div>
+            <button class="btn bg-teal">$1.99</button>
+        </div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="img-container product-detail-image"></div>
+    </main>
+    <div class="related-products">
+        {{#related}}
+            {{> components-product-category-group }}
+        {{/related}}
+    </div>
+</div>

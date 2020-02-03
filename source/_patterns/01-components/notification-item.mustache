@@ -1,0 +1,42 @@
+<div class="person-listing notification-item">
+    <a class="avatar" href="{{ link.pages-public-profile }}">
+        <img src="{{ avatarUrl }}" alt="Avatar Alt Text">
+        {{#online}}
+            <div class="online-indicator"></div>
+        {{/online}}
+    </a>
+    <div class="person-name">
+        <a href="{{ link.pages-public-profile }}">{{ userName }}</a>
+        {{#tagLabel}}
+            <div class="tag {{ tagClass }}"><span>{{ tagLabel }}</span></div>
+        {{/tagLabel}}
+    </div>
+    <div class="person-info">
+        {{#hosting}}
+            <img src="/images/icons/24px/partie-filled-teal.svg" alt="Partie Icon"> <span class="notification-message">is hosting a Partie</span>
+        {{/hosting}}
+        {{#pendingRequest}}
+            <span class="notification-message">Sent a follow request</span>
+        {{/pendingRequest}}
+        {{#acceptedRequest}}
+            <span class="notification-message t-green">Accepted follow request</span>
+        {{/acceptedRequest}}
+        {{#partieInvite}}<span class="notification-message">Sent a Partie invite</span>{{/partieInvite}}
+        {{#message}}<span class="notification-message">Sent you a message</span>{{/message}}
+    </div>
+    {{#hosting}}
+        <button class="btn bg-black">View</button>
+    {{/hosting}}
+    {{#pendingRequest}}
+        <div class="btn-group request-actions">
+            <button class="btn btn-bare"><img src="/images/icons/32px/remove.svg" class="remove-icon" alt="Remove Icon"></button>
+            <button class="btn btn-bare"><img src="/images/icons/32px/check.svg" alt="Check Icon"></button>
+        </div>
+    {{/pendingRequest}}
+    {{#partieInvite}}
+        <button class="btn bg-teal">Join</button>
+    {{/partieInvite}}
+    {{#message}}
+        <button class="btn btn-bare"><img src="/images/icons/24px/chat.svg" alt="Chat Icon"></button>
+    {{/message}}
+</div>

@@ -1,0 +1,23 @@
+<div class="modal lightbox-modal dynamic-height" id="lightbox-modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-container">
+    <div class="modal-header">
+      <button class="btn btn-bare link-more">
+        <img src="/images/icons/24px/more.svg" alt="More Icon">
+      </button>
+      <h2 class="modal-title">1/5</h2>
+      <button class="btn bg-black btn-close" onclick="closeModal()">
+        <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+      </button>
+    </div>
+    <div class="modal-content">
+      <div class="peppermint peppermint-inactive" id="modal-carousel">
+        {{#mediaImages}}
+          <figure><img src="{{ imageUrl }}" alt="Carousel Image" /></figure>
+        {{/mediaImages}}
+      </div>
+    </div>
+    <button class="btn btn-bare lightbox-back"><img src="/images/icons/prev.svg" alt="Back Icon" /></button>
+    <button class="btn btn-bare lightbox-next"><img src="/images/icons/next.svg" alt="Next Icon" /></button>
+  </div>
+</div>

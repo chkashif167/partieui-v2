@@ -1,0 +1,13 @@
+<div class="game-list-item v-hidden" onclick="openModal('#host-modal', true)">
+    <img src="/images/game-{{ imageNumber }}.png" srcset="/images/game-{{ imageNumber }}@2x.png 2x, /images/game-{{ imageNumber }}@3x.png 3x" alt="Game Image Alt">
+    <div class="image-overlay">
+        <span class="game-title">{{ title }}</span>
+        <span class="game-parties"><img src="/images/icons/24px/partie-filled-blue.svg" alt="Partie Icon">{{ partieCount }}</span>
+        {{#exactMatch}}
+            <div class="tag tag--exact-match">Exact Match</div>
+        {{/exactMatch}}
+        {{#matchPercent}}
+            <span class="match-percent {{matchClass}}">{{ matchPercent }}%</span>
+        {{/matchPercent}}
+    </div>
+</div>

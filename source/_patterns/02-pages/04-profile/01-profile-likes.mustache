@@ -1,0 +1,12 @@
+{{> components-side-nav }}
+{{> components-notifications-tray }}
+<div class="page page-home page-likes">
+    {{> components-page-header}}
+    <main class="content" onload="waitForImagesAndResize();">
+        {{#statusItems }}
+            {{> components-status }}
+        {{/statusItems}}
+    </main>
+    {{> components-tap-bar }}
+    {{> components-user-feed-menu }}
+</div>

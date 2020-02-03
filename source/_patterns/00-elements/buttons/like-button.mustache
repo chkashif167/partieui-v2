@@ -1,0 +1,9 @@
+<button class="btn btn-likes {{#liked}}user-likes{{/liked}}">
+    {{^userLikes}}
+        <img src="/images/icons/16px/like.svg" alt="Not Liked">
+    {{/userLikes}}
+    {{#userLikes}}
+        <img src="/images/icons/16px/like-on.svg" alt="Liked">
+    {{/userLikes}}
+    <span class="likes-count">{{ likesCount }}</span>
+</button>

@@ -1,0 +1,17 @@
+{{> components-side-nav }}
+<div class="page page-home page-new-post">
+    {{> components-page-header }}
+    <main class="content">
+        {{> components-new-post-header }}
+        <form action="#">
+            <div class="form-control">
+                <textarea name="post-content" id="post-content" class="new-post-input" placeholder="What's going on?" oninput="resizeTextarea(event)"></textarea>
+            </div>
+        </form>
+        <button class="btn btn-bare" onclick="addImageToNewPost()">
+            <img src="/images/icons/camera.svg" alt="Camera Icon" />
+            <span>New Media</span>
+        </button>
+    </main>
+    {{> components-image-selector }}
+</div>

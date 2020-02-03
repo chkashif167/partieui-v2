@@ -1,0 +1,43 @@
+{
+  "pageHeader": {
+    "back": true,
+    "menuButton": false,
+    "notifications": true,
+    "title": "Yoe Flash Wolves",
+    "subtitle": "Apex Legends",
+    "userList": true,
+    "publicView": true
+  },
+  "messages": [
+    {
+      "chatCtaText": false,
+      "avatarPath": "/images/avatar-dash.png",
+      "authorName": "Dash",
+      "tagClass": "bg-blue",
+      "tagText": "Host",
+      "chatDetails": "7:31 PM",
+      "chatMessage": "Put a bird on it intelligentsia hella, leggings roof party everyday carry list."
+    }, {
+      "avatarPath": "/images/avatar-mete.png",
+      "authorName": "MeTeMeNeo",
+      "chatDetails": "7:32 PM",
+      "chatMessage": "Put a bird on it intelligentsia hella \uD83D\uDE02"
+    }, {
+      "avatarPath": "/images/avatar-alpha.png",
+      "authorName": "AlphaEcho",
+      "tagClass": "tag-partner",
+      "tagText": "Partner",
+      "chatDetails": "7:35 PM",
+      "chatMessage": "Put a bird on it intelligentsia hella, leggings roof party everyday carry list."
+    }, {
+      "notification": true
+    },{
+      "avatarPath": "/images/avatar-placeholder.png",
+      "authorName": "Frankie",
+      "tagClass": "tag-staff",
+      "tagText": "Staff",
+      "chatDetails": "7:37 PM",
+      "chatMessage": "Put a bird on it intelligentsia hella, leggings roof party everyday carry list. Put a bird on it intelligentsia hella, leggings roof party everyday carry list."
+    }
+  ]
+}

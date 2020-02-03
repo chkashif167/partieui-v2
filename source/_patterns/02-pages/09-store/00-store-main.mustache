@@ -1,0 +1,11 @@
+{{> components-side-nav }}
+<div class="page page-store show-search">
+    {{> components-page-header }}
+    <main class="content">
+        {{#categories }}
+            {{> components-product-category-group }}
+        {{/categories}}
+    </main>
+    {{> components-tap-bar }}
+    {{> components-new-releases-modal }}
+</div>

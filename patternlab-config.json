@@ -1,0 +1,158 @@
+{
+  "cacheBust": true,
+  "cleanPublic": true,
+  "defaultPattern": "pages-index",
+  "defaultShowPatternInfo": false,
+  "ishControlsHide": {
+    "s": false,
+    "m": false,
+    "l": false,
+    "full": true,
+    "random": true,
+    "disco": true,
+    "hay": true,
+    "mqs": false,
+    "find": false,
+    "views-all": true,
+    "views-annotations": false,
+    "views-code": false,
+    "views-new": false,
+    "tools-all": false,
+    "tools-docs": true
+  },
+  "ishViewportRange": {
+    "s": [
+      320,
+      500
+    ],
+    "m": [
+      500,
+      800,
+      500,
+      800
+    ],
+    "l": [
+      800,
+      2600,
+      800,
+      2600
+    ]
+  },
+  "logLevel": "info",
+  "outputFileSuffixes": {
+    "rendered": ".rendered",
+    "rawTemplate": "",
+    "markupOnly": ".markup-only"
+  },
+  "paths": {
+    "source": {
+      "root": "source/",
+      "patterns": "source/_patterns/",
+      "data": "source/_data/",
+      "meta": "source/_meta/",
+      "annotations": "source/_annotations/",
+      "styleguide": "dist/",
+      "patternlabFiles": {
+        "general-header": "views/partials/general-header.mustache",
+        "general-footer": "views/partials/general-footer.mustache",
+        "patternSection": "views/partials/patternSection.mustache",
+        "patternSectionSubtype": "views/partials/patternSectionSubtype.mustache",
+        "viewall": "views/viewall.mustache"
+      },
+      "animations": "source/animations",
+      "js": "source/js",
+      "images": "source/images",
+      "fonts": "source/fonts",
+      "css": "source/css"
+    },
+    "public": {
+      "root": "public/",
+      "patterns": "public/patterns/",
+      "data": "public/styleguide/data/",
+      "annotations": "public/annotations/",
+      "styleguide": "public/styleguide/",
+      "animations": "public/animations",
+      "js": "public/js",
+      "images": "public/images",
+      "fonts": "public/fonts",
+      "css": "public/css"
+    }
+  },
+  "patternExtension": "mustache",
+  "patternStateCascade": [
+    "inprogress",
+    "inreview",
+    "complete",
+    "inprogress",
+    "inreview",
+    "complete"
+  ],
+  "patternExportDirectory": "./pattern_exports/",
+  "patternExportPatternPartials": [
+    "pages-landing",
+    "pages-create-account",
+    "pages-verify-account",
+    "pages-sign-in",
+    "pages-sign-in-reset-success",
+    "pages-reset-password",
+    "pages-reset-password-success",
+    "pages-reset-password-via-email",
+    "pages-home",
+    "pages-home-no-results",
+    "pages-new-post",
+    "pages-public-profile",
+    "pages-public-profile-personal",
+    "pages-public-profile-standard",
+    "pages-partie-list",
+    "pages-host-partie",
+    "pages-partie-room",
+    "pages-partie-room-feedback",
+    "pages-partie-room-messages",
+    "pages-partie-room-public",
+    "pages-partie-room-rate",
+    "pages-notifications",
+    "pages-notifications-empty",
+    "pages-messages",
+    "pages-conversation",
+    "pages-account",
+    "pages-account-partner",
+    "pages-account-pending-review",
+    "pages-account-progress-complete",
+    "pages-preferences",
+    "pages-account-notifications",
+    "pages-privacy",
+    "pages-store-main",
+    "pages-store-view-all",
+    "pages-product",
+    "pages-edit-profile",
+    "pages-edit-profile-linked-social",
+    "pages-select-photo"
+  ],
+  "serverOptions": {
+    "wait": 1000,
+    "open": false
+  },
+  "starterkitSubDir": "dist",
+  "styleGuideExcludes": ["pages"],
+  "theme": {
+    "color": "dark",
+    "density": "compact",
+    "layout": "horizontal"
+  },
+  "uikits": [
+    {
+      "name": "uikit-workshop",
+      "outputDir": "",
+      "enabled": true,
+      "excludedPatternStates": [],
+      "excludedTags": []
+    },
+    {
+      "name": "uikit-workshop",
+      "outputDir": "",
+      "enabled": true,
+      "excludedPatternStates": [],
+      "excludedTags": []
+    }
+  ]
+}

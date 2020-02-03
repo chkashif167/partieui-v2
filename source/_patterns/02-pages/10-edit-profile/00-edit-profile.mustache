@@ -1,0 +1,47 @@
+{{> components-side-nav }}
+<div class="page page-edit-profile">
+    {{> components-page-header }}
+    <main class="content">
+        <form class="form" action="">
+            <div class="avatar-setting">
+                <img class="avatar" src="/images/avatar-johnny.png" alt="User Avatar">
+                <a href="#" onclick="openModal('#select-photo-modal')">Upload Photo</a>
+            </div>
+            {{#inputsA}}
+                {{> elements-input }}
+            {{/inputsA}}
+
+            <div class="form-control">
+                <label for="bio">Bio</label>
+                <textarea name="bio" id="bio" required>Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarers cray gastropub cred green juice PBR&B.</textarea>
+            </div>
+
+            {{#inputsB}}
+                {{> elements-input }}
+            {{/inputsB}}
+            <div class="social-connection">
+                <button class="btn btn-bare facebook-connect {{#facebookLinked}}connected{{/facebookLinked}}">
+                    <span class="btn-inner">
+                        <img src="/images/facebook.png" srcset="/images/facebook@2x.png 2x, /images/facebook@3x.png 3x" alt="Facebook Logo">
+                        {{^facebookLinked}}
+                            <span>Connect With Facebook</span>
+                        {{/facebookLinked}}
+                        {{#facebookLinked}}
+                            <span>my.facebook.username</span>
+                        {{/facebookLinked}}
+                    </span>
+                </button>
+                {{#facebookLinked}}
+                    <a href="#">Unlink Account</a>
+                {{/facebookLinked}}
+            </div>
+        </form>
+    </main>
+    {{#platformsModal}}
+        {{> components-preference-modal }}
+    {{/platformsModal}}
+    {{#handleModal}}
+        {{> components-handle-modal }}
+    {{/handleModal}}
+    {{> components-select-photo-modal }}
+</div>

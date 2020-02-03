@@ -1,0 +1,42 @@
+<div class="modal host-modal dynamic-height" id="partie-settings-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Apex Legends</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            {{> elements-input(inputName: "partie-name", inputType: "text", placeholder: "Enter Partie name", required: true, className: "input-lg") }}
+            <div class="tag-selection mb-24">
+                <div class="tag tag-lg active" onclick="this.classList.toggle('active')">PVE</div>
+                <div class="tag tag-lg active" onclick="this.classList.toggle('active')">PVP</div>
+                <div class="tag tag-lg" onclick="this.classList.toggle('active')">TAG</div>
+                <div class="tag tag-lg" onclick="this.classList.toggle('active')">TAG</div>
+                <div class="tag tag-lg" onclick="this.classList.toggle('active')">TAG</div>
+            </div>
+            {{> elements-input(inputName: "partie-objective", label: "Objective", inputType: "text", placeholder: "Enter your Partie's objective", required: true) }}
+            <div class="setting-toggle pt-0">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Privacy</span>
+                    </div>
+                    <div class="switch-group">
+                        <span class="status-message on">Closed Partie</span>
+                        <span class="status-message off">Open Partie</span>
+                        <label class="switch icons-lg">
+                            <input type="checkbox" onchange="toggleSettingClass(event)">
+                            <span class="slider round"></span>
+                            <img src="/images/icons/16px/lock-green.svg" alt="Locked Icon">
+                            <img src="/images/icons/16px/unlocked.svg" alt="Unlocked Icon">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-fixed-bottom">
+        <button class="btn btn-fill bg-blue" onclick="closeModal()">Save</button>
+    </div>
+</div>

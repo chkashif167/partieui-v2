@@ -1,0 +1,17 @@
+<div class="person-listing">
+    <a class="avatar" href="{{ link.pages-public-profile }}">
+        <img src="{{ avatarUrl }}" alt="Avatar Alt Text">
+        {{#online}}
+            <div class="online-indicator"></div>
+        {{/online}}
+    </a>
+    <div class="person-name">
+        <a href="{{ link.pages-public-profile }}">{{ userName }}</a>
+        {{#tagLabel}}
+            <div class="tag {{ tagClass }}"><span>{{ tagLabel }}</span></div>
+        {{/tagLabel}}
+    </div>
+    <div class="person-info">
+        <span class="followers">{{ followersCount }} Followers</span>
+    </div>
+</div>

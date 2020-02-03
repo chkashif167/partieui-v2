@@ -1,0 +1,23 @@
+<div class="page page-preferences">
+    {{> components-page-header}}
+    <main class="content">
+        {{#notificationSettings}}
+            <div class="preference-item">
+                <div class="notification-setting">
+                    <span class="setting-title">{{ label }}</span>
+                    <span class="setting-description">{{ description }}</span>
+                    <div class="setting-actions">
+                        <button class="btn btn-bare {{#emailEnabled}}enabled{{/emailEnabled}}" onclick="toggleClass(event, 'enabled')">
+                            <img src="/images/icons/24px/email.svg" alt="Email Icon" class="icon-disabled">
+                            <img src="/images/icons/24px/email-green.svg" alt="Email Icon" class="icon-enabled">
+                        </button>
+                        <button class="btn btn-bare {{#pushEnabled}}enabled{{/pushEnabled}}" onclick="toggleClass(event, 'enabled')">
+                            <img src="/images/icons/24px/mobile.svg" alt="Mobile Icon" class="icon-disabled">
+                            <img src="/images/icons/24px/mobile-green.svg" alt="Mobile Icon" class="icon-enabled">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        {{/notificationSettings}}
+    </main>
+</div>

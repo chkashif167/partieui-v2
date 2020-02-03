@@ -1,0 +1,24 @@
+{
+  "bodyClass": "bg-black",
+  "pageHeader": {
+    "back": true,
+    "menuButton": true,
+    "notifications": true,
+    "title": "AlphaEcho"
+  },
+  "messages": [
+    {
+      "avatarPath": "/images/avatar-alpha.png",
+      "authorName": "AlphaEcho",
+      "tagText": "Staff",
+      "tagClass": "tag-staff",
+      "chatMessage": "<p>Thanks for joining Partie! Here are a few tips to help you get started. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a augue ut munc posuere dignissim tincidunt non dui. Suspendisse vitae fringilla neque.</p><p>Donec sapien nunc, mattis nec justo vitae, scelerisque aliquet orci. Nulla faciliisi. Lorem ipsum dolor sit amet.</p>",
+      "chatDetails": "7:30 PM"
+    }, {
+      "avatarPath": "/images/avatar-mete.png",
+      "authorName": "MeTeMeNeo",
+      "chatMessage": "That's awesome, thank you! \uD83D\uDE01",
+      "chatDetails": "7:31 PM"
+    }
+  ]
+}

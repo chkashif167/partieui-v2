@@ -1,0 +1,31 @@
+{{> components-side-nav }}
+<div class="page page-messages {{^messages}}empty{{/messages}}">
+    {{> components-page-header}}
+    <main class="content">
+        {{#messages}}
+            {{> components-message-item }}
+        {{/messages}}
+
+        {{^messages}}
+            <img src="/images/logo-lockup.svg" alt="Partie Logo" class="logo">
+            <p class="headline">You don't have any messages</p>
+            <p>Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        {{/messages}}
+    </main>
+    <button class="btn btn-floating-cta" onclick="openModal('#new-message-modal')"></button>
+    <section class="message hide-mobile bg-black">
+        <h2 class="bg-black">AlphaEcho</h2>
+        <div class="content">
+            <div class="chat-messages">
+                {{#conversation}}
+                    {{> components-chat-message }}
+                {{/conversation}}
+            </div>
+        </div>
+        {{> components-chat-input }}
+        {{> components-chat-menu }}
+    </section>
+    {{> components-admin-tap-bar }}
+    {{> components-message-menu }}
+    {{> components-new-message-modal }}
+</div>

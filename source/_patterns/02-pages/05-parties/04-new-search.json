@@ -1,0 +1,11 @@
+{
+  "bodyClass": "bg-dark has-side-nav",
+  "sideNavPartie": true,
+  "tapBarPartie": true,
+  "pageHeader": {
+    "back": true,
+    "backLink": "javascript:history.back()",
+    "title": "Search filter",
+    "textLink": "Reset"
+  }
+}

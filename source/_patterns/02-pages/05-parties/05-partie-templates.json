@@ -1,0 +1,117 @@
+{
+  "bodyClass": "bg-dark has-side-nav",
+  "sideNavPartie": true,
+  "tapBarPartie": true,
+  "pageHeader": {
+    "back": true,
+    "backLink": "javascript:history.back()",
+    "title": "Partie templates"
+  },
+  "parties": [
+    {
+      "partieImage": "/images/partie-1.png",
+      "partieTitle": "PartieNameTitle",
+      "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+      "partieGame": "Apex Legends",
+      "xbox": true,
+      "partieTags": [{
+        "tagLabel": "PVE"
+      }],
+      "filledSpots": 12,
+      "totalSpots": 20,
+      "removeButton": true
+    }, {
+      "partieImage": "/images/partie-2.png",
+      "partieTitle": "PartieNameTitle",
+      "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+      "partieGame": "Counter Strike",
+      "steam": true,
+      "partieTags": [{
+        "tagLabel": "PVE"
+      }, {
+        "tagLabel": "PVP"
+      }],
+      "filledSpots": 8,
+      "totalSpots": 8,
+      "isFull": true,
+      "removeButton": true
+    }, {
+      "partieImage": "/images/partie-3.png",
+      "partieTitle": "PartieNameTitle",
+      "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+      "partieGame": "Halo Wars",
+      "xbox": true,
+      "partieTags": [{
+        "tagLabel": "PVE"
+      }],
+      "filledSpots": 2,
+      "totalSpots": 6,
+      "waiting": true,
+      "removeButton": true
+    }, {
+      "partieImage": "/images/partie-4.png",
+      "partieTitle": "PartieNameTitle",
+      "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+      "partieGame": "Forza Motorsport 7",
+      "xbox": true,
+      "partieTags": [{
+        "tagLabel": "PVE"
+      }],
+      "filledSpots": 5,
+      "totalSpots": 6,
+      "removeButton": true
+    }, {
+      "partieImage": "/images/partie-1.png",
+      "partieTitle": "PartieNameTitle",
+      "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+      "partieGame": "Apex Legends",
+      "xbox": true,
+      "partieTags": [{
+        "tagLabel": "PVE"
+      }],
+      "filledSpots": 12,
+      "totalSpots": 20,
+      "removeButton": true
+    }, {
+      "partieImage": "/images/partie-2.png",
+      "partieTitle": "PartieNameTitle",
+      "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+      "partieGame": "Counter Strike",
+      "steam": true,
+      "partieTags": [{
+        "tagLabel": "PVE"
+      }, {
+        "tagLabel": "PVP"
+      }],
+      "filledSpots": 8,
+      "totalSpots": 8,
+      "isFull": true,
+      "removeButton": true
+    }, {
+      "partieImage": "/images/partie-3.png",
+      "partieTitle": "PartieNameTitle",
+      "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+      "partieGame": "Halo Wars",
+      "xbox": true,
+      "partieTags": [{
+        "tagLabel": "PVE"
+      }],
+      "filledSpots": 2,
+      "totalSpots": 6,
+      "waiting": true,
+      "removeButton": true
+    }, {
+      "partieImage": "/images/partie-4.png",
+      "partieTitle": "PartieNameTitle",
+      "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+      "partieGame": "Forza Motorsport 7",
+      "xbox": true,
+      "partieTags": [{
+        "tagLabel": "PVE"
+      }],
+      "filledSpots": 5,
+      "totalSpots": 6,
+      "removeButton": true
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<div class="page page-preferences">
+    {{> components-page-header}}
+    <main class="content">
+        <div class="preference-item">
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Appear Offline</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-help">
+                    <p>Lorem ipsum dolor description</p>
+                </div>
+            </div>
+        </div>
+        <div class="preference-item">
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Allow Direct messages</span>
+                    </div>
+                    <label class="switch on">
+                        <input type="checkbox" onchange="toggleSettingClass(event)" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-help">
+                    <p>Lorem ipsum dolor description</p>
+                </div>
+            </div>
+        </div>
+        <div class="preference-item">
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Follower Require Approval</span>
+                    </div>
+                    <label class="switch on">
+                        <input type="checkbox" onchange="toggleSettingClass(event)" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-help">
+                    <p>Lorem ipsum dolor description</p>
+                </div>
+            </div>
+        </div>
+        <div class="preference-item">
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Content Age Screening</span>
+                    </div>
+                    <label class="switch on">
+                        <input type="checkbox" onchange="toggleSettingClass(event)" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-help">
+                    <p>Lorem ipsum dolor description</p>
+                </div>
+            </div>
+        </div>
+        <div class="preference-item" onclick="openModal('#post-visibility-modal')">
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Post Visibility</span>
+                    </div>
+                </div>
+                <div class="toggle-help">
+                    <p>Public</p>
+                </div>
+            </div>
+        </div>
+        <div class="preference-item short" onclick="openModal('#muted-modal')">
+            <span class="preference-label">Muted Accounts</span>
+        </div>
+        <div class="preference-item short" onclick="openModal('#blocked-modal')">
+            <span class="preference-label">Blocked Accounts</span>
+        </div>
+    </main>
+    {{#blocked}}
+        {{> components-manage-accounts-modal }}
+    {{/blocked}}
+    {{#muted}}
+        {{> components-manage-accounts-modal }}
+    {{/muted}}
+    {{#post}}
+        {{> components-post-visibility-modal }}
+    {{/post}}
+    {{#regionModal}}
+        {{> components-preference-modal }}
+    {{/regionModal}}
+    {{#languageModal}}
+        {{> components-preference-modal }}
+    {{/languageModal}}
+</div>

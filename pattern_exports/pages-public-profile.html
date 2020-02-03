@@ -1,0 +1,873 @@
+<div class="side-nav hide-mobile hide-tablet">
+    <div class="side-nav__header">
+        <img src="/images/side-nav-logo.svg" alt="Partie Logo" class="logo">
+        <div class="side-nav__actions">
+            <a href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html" onclick="toggleNotificationsTray(event)" class="btn btn-bare">
+                <img src="/images/icons/24px/notifications-on.svg"  alt="Notifications Pending Icon"/>
+            </a>
+        </div>
+    </div>
+    <nav class="side-nav__links">
+            <a href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/home.svg" class="nav-item__icon"  alt="Home Icon"/>
+                <span class="nav-item__title">Home</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html" class="nav-item active">
+                    <img src="/images/icons/24px/partie-filled.svg" class="nav-item__icon"  alt="Partie Icon"/>
+                <span class="nav-item__title">Partie</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/chat.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                <span class="nav-item__title">Messages</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/account.svg" class="nav-item__icon"  alt="Account Icon"/>
+                <span class="nav-item__title">Account</span>
+            </a>
+            <a href="" class="nav-item ">
+                    <img src="/images/icons/24px/store.svg" class="nav-item__icon"  alt="Store Icon"/>
+                <span class="nav-item__title">Store</span>
+            </a>
+
+    </nav>
+    <div class="side-nav__profile " onclick="window.location = '&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html'">
+            <div class="profile-avatar">
+    <svg class="level-indicator" data-percentage="64" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/avatar-large.png" alt="Avatar Alt Text" class="avatar">
+    <div class="online-indicator"></div>
+</div>
+
+            <span class="username">RandomDash</span>
+            <span class="user-level">Level 64</span>
+            <button class="btn btn-bare" onclick="event.stopPropagation()">
+                <img src="/images/icons/32px/more-dots.svg" alt="Menu Icon">
+                <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+            </button>
+
+    </div>
+</div>
+
+<div class="page page-profile">
+    <div id="scroll-trigger" style="position: absolute; top: 52vh; width: 10px; height: 20px;"></div>
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare link-back" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center"></h1>
+            <div class="actions--right">
+                    <button class="btn btn-bare link-more" onclick="toggleFeedMenu(); activateUserActionsPopper(event);">
+                        <img src="/images/icons/24px/more.svg" alt="More Icon">
+                        <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+                    </button>
+                    <a class="btn btn-bare link-notifications" href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+</header>
+
+    <div class="profile-header">
+    <div class="profile-header-container">
+        <div class="profile-avatar">
+    <svg class="level-indicator" data-percentage="64" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/avatar-large.png" alt="Avatar Alt Text" class="avatar">
+    <div class="online-indicator"></div>
+</div>
+
+        <h1 class="h2 profile-name">Nathan728</h1>
+        <div class="profile-meta">
+                <div class="tag staff bg-teal"><span>Staff</span></div>
+            <span class="profile-level">Level 64</span>
+        </div>
+        <div class="profile-actions">
+                        <button class="btn bg-black"><span class="btn-inner">Follow</span></button>
+                    <button class="btn bg-black"><span class="btn-inner"><img src="/images/icons/24px/chat.svg" alt="Chat Icon"> Message</span></button>
+
+        </div>
+    </div>
+    <div class="profile-quick-stats">
+    <div class="quick-stat" onclick="openModal('#followers-modal')">
+        <span class="quick-stat-figure">239</span>
+        <span class="quick-stat-label">Following</span>
+    </div>
+    <div class="quick-stat" onclick="openModal('#followers-modal')">
+        <span class="quick-stat-figure">98</span>
+        <span class="quick-stat-label">Followers</span>
+    </div>
+    <div class="quick-stat" onclick="openModal('#parties-modal')">
+        <span class="quick-stat-figure">33</span>
+        <span class="quick-stat-label">Parties</span>
+    </div>
+    <div class="quick-stat" onclick="openModal('#badges-modal')">
+        <span class="quick-stat-figure">14</span>
+        <span class="quick-stat-label">Badges</span>
+    </div>
+    <div class="quick-stat" onclick="window.location = '&#x2F;patterns&#x2F;02-pages-04-profile-01-profile-likes\02-pages-04-profile-01-profile-likes.rendered.html'">
+        <span class="quick-stat-figure">234</span>
+        <span class="quick-stat-label">Likes</span>
+    </div>
+</div>
+
+</div>
+
+    <main class="content">
+        <p class="t-body-lg profile-bio">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarers cray gastropub cred green juice PBR&B mumblecore. Everyday carry bicycle rights vape truffaut blog, cornhole pabst la croix tousled franzen mustache.</p>
+        <div class="profile-location">
+            <span class="profile-website"><img src="/images/icons/16px/link-blue-muted.svg" alt="Link Icon"> <a href="#">someurl.com</a></span>
+            <span class="profile-city"><img src="/images/icons/16px/location-blue-muted.svg" alt="Location Icon"> <span>San Francisco, CA</span></span>
+        </div>
+        <div class="gamer-tags">
+    <div class="gamer-tag">
+        <img src="/images/icons/16px/steam.svg" alt="Steam Logo">
+        <span>Gamertag938</span>
+    </div>
+    <div class="gamer-tag">
+        <img src="/images/icons/16px/xbox.svg" alt="Xbox Logo">
+        <span>RandomTag20223</span>
+    </div>
+    <div class="gamer-tag">
+        <img src="/images/icons/16px/playstation.svg" alt="Playstation Logo">
+        <span>UserTag20</span>
+    </div>
+</div>
+
+        <div class="weekly-stats">
+    <div class="stats-header">
+        <button class="btn btn-bare previous"><img src="/images/icons/16px/previous.svg" alt="Previous Icon"></button>
+        <span class="date-range">May 5 - 10</span>
+        <button class="btn btn-bare next disabled"><img src="/images/icons/16px/next.svg" alt="Next Icon"></button>
+    </div>
+    <div class="stats-chart">
+            <div class="stat-meter">
+    <div class="stat-meter-column parties" data-count="6" data-max-count="30"></div>
+    <div class="stat-meter-column badges" data-count="10" data-max-count="30"></div>
+</div>
+
+            <div class="stat-meter">
+    <div class="stat-meter-column parties" data-count="23" data-max-count="30"></div>
+    <div class="stat-meter-column badges" data-count="17" data-max-count="30"></div>
+</div>
+
+            <div class="stat-meter">
+    <div class="stat-meter-column parties" data-count="13" data-max-count="30"></div>
+    <div class="stat-meter-column badges" data-count="19" data-max-count="30"></div>
+</div>
+
+            <div class="stat-meter">
+    <div class="stat-meter-column parties" data-count="26" data-max-count="30"></div>
+    <div class="stat-meter-column badges" data-count="4" data-max-count="30"></div>
+</div>
+
+            <div class="stat-meter">
+    <div class="stat-meter-column parties" data-count="3" data-max-count="30"></div>
+    <div class="stat-meter-column badges" data-count="17" data-max-count="30"></div>
+</div>
+
+            <div class="stat-meter">
+    <div class="stat-meter-column parties" data-count="30" data-max-count="30"></div>
+    <div class="stat-meter-column badges" data-count="8" data-max-count="30"></div>
+</div>
+
+            <div class="stat-meter">
+    <div class="stat-meter-column parties" data-count="7" data-max-count="30"></div>
+    <div class="stat-meter-column badges" data-count="10" data-max-count="30"></div>
+</div>
+
+        <div class="count-labels">
+            <div class="count-labels-wrapper">
+                <span class="t-nav">30</span>
+                <span class="t-nav">25</span>
+                <span class="t-nav">20</span>
+                <span class="t-nav">15</span>
+                <span class="t-nav">10</span>
+                <span class="t-nav">5</span>
+                <span class="t-nav">0</span>
+            </div>
+        </div>
+        <div class="day-labels">
+            <span class="t-nav">S</span>
+            <span class="t-nav">M</span>
+            <span class="t-nav">T</span>
+            <span class="t-nav">W</span>
+            <span class="t-nav">T</span>
+            <span class="t-nav">F</span>
+            <span class="t-nav">S</span>
+        </div>
+    </div>
+</div>
+
+        <div class="stat-group">
+                <div class="stat">
+                    <span class="stat-value h1">17 hrs</span>
+                        <span class="stat-label t-nav">Time in Parties</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value h1">44</span>
+                        <span class="stat-label t-nav">Parties Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value h1">56</span>
+                        <span class="stat-label t-nav">Badges Received</span>
+                </div>
+        </div>
+        <div class="stat-divider"><span class="t-nav">All-Time Stats</span></div>
+        <div class="stat-group">
+                <div class="stat">
+                    <span class="stat-value h1">432 hrs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value h1">217</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value h1">323</span>
+                </div>
+        </div>
+        <div class="modal" id="followers-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">239 Followers</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+                    <div class="person-listing follow-person">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a  href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RomanNin1</a>
+            <div class="tag bg-orange"><span>Partner</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-fit bg-black">Follow</button>
+</div>
+
+                    <div class="person-listing follow-person">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a  href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">AlphaEcho</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-fit bg-black">Follow</button>
+</div>
+
+                    <div class="person-listing follow-person">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a  href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">User03993</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-fit bg-black">Follow</button>
+</div>
+
+                    <div class="person-listing follow-person">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a  href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RosalinMU</a>
+            <div class="tag bg-teal"><span>Staff</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-outline btn-fit">Following</button>
+</div>
+
+                    <div class="person-listing follow-person">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a  href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">xDeniCx</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-fit bg-black">Follow</button>
+</div>
+
+                    <div class="person-listing follow-person">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a  href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">MeTeMeNeo</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-fit bg-black">Follow</button>
+</div>
+
+                    <div class="person-listing follow-person">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a  href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Artur305</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-outline btn-fit">Following</button>
+</div>
+
+                    <div class="person-listing follow-person">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a  href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Biohaz007</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-fit bg-black">Follow</button>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="modal" id="parties-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">33 Parties</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+                    <div class="partie-item">
+                        <span class="partie-title">PartieNameTitle</span>
+                        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+                        <div class="partie-meta">
+                            <div class="partie-badges">
+                                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                                    <div class="tag bg-blue">PVE</div>
+                            </div>
+                            <span class="partie-game">Apex Legends</span>
+                        </div>
+                    </div>
+                    <div class="partie-item">
+                        <span class="partie-title">PartieNameTitle</span>
+                        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+                        <div class="partie-meta">
+                            <div class="partie-badges">
+                                    <img src="/images/icons/16px/steam-blue-muted.svg" alt="Steam Icon">
+                                    <div class="tag bg-blue">PVE</div>
+                                    <div class="tag bg-blue">PVP</div>
+                            </div>
+                            <span class="partie-game">Counter Strike</span>
+                        </div>
+                    </div>
+                    <div class="partie-item">
+                        <span class="partie-title">PartieNameTitle</span>
+                        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+                        <div class="partie-meta">
+                            <div class="partie-badges">
+                                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                                    <div class="tag bg-blue">PVE</div>
+                            </div>
+                            <span class="partie-game">Halo Wars</span>
+                        </div>
+                    </div>
+                    <div class="partie-item">
+                        <span class="partie-title">PartieNameTitle</span>
+                        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+                        <div class="partie-meta">
+                            <div class="partie-badges">
+                                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                                    <div class="tag bg-blue">PVE</div>
+                            </div>
+                            <span class="partie-game">Forza Motorsport 7</span>
+                        </div>
+                    </div>
+                    <div class="partie-item">
+                        <span class="partie-title">PartieNameTitle</span>
+                        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+                        <div class="partie-meta">
+                            <div class="partie-badges">
+                                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                                    <div class="tag bg-blue">PVE</div>
+                            </div>
+                            <span class="partie-game">Apex Legends</span>
+                        </div>
+                    </div>
+                    <div class="partie-item">
+                        <span class="partie-title">PartieNameTitle</span>
+                        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+                        <div class="partie-meta">
+                            <div class="partie-badges">
+                                    <img src="/images/icons/16px/steam-blue-muted.svg" alt="Steam Icon">
+                                    <div class="tag bg-blue">PVE</div>
+                                    <div class="tag bg-blue">PVP</div>
+                            </div>
+                            <span class="partie-game">Counter Strike</span>
+                        </div>
+                    </div>
+                    <div class="partie-item">
+                        <span class="partie-title">PartieNameTitle</span>
+                        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+                        <div class="partie-meta">
+                            <div class="partie-badges">
+                                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                                    <div class="tag bg-blue">PVE</div>
+                            </div>
+                            <span class="partie-game">Halo Wars</span>
+                        </div>
+                    </div>
+                    <div class="partie-item">
+                        <span class="partie-title">PartieNameTitle</span>
+                        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+                        <div class="partie-meta">
+                            <div class="partie-badges">
+                                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                                    <div class="tag bg-blue">PVE</div>
+                            </div>
+                            <span class="partie-game">Forza Motorsport 7</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="modal badges-modal" id="badges-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">14 Badges</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+                <div class="section-header">
+                    <span class="t-nav">Tokens</span>
+                </div>
+                <div class="badge-group">
+                        <div class="token ">
+    <img src="/images/cheesy.png" alt="Cheese">
+    <div class="token-value"><span>239</span></div>
+</div>
+
+                        <div class="token empty">
+    <img src="/images/cheesy.png" alt="Cheese">
+    <div class="token-value"><span>0</span></div>
+</div>
+
+                        <div class="token ">
+    <img src="/images/cheesy.png" alt="Cheese">
+    <div class="token-value"><span>43</span></div>
+</div>
+
+                        <div class="token ">
+    <img src="/images/cheesy.png" alt="Cheese">
+    <div class="token-value"><span>32</span></div>
+</div>
+
+                        <div class="token ">
+    <img src="/images/cheesy.png" alt="Cheese">
+    <div class="token-value"><span>5</span></div>
+</div>
+
+                        <div class="token empty">
+    <img src="/images/cheesy.png" alt="Cheese">
+    <div class="token-value"><span>0</span></div>
+</div>
+
+                </div>
+                <div class="section-header">
+                    <span class="t-nav">Achievements</span>
+                </div>
+                <div class="badge-group">
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="60" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="0" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="45" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="10" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="70" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement ">
+    <svg class="level-indicator" data-percentage="100" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="90" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="0" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="32" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="84" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="14" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                        <div class="achievement incomplete">
+    <svg class="level-indicator" data-percentage="89" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    <span class="achievement-title">Title 12345</span>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="modal leave-modal dynamic-height" id="unsubscribe-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title"></h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <h2>Are you sure you want to unfollow?</h2>
+            <div class="btn-group">
+                <button class="btn btn-outline" onclick="closeModal()">Cancel</button>
+                <button class="btn bg-teal" onclick="closeModal()">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+    <div class="tap-bar">
+    <nav>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html">
+                <img src="/images/icons/24px/home.svg" alt="Home Icon">
+            <span class="t-nav">Home</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html">
+                <img src="/images/icons/24px/partie-filled.svg" alt="Partie Icon">
+            <span class="t-nav">Partie</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html">
+                <img src="/images/icons/24px/chat.svg" alt="Chat Icon">
+            <span class="t-nav">Messages</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html">
+                <img src="/images/icons/24px/account.svg" alt="Account Icon">
+            <span class="t-nav">Account</span>
+        </a>
+    </nav>
+</div>
+
+    <div class="menu-drawer" onclick="event.stopPropagation()">
+    <div class="content">
+        <button class="btn btn-bare btn-menu-item">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/32px/mute.svg" alt="Mute Icon">
+                <img class="show-tablet show-desktop" src="/images/icons/32px/mute-blue.svg" alt="Mute Icon">
+                <span class="action-title">Mute</span>
+                <span class="action-description">Stop seeing posts but continue following</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/32px/remove.svg" alt="Remove Icon">
+                <img class="show-tablet show-desktop" src="/images/icons/32px/remove-blue.svg" alt="Remove Icon">
+                <span class="action-title">Unfollow</span>
+                <span class="action-description">Stop seeing posts and unfollow</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/32px/block.svg" alt="Block Icon">
+                <img class="show-tablet show-desktop" src="/images/icons/32px/block-blue.svg" alt="Block Icon">
+                <span class="action-title">Block</span>
+                <span class="action-description">Stop seeing posts and block account</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item btn-report">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/32px/report.svg" alt="Report Icon">
+                <img class="show-tablet show-desktop" src="/images/icons/32px/report-blue.svg" alt="Report Icon">
+                <span class="action-title">Report</span>
+                <span class="action-description">Report this account for abuse</span>
+            </div>
+        </button>
+    </div>
+</div>
+
+</div>

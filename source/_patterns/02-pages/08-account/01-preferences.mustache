@@ -1,0 +1,35 @@
+<div class="page page-preferences">
+    {{> components-page-header}}
+    <main class="content">
+        <div class="preference-item">
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Contacts Syncing</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-help">
+                    <p>Allow Partie access to your contacts</p>
+                </div>
+            </div>
+        </div>
+        <div class="preference-item" onclick="openModal('#region-modal')">
+            <span class="preference-label">Region Lock</span>
+            <span class="preference-current">United States, Japan</span>
+        </div>
+        <div class="preference-item" onclick="openModal('#language-modal')">
+            <span class="preference-label">Language</span>
+            <span class="preference-current">English</span>
+        </div>
+    </main>
+    {{#regionModal}}
+        {{> components-preference-modal }}
+    {{/regionModal}}
+    {{#languageModal}}
+        {{> components-preference-modal }}
+    {{/languageModal}}
+</div>

@@ -1,0 +1,18 @@
+{
+  "bodyClass": "bg-dark has-side-nav",
+  "sideNavStore": true,
+  "pageHeader": {
+    "back": true,
+    "notifications": true,
+    "title": "Product Info"
+  },
+  "related": {
+    "title": "Related Products",
+    "items": [
+      { "description": "Lorem ipsum dolor product name" },
+      { "description": "Lorem ipsum dolor product name" },
+      { "description": "Lorem ipsum dolor product name" },
+      { "description": "Lorem ipsum dolor product name" }
+    ]
+  }
+}

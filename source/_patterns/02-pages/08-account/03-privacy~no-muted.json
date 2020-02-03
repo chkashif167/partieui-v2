@@ -1,0 +1,12 @@
+{
+    "muted": {
+        "modalTitle": "",
+        "empty": true,
+        "emptyMessage": "You have not muted anyone."
+    },
+    "blocked": {
+        "modalTitle": "",
+        "empty": true,
+        "emptyMessage": "You have not blocked anyone."
+    }
+}

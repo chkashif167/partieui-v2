@@ -1,0 +1,18 @@
+{{> components-side-nav }}
+<div class="page page-profile">
+    {{> components-page-header }}
+    {{> components-profile-header }}
+    <main class="content">
+        <div class="profile-private">
+          <img src="/images/private-profile.svg" alt="Private Profile">
+          <span class="h2">This Account is Private</span>
+          <p>Follow to see their details and updates</p>
+        </div>
+        {{> components-followers-modal }}
+        {{> components-parties-modal }}
+        {{> components-badges-modal }}
+        {{> components-unsubscribe-modal }}
+    </main>
+    {{> components-tap-bar }}
+    {{> components-user-feed-menu }}
+</div>

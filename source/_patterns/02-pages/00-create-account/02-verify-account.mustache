@@ -1,0 +1,22 @@
+<div class="page page-verify-account">
+    {{> components-page-header }}
+    <main class="content">
+        <!-- NOTE: Not including component here because message text breaks the include -->
+        <div class="message-panel {{ styleModifier }}">
+            <img class="hide-desktop" src="/images/icons/16px/sms.svg" alt="SMS Icon">
+            <img class="hide-mobile hide-tablet" src="/images/icons/misc/mobile-large.svg" alt="SMS Icon">
+            <p>We just sent a verification code to (***) *** - **34</p>
+        </div>
+        <form class="form" action="">
+            {{> elements-input(inputName: "phone-verification", inputType: "text", label: "Verify Your Phone Number", placeholder: "Enter the 6-digit code", required: true, resend: true) }}
+            {{> elements-link-button:bg-blue(text: "Verify Account", url: "link.pages-sign-in") }}
+        </form>
+        <p class="contact">Need help? <a href="#">Contact Us</a></p>
+    </main>
+</div>
+
+<script>
+    document.onload = function() {
+        document.querySelector("input[name='phone-verification']").focus();
+    };
+</script>

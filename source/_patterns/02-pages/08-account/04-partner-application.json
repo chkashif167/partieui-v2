@@ -1,0 +1,10 @@
+{
+    "bodyClass": "bg-dark has-side-nav",
+    "sideNavAccount": true,
+    "tapBarAccount": true,
+    "pageHeader": {
+      "close": true,
+      "title": "Partner Application"
+    }
+  }
+  

@@ -1,0 +1,30 @@
+<div class="tray notifications-tray  hide-mobile hide-tablet {{^notificationItems}}empty{{/notificationItems}}">
+    <div class="tray-header">
+        <h2>Notifications</h2>
+        <button class="btn btn-bare close" onclick="toggleNotificationsTray(event)">
+            <img src="/images/icons/24px/close-2.svg" alt="Close Icon">
+        </button>
+    </div>
+    <div class="tray-content">
+        {{# notificationItems }}
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+            {{> components-notification-item }}
+        {{/notificationItems}}
+
+        {{^notificationItems}}
+            <p class="headline">You don't have any notifications</p>
+            <p>Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        {{/notificationItems}}
+    </div>
+</div>

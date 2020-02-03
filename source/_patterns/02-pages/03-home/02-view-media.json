@@ -1,0 +1,16 @@
+{
+  "bodyClass": "bg-black",
+  "pageHeader": {
+    "back": true,
+    "backLink": "javascript:history.back()",
+    "menuButton": true,
+    "title": "1/5"
+  },
+  "mediaImages": [
+    { "imageUrl": "/images/in-game-1.jpg" },
+    { "imageUrl": "/images/in-game-2.jpg" },
+    { "imageUrl": "/images/in-game-3.jpg" },
+    { "imageUrl": "/images/in-game-4.jpg" },
+    { "imageUrl": "/images/in-game-5.jpg" }
+  ]
+}

@@ -1,0 +1,14 @@
+<div class="page page-sign-in {{#resetSuccess}}reset-success{{/resetSuccess}}">
+    {{> components-page-header }}
+    <main class="content">
+        {{#resetSuccess}}
+            {{> components-message-panel(success: true, message: "Password reset successful.") }}
+        {{/resetSuccess}}
+        <form class="form" action="">
+            {{> elements-input(inputName: "username", inputType: "text", label: "User Name", placeholder: "Enter your username", required: true) }}
+            {{> elements-input(inputName: "password", inputType: "password", label: "Password", placeholder: "Enter your password", required: true) }}
+            {{> elements-link-button:bg-blue(text: "Sign In", url: "link.pages-sign-in") }}
+        </form>
+        <p class="help-message"><a href="{{ link.pages-reset-password }}">Forgot Password?</a></p>
+    </main>
+</div>

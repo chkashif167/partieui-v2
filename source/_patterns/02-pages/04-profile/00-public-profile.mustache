@@ -1,0 +1,42 @@
+{{> components-side-nav }}
+<div class="page page-profile">
+    <div id="scroll-trigger" style="position: absolute; top: 52vh; width: 10px; height: 20px;"></div>
+    {{> components-page-header }}
+    {{> components-profile-header }}
+    <main class="content">
+        <p class="t-body-lg profile-bio">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarers cray gastropub cred green juice PBR&B mumblecore. Everyday carry bicycle rights vape truffaut blog, cornhole pabst la croix tousled franzen mustache.</p>
+        <div class="profile-location">
+            <span class="profile-website"><img src="/images/icons/16px/link-blue-muted.svg" alt="Link Icon"> <a href="#">someurl.com</a></span>
+            <span class="profile-city"><img src="/images/icons/16px/location-blue-muted.svg" alt="Location Icon"> <span>San Francisco, CA</span></span>
+        </div>
+        {{> components-gamer-tags }}
+        {{> components-weekly-stats }}
+        <div class="stat-group">
+            {{#weekStats}}
+                <div class="stat">
+                    <span class="stat-value h1">{{ statValue }}</span>
+                    {{#statLabel}}
+                        <span class="stat-label t-nav">{{ statLabel }}</span>
+                    {{/statLabel}}
+                </div>
+            {{/weekStats}}
+        </div>
+        <div class="stat-divider"><span class="t-nav">All-Time Stats</span></div>
+        <div class="stat-group">
+            {{#totalStats}}
+                <div class="stat">
+                    <span class="stat-value h1">{{ statValue }}</span>
+                    {{#statLabel}}
+                        <span class="stat-label t-nav">{{ statLabel }}</span>
+                    {{/statLabel}}
+                </div>
+            {{/totalStats}}
+        </div>
+        {{> components-followers-modal }}
+        {{> components-parties-modal }}
+        {{> components-badges-modal }}
+        {{> components-unsubscribe-modal }}
+    </main>
+    {{> components-tap-bar }}
+    {{> components-user-feed-menu }}
+</div>

@@ -1,0 +1,12 @@
+<div class="page page-chat page-partie-room">
+    {{> components-page-header }}
+    <main class="content">
+        <div class="chat-messages">
+            {{#messages}}
+                {{> components-chat-message }}
+            {{/messages}}
+        </div>
+    </main>
+    {{> components-chat-input }}
+    {{> components-chat-menu }}
+</div>

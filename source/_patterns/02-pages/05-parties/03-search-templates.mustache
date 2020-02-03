@@ -1,0 +1,18 @@
+<div class="page page-saved-templates">
+    {{> components-page-header }}
+    <main class="content">
+        {{# searchTemplates }}
+            <div class="person-listing search-template-item">
+                <div class="person-name">
+                    <span>{{ title }}</span>
+                </div>
+                <div class="person-info">
+                    <span>{{ game }} | {{ type }}</span>
+                </div>
+                <button class="btn btn-bare remove">
+                    <img src="/images/icons/32px/remove.svg" alt="Remove Icon">
+                </button>
+            </div>
+        {{/searchTemplates}}
+    </main>
+</div>

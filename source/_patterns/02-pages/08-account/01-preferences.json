@@ -1,0 +1,34 @@
+{
+  "tapBarAccount": true,
+  "pageHeader": {
+    "back": true,
+    "notifications": true,
+    "title": "Preferences"
+  },
+  "regionModal": {
+    "modalId": "region-modal",
+    "modalTitle": "Choose your region",
+    "modalOptions": {
+      "checkboxItems": [
+        { "label": "United States" },
+        { "label": "Japan" },
+        { "label": "Country" },
+        { "label": "Country" },
+        { "label": "Country" }
+      ]
+    }
+  },
+  "languageModal": {
+    "modalId": "language-modal",
+    "modalTitle": "Choose your language",
+    "modalOptions": {
+      "checkboxItems": [
+        { "label": "English" },
+        { "label": "Spanish" },
+        { "label": "Russian" },
+        { "label": "Japanese" },
+        { "label": "Italian" }
+      ]
+    }
+  }
+}

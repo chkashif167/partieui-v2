@@ -1,0 +1,33 @@
+<div class="profile-header">
+    <div class="profile-header-container">
+        {{> components-profile-avatar }}
+        <h1 class="h2 profile-name">Nathan728</h1>
+        <div class="profile-meta">
+            {{#userTags}}
+                <div class="tag staff {{ tagClass }}"><span>{{ tagLabel }}</span></div>
+            {{/userTags}}
+            <span class="profile-level">Level 64</span>
+        </div>
+        <div class="profile-actions">
+            {{^profileAdmin}}
+                {{#profileSelf}}
+                    <button class="btn bg-black"><span class="btn-inner">Edit Profile</span></button>
+                {{/profileSelf}}
+                {{^profileSelf}}
+                    {{^following}}
+                        <button class="btn bg-black"><span class="btn-inner">Follow</span></button>
+                    {{/following}}
+                    {{#following}}
+                        <button class="btn bg-teal" onclick="openModal('#unsubscribe-modal')"><span class="btn-inner">Following</span></button>
+                    {{/following}}
+                    <button class="btn bg-black"><span class="btn-inner"><img src="/images/icons/24px/chat.svg" alt="Chat Icon"> Message</span></button>
+                {{/profileSelf}}
+            {{/profileAdmin}}
+
+            {{#profileAdmin}}
+                <button class="btn bg-dark"><span class="btn-inner"><img src="/images/icons/24px/chat.svg" alt="Chat Icon"> Message</span></button>
+            {{/profileAdmin}}
+        </div>
+    </div>
+    {{> components-profile-quick-stats }}
+</div>

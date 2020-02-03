@@ -1,0 +1,10 @@
+{{> components-side-nav }}
+{{> components-notifications-tray }}
+<div class="page page-partie-list page-partie-templates">
+    {{> components-page-header }}
+    <main class="content">
+        {{# parties }}
+            {{> components-partie-list-item }}
+        {{/parties}}
+    </main>
+</div>

@@ -1,0 +1,155 @@
+{
+  "bodyClass": "bg-dark has-side-nav",
+  "sideNavProfile": true,
+  "pageHeader": {
+    "back": true,
+    "textLink": "Save",
+    "title": "Edit Profile"
+  },
+  "facebookLinked": false,
+  "inputsA": [
+    {
+      "inputName": "username",
+      "inputType": "text",
+      "label": "Username",
+      "inputValue": "Johnny22",
+      "required": true
+    }, {
+      "inputName": "firstName",
+      "inputType": "text",
+      "label": "First Name",
+      "inputValue": "Johnny",
+      "required": true
+    }, {
+      "inputName": "lastName",
+      "inputType": "text",
+      "label": "Last Name",
+      "inputValue": "Doe",
+      "required": true
+    }, {
+      "inputName": "dob",
+      "inputType": "date",
+      "label": "Date of Birth",
+      "inputValue": "1999-12-01",
+      "required": true
+    }, {
+      "inputName": "email",
+      "inputType": "email",
+      "label": "Email",
+      "inputValue": "johnny@doe.com",
+      "required": true
+    }, {
+      "inputName": "phone",
+      "inputType": "tel",
+      "label": "Phone",
+      "inputValue": "415-987-6543",
+      "required": true
+    }, {
+      "inputName": "location",
+      "inputType": "text",
+      "label": "Location",
+      "inputValue": "San Francisco, CA",
+      "required": true
+    }
+  ],
+  "inputsB": [
+    {
+      "inputName": "profileLink",
+      "inputType": "text",
+      "label": "Link",
+      "inputValue": "http://www.mysite.com",
+      "required": true
+    }, {
+      "className": "platforms-select custom-select",
+      "inputName": "platforms",
+      "inputType": "text",
+      "label": "Platforms",
+      "inputValue": "PS4, XBOX, Steam"
+    }
+  ],
+  "platformsModal": {
+    "modalId": "platforms-modal",
+    "modalTitle": "Select Your Platforms",
+    "modalCta": "Next",
+    "openModalId": "handle-modal",
+    "modalOptions": {
+      "checkboxItems": [
+        {
+          "className": "checked",
+          "label": "PS4"
+        },
+        {
+          "className": "checked",
+          "label": "XBOX"
+        },
+        {
+          "className": "checked",
+          "label": "Steam"
+        },
+        {
+          "label": "Uplay"
+        },
+        {
+          "label": "Epic"
+        }
+      ]
+    }
+  },
+  "handleModal": {
+    "inputs": [
+      {
+        "inputName": "ps4-handle",
+        "label": "PS4 Handle",
+        "inputType": "text",
+        "placeholder": "Enter your PS4 handle",
+        "required": true
+      },
+      {
+        "inputName": "xbox-handle",
+        "label": "Xbox Handle",
+        "inputType": "text",
+        "placeholder": "Enter your Xbox handle",
+        "required": true
+      },
+      {
+        "inputName": "steam-handle",
+        "label": "Steam Handle",
+        "inputType": "text",
+        "placeholder": "Enter your Steam handle",
+        "required": true
+      }
+    ]
+  },
+  "images": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ]
+}

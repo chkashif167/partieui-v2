@@ -1,0 +1,14 @@
+<div class="checklist-item {{#complete}}completed{{/complete}}">
+    {{#complete}}
+        <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+    {{/complete}}
+    {{^complete}}
+        <img src="/images/icons/misc/bullet-point.svg" alt="Bullet Point Icon">
+    {{/complete}}
+    <span class="checklist-description">{{ description }}</span>
+    <span class="checklist-progress">
+        <span class="checklist-required">{{ requiredCount }}</span>
+        <span class="checklist-divider"> / </span>
+        <span class="checklist-completed">{{ completedCount }}</span>
+    </span>
+</div>

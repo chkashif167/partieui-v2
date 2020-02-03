@@ -1,0 +1,103 @@
+{
+  "pageHeader": {
+    "account": true,
+    "close": true,
+    "title": "Notifications"
+  },
+  "showRequests": true,
+  "notificationItems": [
+    {
+      "avatarUrl": "/images/avatar-roman.png",
+      "online": true,
+      "userName": "RomanNin1",
+      "tagClass": "bg-orange",
+      "tagLabel": "Partner",
+      "hosting": true
+    }, {
+      "avatarUrl": "/images/avatar-alpha.png",
+      "online": false,
+      "userName": "AlphaEcho",
+      "pendingRequest": true
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": true,
+      "userName": "User03993",
+      "acceptedRequest": true
+    }, {
+      "avatarUrl": "/images/avatar-rosalin.png",
+      "online": true,
+      "userName": "RosalinMU",
+      "tagClass": "bg-teal",
+      "tagLabel": "Staff",
+      "partieInvite": true
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": false,
+      "userName": "xDeniCx",
+      "message": true
+    }, {
+      "avatarUrl": "/images/avatar-mete.png",
+      "online": true,
+      "userName": "MeTeMeNeo",
+      "hosting": true
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": false,
+      "userName": "Artur305",
+      "pendingRequest": true
+    }, {
+      "avatarUrl": "/images/avatar-anton.png",
+      "online": true,
+      "userName": "Biohaz007",
+      "acceptedRequest": true
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": false,
+      "userName": "xDeniCx",
+      "partieInvite": true
+    }
+  ],
+  "requests": [
+    {
+      "avatarUrl": "/images/avatar-roman.png",
+      "online": true,
+      "userName": "RomanNin1",
+      "tagClass": "bg-orange",
+      "tagLabel": "Partner"
+    }, {
+      "avatarUrl": "/images/avatar-alpha.png",
+      "online": false,
+      "userName": "AlphaEcho"
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": true,
+      "userName": "User03993"
+    }, {
+      "avatarUrl": "/images/avatar-rosalin.png",
+      "online": true,
+      "userName": "RosalinMU",
+      "tagClass": "bg-teal",
+      "tagLabel": "Staff"
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": false,
+      "userName": "xDeniCx"
+    }, {
+      "avatarUrl": "/images/avatar-mete.png",
+      "online": true,
+      "userName": "MeTeMeNeo"
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": false,
+      "userName": "Artur305"
+    }, {
+      "avatarUrl": "/images/avatar-anton.png",
+      "online": true,
+      "userName": "Biohaz007"
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": false,
+      "userName": "xDeniCx"
+    }
+  ]
+}

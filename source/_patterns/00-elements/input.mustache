@@ -1,0 +1,16 @@
+<div class="form-control {{ className }}">
+    <label for="{{ inputName }}">{{ label }}</label>
+    {{#password }}
+        <div class="password-meter" data-password-strength="">
+            <div class="password-meter__dot"></div>
+            <div class="password-meter__dot"></div>
+            <div class="password-meter__dot"></div>
+            <div class="password-meter__dot"></div>
+            <div class="password-meter__dot"></div>
+        </div>
+    {{/password}}
+    {{#resend}}
+        <a href="#" class="resend">Resend Code</a>
+    {{/resend}}
+    <input type="{{ inputType }}" name="{{ inputName }}" placeholder="{{ placeholder }}" value="{{ inputValue }}"{{#required}}required{{/required}}/>
+</div>

@@ -1,0 +1,93 @@
+<div class="page page-chat page-partie-room">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare link-back" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">AlphaEcho</h1>
+            <div class="actions--right">
+                    <button class="btn btn-bare link-more" onclick="toggleFeedMenu(); activateUserActionsPopper(event);">
+                        <img src="/images/icons/24px/more.svg" alt="More Icon">
+                        <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+                    </button>
+                    <a class="btn btn-bare link-notifications" href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+        <div class="chat-messages">
+                <div class="chat-message ">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html" class="avatar">
+            <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+        </a>
+    <div class="chat-message-meta">
+        <a class="chat-message-author" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">AlphaEcho</a>
+            <div class="tag tag-staff"><span>Staff</span></div>
+        <span class="chat-message-details">7:30 PM</span>
+    </div>
+    <div class="chat-message-content">
+        <p>Thanks for joining Partie! Here are a few tips to help you get started. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a augue ut munc posuere dignissim tincidunt non dui. Suspendisse vitae fringilla neque.</p><p>Donec sapien nunc, mattis nec justo vitae, scelerisque aliquet orci. Nulla faciliisi. Lorem ipsum dolor sit amet.</p>
+    </div>
+</div>
+
+                <div class="chat-message ">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html" class="avatar">
+            <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+        </a>
+    <div class="chat-message-meta">
+        <a class="chat-message-author" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">MeTeMeNeo</a>
+        <span class="chat-message-details">7:31 PM</span>
+    </div>
+    <div class="chat-message-content">
+        That's awesome, thank you! 😁
+    </div>
+</div>
+
+        </div>
+    </main>
+    <div class="chat-input">
+    <div class="form-control">
+        <textarea name="chat-message" id="message-input" placeholder="Say anything you want, be nice." onkeydown="chatKeydownHandler(event)"></textarea>
+    </div>
+    <button class="btn" onclick="postMessage(event)">Send</button>
+</div>
+
+    <div class="menu-drawer">
+    <div class="content">
+        <button class="btn btn-bare btn-menu-item" onclick="toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/commence-partie.svg" alt="Commence Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/commence-partie-blue.svg" alt="Commence Partie">
+                <span class="action-title">Commence Partie</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#partie-settings-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/partie-settings.svg" alt="Share Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/partie-settings-blue.svg" alt="Share Partie">
+                <span class="action-title">Partie Settings</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#twitter-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/share-partie.svg" alt="Share Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/share-partie-blue.svg" alt="Share Partie">
+                <span class="action-title">Share Partie</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#leave-partie-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/end-partie.svg" alt="Share Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/end-partie-blue.svg" alt="Share Partie">
+                <span class="action-title">End Partie</span>
+                <span class="action-description">Lorem ipsum dolor  consectetur adipi</span>
+            </div>
+        </button>
+    </div>
+</div>
+
+</div>

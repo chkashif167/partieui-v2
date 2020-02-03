@@ -1,0 +1,25 @@
+<div class="tray search-filters-tray hide-mobile hide-tablet">
+    <div class="tray-header">
+        <h2>Search filters</h2>
+        <button class="btn btn-bare close" onclick="toggleTray('.search-filters-tray')">
+            <img src="/images/icons/24px/close-2.svg" alt="Close Icon">
+        </button>
+    </div>
+    <div class="tray-content">
+        <div class="scroll-container">
+            {{# searchTemplates }}
+                <div class="person-listing search-template-item">
+                    <div class="person-name">
+                        <span>{{ title }}</span>
+                    </div>
+                    <div class="person-info">
+                        <span>{{ game }} | {{ type }}</span>
+                    </div>
+                    <button class="btn btn-bare remove">
+                        <img src="/images/icons/32px/remove.svg" alt="Remove Icon">
+                    </button>
+                </div>
+            {{/searchTemplates}}
+        </div>
+    </div>
+</div>

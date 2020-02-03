@@ -1,0 +1,32 @@
+<div class="weekly-stats">
+    <div class="stats-header">
+        <button class="btn btn-bare previous"><img src="/images/icons/16px/previous.svg" alt="Previous Icon"></button>
+        <span class="date-range">May 5 - 10</span>
+        <button class="btn btn-bare next disabled"><img src="/images/icons/16px/next.svg" alt="Next Icon"></button>
+    </div>
+    <div class="stats-chart">
+        {{#days}}
+            {{> components-stat-bar}}
+        {{/days}}
+        <div class="count-labels">
+            <div class="count-labels-wrapper">
+                <span class="t-nav">30</span>
+                <span class="t-nav">25</span>
+                <span class="t-nav">20</span>
+                <span class="t-nav">15</span>
+                <span class="t-nav">10</span>
+                <span class="t-nav">5</span>
+                <span class="t-nav">0</span>
+            </div>
+        </div>
+        <div class="day-labels">
+            <span class="t-nav">S</span>
+            <span class="t-nav">M</span>
+            <span class="t-nav">T</span>
+            <span class="t-nav">W</span>
+            <span class="t-nav">T</span>
+            <span class="t-nav">F</span>
+            <span class="t-nav">S</span>
+        </div>
+    </div>
+</div>

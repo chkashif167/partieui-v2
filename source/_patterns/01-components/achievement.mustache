@@ -1,0 +1,20 @@
+<div class="achievement {{^isComplete}}incomplete{{/isComplete}}">
+    <svg class="level-indicator" data-percentage="{{ percentComplete }}" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/cheesy.png" alt="Cheese!">
+    {{#achievementTitle}}<span class="achievement-title">{{ achievementTitle }}</span>{{/achievementTitle}}
+</div>

@@ -1,0 +1,941 @@
+<div class="side-nav hide-mobile hide-tablet">
+    <div class="side-nav__header">
+        <img src="/images/side-nav-logo.svg" alt="Partie Logo" class="logo">
+        <div class="side-nav__actions">
+            <a href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html" onclick="toggleNotificationsTray(event)" class="btn btn-bare">
+                <img src="/images/icons/24px/notifications-on.svg"  alt="Notifications Pending Icon"/>
+            </a>
+        </div>
+    </div>
+    <nav class="side-nav__links">
+            <a href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/home.svg" class="nav-item__icon"  alt="Home Icon"/>
+                <span class="nav-item__title">Home</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/partie.svg" class="nav-item__icon"  alt="Partie Icon"/>
+                <span class="nav-item__title">Partie</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/chat.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                <span class="nav-item__title">Messages</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html" class="nav-item active">
+                    <img src="/images/icons/24px/account-filled.svg" class="nav-item__icon"  alt="Account Icon"/>
+                <span class="nav-item__title">Account</span>
+            </a>
+            <a href="" class="nav-item ">
+                    <img src="/images/icons/24px/store.svg" class="nav-item__icon"  alt="Store Icon"/>
+                <span class="nav-item__title">Store</span>
+            </a>
+
+    </nav>
+    <div class="side-nav__profile " onclick="window.location = '&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html'">
+            <div class="profile-avatar">
+    <svg class="level-indicator" data-percentage="64" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/avatar-large.png" alt="Avatar Alt Text" class="avatar">
+    <div class="online-indicator"></div>
+</div>
+
+            <span class="username">RandomDash</span>
+            <span class="user-level">Level 64</span>
+            <button class="btn btn-bare" onclick="event.stopPropagation()">
+                <img src="/images/icons/32px/more-dots.svg" alt="Menu Icon">
+                <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+            </button>
+
+    </div>
+</div>
+
+<div class="page page-account">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare link-account" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html"><img src="/images/icons/24px/user-placeholder.svg" alt="User Placeholder Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Account</h1>
+            <div class="actions--right">
+                    <a class="btn btn-bare link-notifications" href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+</header>
+
+        <div class="partner-progress ">
+        <div class="progress-primary" onclick="document.querySelector('.partner-progress').classList.toggle('expanded')">
+            <img src="/images/icons/24px/partie-filled-blue-muted.svg" alt="Partie Logo">
+            <span class="progress-title">Partner Progress</span>
+            <div class="progress-indicator">
+                <span class="progress-percent">23%</span>
+                <div class="progress-bar" data-progress-percent="23"></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="progress-checklist">
+                <div class="checklist-item ">
+        <img src="/images/icons/misc/bullet-point.svg" alt="Bullet Point Icon">
+    <span class="checklist-description">Host 25 Successful Parties</span>
+    <span class="checklist-progress">
+        <span class="checklist-required">25</span>
+        <span class="checklist-divider"> / </span>
+        <span class="checklist-completed">2</span>
+    </span>
+</div>
+
+                <div class="checklist-item ">
+        <img src="/images/icons/misc/bullet-point.svg" alt="Bullet Point Icon">
+    <span class="checklist-description">Reach 20 Followers</span>
+    <span class="checklist-progress">
+        <span class="checklist-required">20</span>
+        <span class="checklist-divider"> / </span>
+        <span class="checklist-completed">1</span>
+    </span>
+</div>
+
+                <div class="checklist-item ">
+        <img src="/images/icons/misc/bullet-point.svg" alt="Bullet Point Icon">
+    <span class="checklist-description">Receive 50 Tokens</span>
+    <span class="checklist-progress">
+        <span class="checklist-required">50</span>
+        <span class="checklist-divider"> / </span>
+        <span class="checklist-completed">7</span>
+    </span>
+</div>
+
+                <div class="checklist-item completed">
+        <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+    <span class="checklist-description">Get 10 5-Star Ratings</span>
+    <span class="checklist-progress">
+        <span class="checklist-required">10</span>
+        <span class="checklist-divider"> / </span>
+        <span class="checklist-completed">10</span>
+    </span>
+</div>
+
+                <div class="checklist-item ">
+        <img src="/images/icons/misc/bullet-point.svg" alt="Bullet Point Icon">
+    <span class="checklist-description">Do something 60 times</span>
+    <span class="checklist-progress">
+        <span class="checklist-required">60</span>
+        <span class="checklist-divider"> / </span>
+        <span class="checklist-completed">2</span>
+    </span>
+</div>
+
+        </div>
+
+    <button class="btn btn-bare btn-fill progress-collapse" onclick="document.querySelector('.partner-progress.expanded').classList.remove('expanded')">
+        <img src="/images/icons/16px/arrow.svg" alt="Collapse Icon">
+    </button>
+</div>
+
+    <main class="content">
+        <div class="account-option referral-link">
+            <img src="/images/icons/16px/link-blue-muted.svg" alt="Link Icon">
+            <span class="option-title">Referral Link</span>
+            <span class="link">https://partie.com/?id=939dzgx</span>
+            <button class="btn bg-black">Share</button>
+        </div>
+        <div class="account-option active" id="preferences-link" onclick="accountNavigation('#preferences', 'Preferences', null, '&#x2F;patterns&#x2F;02-pages-08-account-01-preferences\02-pages-08-account-01-preferences.rendered.html')">
+            <img src="/images/icons/16px/settings-blue-muted.svg" alt="Preferences Icon">
+            <span class="option-title">Preferences</span>
+        </div>
+        <div class="account-option" id="notifications-link" onclick="accountNavigation('#notifications', 'Notifications Manager', null, '&#x2F;patterns&#x2F;02-pages-08-account-02-account-notifications\02-pages-08-account-02-account-notifications.rendered.html')">
+            <img src="/images/icons/16px/notifications-blue-muted.svg" alt="Notifications Icon">
+            <span class="option-title">Notifications Manager</span>
+        </div>
+        <div class="account-option" id="privacy-link" onclick="accountNavigation('#privacy', 'Privacy & Safety', null, '&#x2F;patterns&#x2F;02-pages-08-account-03-privacy\02-pages-08-account-03-privacy.rendered.html')">
+            <img src="/images/icons/16px/lock-blue-muted.svg" alt="Privacy Icon">
+            <span class="option-title">Privacy &amp; Safety</span>
+        </div>
+        <div class="account-option" id="terms-link" onclick="accountNavigation('#terms', 'Terms', '#terms-modal')">
+            <img src="/images/icons/16px/terms-blue-muted.svg" alt="Terms Icon">
+            <span class="option-title">Terms</span>
+        </div>
+        <div class="account-option" onclick="accountNavigation('#terms', 'Terms', '#terms-modal')">
+            <img src="/images/icons/16px/community-blue-muted.svg" alt="Community Icon">
+            <span class="option-title">Community Guidelines</span>
+        </div>
+        <div class="account-option" onclick="accountNavigation('#terms', 'Terms', '#terms-modal')">
+            <img src="/images/icons/16px/help-blue-muted.svg" alt="Help Icon">
+            <span class="option-title">Help</span>
+        </div>
+        <div class="account-option" onclick="accountNavigation('#terms', 'Terms', '#terms-modal')">
+            <img src="/images/icons/16px/about-blue-muted.svg" alt="About Icon">
+            <span class="option-title">About</span>
+        </div>
+    </main>
+    <section class="settings-header hide-mobile">
+        <h2>
+        Preferences
+        
+        </h2>
+    </section>
+    <section class="settings-pages">
+        <div class="settings-page active " id="preferences">
+            <div class="preference-item">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Contacts Syncing</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" onchange="toggleSettingClass(event)">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Allow Partie access to your contacts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item" onclick="openModal('#region-modal')">
+                <span class="preference-label">Region Lock</span>
+                <span class="preference-current">United States, Japan</span>
+            </div>
+            <div class="preference-item" onclick="openModal('#language-modal')">
+                <span class="preference-label">Language</span>
+                <span class="preference-current">English</span>
+            </div>
+
+        </div>
+        <div class="settings-page" id="notifications">
+                <div class="preference-item">
+                    <div class="notification-setting">
+                        <span class="setting-title">Follow Requests</span>
+                        <span class="setting-description">Notify me of new follow requests</span>
+                        <div class="setting-actions">
+                            <button class="btn btn-bare " onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/email.svg" alt="Email Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/email-green.svg" alt="Email Icon" class="icon-enabled">
+                            </button>
+                            <button class="btn btn-bare enabled" onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/mobile.svg" alt="Mobile Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/mobile-green.svg" alt="Mobile Icon" class="icon-enabled">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="preference-item">
+                    <div class="notification-setting">
+                        <span class="setting-title">New Parties</span>
+                        <span class="setting-description">Notify me when friends start a Partie</span>
+                        <div class="setting-actions">
+                            <button class="btn btn-bare enabled" onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/email.svg" alt="Email Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/email-green.svg" alt="Email Icon" class="icon-enabled">
+                            </button>
+                            <button class="btn btn-bare enabled" onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/mobile.svg" alt="Mobile Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/mobile-green.svg" alt="Mobile Icon" class="icon-enabled">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="preference-item">
+                    <div class="notification-setting">
+                        <span class="setting-title">Messages</span>
+                        <span class="setting-description">Notify me of new messages</span>
+                        <div class="setting-actions">
+                            <button class="btn btn-bare " onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/email.svg" alt="Email Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/email-green.svg" alt="Email Icon" class="icon-enabled">
+                            </button>
+                            <button class="btn btn-bare enabled" onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/mobile.svg" alt="Mobile Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/mobile-green.svg" alt="Mobile Icon" class="icon-enabled">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="preference-item">
+                    <div class="notification-setting">
+                        <span class="setting-title">Lorem Ipsum</span>
+                        <span class="setting-description">Insert short description</span>
+                        <div class="setting-actions">
+                            <button class="btn btn-bare " onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/email.svg" alt="Email Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/email-green.svg" alt="Email Icon" class="icon-enabled">
+                            </button>
+                            <button class="btn btn-bare " onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/mobile.svg" alt="Mobile Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/mobile-green.svg" alt="Mobile Icon" class="icon-enabled">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="preference-item">
+                    <div class="notification-setting">
+                        <span class="setting-title">Lorem Ipsum Dolor</span>
+                        <span class="setting-description">Another type of notification</span>
+                        <div class="setting-actions">
+                            <button class="btn btn-bare enabled" onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/email.svg" alt="Email Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/email-green.svg" alt="Email Icon" class="icon-enabled">
+                            </button>
+                            <button class="btn btn-bare " onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/mobile.svg" alt="Mobile Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/mobile-green.svg" alt="Mobile Icon" class="icon-enabled">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="preference-item">
+                    <div class="notification-setting">
+                        <span class="setting-title">Dolor Ipsum Lorem</span>
+                        <span class="setting-description">Send this user more notifications</span>
+                        <div class="setting-actions">
+                            <button class="btn btn-bare " onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/email.svg" alt="Email Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/email-green.svg" alt="Email Icon" class="icon-enabled">
+                            </button>
+                            <button class="btn btn-bare enabled" onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/mobile.svg" alt="Mobile Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/mobile-green.svg" alt="Mobile Icon" class="icon-enabled">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="preference-item">
+                    <div class="notification-setting">
+                        <span class="setting-title">Ipsum Dolor Lorem</span>
+                        <span class="setting-description">Another notification right here</span>
+                        <div class="setting-actions">
+                            <button class="btn btn-bare " onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/email.svg" alt="Email Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/email-green.svg" alt="Email Icon" class="icon-enabled">
+                            </button>
+                            <button class="btn btn-bare " onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/mobile.svg" alt="Mobile Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/mobile-green.svg" alt="Mobile Icon" class="icon-enabled">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="settings-page" id="privacy">
+            <div class="preference-item">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Appear Offline</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" onchange="toggleSettingClass(event)">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Lorem ipsum dolor description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Allow Direct messages</span>
+                        </div>
+                        <label class="switch on">
+                            <input type="checkbox" onchange="toggleSettingClass(event)" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Lorem ipsum dolor description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Follower Require Approval</span>
+                        </div>
+                        <label class="switch on">
+                            <input type="checkbox" onchange="toggleSettingClass(event)" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Lorem ipsum dolor description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Content Age Screening</span>
+                        </div>
+                        <label class="switch on">
+                            <input type="checkbox" onchange="toggleSettingClass(event)" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Lorem ipsum dolor description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item" onclick="openModal('#post-visibility-modal')">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Post Visibility</span>
+                        </div>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Public</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item short" onclick="openModal('#muted-modal')">
+                <span class="preference-label">Muted Accounts</span>
+            </div>
+            <div class="preference-item short" onclick="openModal('#blocked-modal')">
+                <span class="preference-label">Blocked Accounts</span>
+            </div>
+        </div>
+        <div class="settings-page" id="terms">
+            <h3 class="section-heading">Section Title</h3>
+            <p>90's health goth hella squid palo santo, brooklyn chillwave austin letterpress flexitarian. Crucifix tote bag cardigan, hell of tofu XOXO bespoke meditation hammock vinyl jianbing subway tile keffiyeh. Intelligentsia sustainable woke, twee scenester gastropub prism pickled vinyl. Crucifix unicorn flexitarian pinterest meh chicharrones. Occupy chia freegan, schlitz cloud bread humblebrag quinoa banjo.</p>
+            <p>Wayfarers kogi bicycle rights, seitan paleo swag raw denim edison bulb synth literally banjo. Knausgaard swag scenester meditation, microdosing wolf bespoke lo-fi fashion axe salvia. Helvetica snackwave hella lo-fi kale chips tumblr subway tile viral selfies pabst deep v man braid drinking vinegar. +1 activated charcoal small batch flannel ennui, mumblecore cred blue bottle meggings pop-up actually whatever locavore. 3 wolf moon air plant pok pok before they sold out franzen.</p>
+            <h3 class="section-heading">Section Title II</h3>
+            <p>Cornhole fixie distillery synth slow-carb, biodiesel marfa hammock lomo whatever meggings everyday carry deep v pickled echo park. PBR&B four loko kinfolk mixtape pork belly viral craft beer bespoke put a bird on it YOLO kogi tofu seitan. Chartreuse tattooed twee listicle, schlitz slow-carb VHS asymmetrical meggings tumeric yr af gentrify bicycle rights. Cardigan crucifix palo santo helvetica ethical. Umami locavore echo park af vegan tumeric kale chips unicorn taxidermy scenester lo-fi.</p>
+            <p>Vape lumbersexual echo park, brooklyn lomo iceland lo-fi keytar next level 8-bit la croix banh mi. Flexitarian direct trade forage, everyday carry vexillologist authentic seitan activated charcoal try-hard. Biodiesel meditation adaptogen migas poutine bicycle rights cliche messenger bag. 3 wolf moon vexillologist artisan, aesthetic before they sold out knausgaard direct trade hashtag typewriter mlkshk copper mug cold-pressed.</p>
+        </div>
+    </section>
+    <div class="tap-bar">
+    <nav>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html">
+                <img src="/images/icons/24px/home.svg" alt="Home Icon">
+            <span class="t-nav">Home</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html">
+                <img src="/images/icons/24px/partie.svg" alt="Partie Icon">
+            <span class="t-nav">Partie</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html">
+                <img src="/images/icons/24px/chat.svg" alt="Chat Icon">
+            <span class="t-nav">Messages</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html">
+                <img src="/images/icons/24px/account-filled.svg" alt="Account Icon">
+            <span class="t-nav">Account</span>
+        </a>
+    </nav>
+</div>
+
+    <div class="modal terms-modal" id="terms-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Terms</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable pb-24">
+                <h3 class="section-heading">Section Title</h3>
+                <p>90's health goth hella squid palo santo, brooklyn chillwave austin letterpress flexitarian. Crucifix tote bag cardigan, hell of tofu XOXO bespoke meditation hammock vinyl jianbing subway tile keffiyeh. Intelligentsia sustainable woke, twee scenester gastropub prism pickled vinyl. Crucifix unicorn flexitarian pinterest meh chicharrones. Occupy chia freegan, schlitz cloud bread humblebrag quinoa banjo.</p>
+                <p>Wayfarers kogi bicycle rights, seitan paleo swag raw denim edison bulb synth literally banjo. Knausgaard swag scenester meditation, microdosing wolf bespoke lo-fi fashion axe salvia. Helvetica snackwave hella lo-fi kale chips tumblr subway tile viral selfies pabst deep v man braid drinking vinegar. +1 activated charcoal small batch flannel ennui, mumblecore cred blue bottle meggings pop-up actually whatever locavore. 3 wolf moon air plant pok pok before they sold out franzen.</p>
+                <h3 class="section-heading">Section Title II</h3>
+                <p>Cornhole fixie distillery synth slow-carb, biodiesel marfa hammock lomo whatever meggings everyday carry deep v pickled echo park. PBR&B four loko kinfolk mixtape pork belly viral craft beer bespoke put a bird on it YOLO kogi tofu seitan. Chartreuse tattooed twee listicle, schlitz slow-carb VHS asymmetrical meggings tumeric yr af gentrify bicycle rights. Cardigan crucifix palo santo helvetica ethical. Umami locavore echo park af vegan tumeric kale chips unicorn taxidermy scenester lo-fi.</p>
+                <p>Vape lumbersexual echo park, brooklyn lomo iceland lo-fi keytar next level 8-bit la croix banh mi. Flexitarian direct trade forage, everyday carry vexillologist authentic seitan activated charcoal try-hard. Biodiesel meditation adaptogen migas poutine bicycle rights cliche messenger bag. 3 wolf moon vexillologist artisan, aesthetic before they sold out knausgaard direct trade hashtag typewriter mlkshk copper mug cold-pressed.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="modal manage-accounts-modal " id="blocked-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Blocked Accounts</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+                <div class="content-scrollable">
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RomanNin1</a>
+            <div class="tag bg-orange"><span>Partner</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">AlphaEcho</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">User03993</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RosalinMU</a>
+            <div class="tag bg-teal"><span>Staff</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">xDeniCx</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">MeTeMeNeo</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Artur305</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Biohaz007</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                </div>
+
+        </div>
+    </div>
+</div>
+
+        <div class="modal manage-accounts-modal " id="muted-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Muted Acccounts</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+                <div class="content-scrollable">
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RomanNin1</a>
+            <div class="tag bg-orange"><span>Partner</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">AlphaEcho</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">User03993</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RosalinMU</a>
+            <div class="tag bg-teal"><span>Staff</span></div>
+    </div>
+    <div class="person-info">
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">xDeniCx</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">MeTeMeNeo</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Artur305</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                        <div class="person-listing participant">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Biohaz007</a>
+    </div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+                </div>
+
+        </div>
+    </div>
+</div>
+
+        <div class="modal visibility-modal dynamic-height" id="post-visibility-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Post Visibility</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+<div class="checkbox-group">
+        <div class="checkbox-item large">
+            <label class="checkbox ">
+        <div class="checkbox-text">
+            <span class="label">Public</span>
+            <span class="description">Post is visible to all users</span>
+        </div>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item large">
+            <label class="checkbox ">
+        <div class="checkbox-text">
+            <span class="label">Protected</span>
+            <span class="description">Post only visible to user&#39;s followers</span>
+        </div>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="modal preference-modal dynamic-height" id="region-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Choose your region</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal('#region-modal')">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+                <div class="checkbox-group">
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">United States</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Japan</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Country</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Country</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Country</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+</div>
+
+            <button class="btn bg-blue btn-fit" onclick="closeModal('#region-modal')">Save</button>
+        </div>
+    </div>
+</div>
+
+        <div class="modal preference-modal dynamic-height" id="language-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Choose your language</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal('#language-modal')">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+                <div class="checkbox-group">
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">English</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Spanish</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Russian</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Japanese</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Italian</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+</div>
+
+            <button class="btn bg-blue btn-fit" onclick="closeModal('#language-modal')">Save</button>
+        </div>
+    </div>
+</div>
+
+</div>

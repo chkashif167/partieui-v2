@@ -1,0 +1,11 @@
+<div class="message-panel {{ styleModifier }}">
+    {{#success}}
+        <img class="hide-desktop" src="/images/icons/16px/success.svg" alt="Success Icon">
+        <img class="hide-mobile hide-tablet" src="/images/icons/misc/success-check.svg" alt="Success Icon">
+    {{/success}}
+    {{#sms}}
+        <img class="hide-desktop" src="/images/icons/16px/sms.svg" alt="SMS Icon">
+        <img class="hide-mobile hide-tablet" src="/images/icons/misc/mobile-large.svg" alt="SMS Icon">
+    {{/sms}}
+    <p>{{ message }}</p>
+</div>

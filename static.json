@@ -1,0 +1,5 @@
+{
+  "root": "public/",
+  "https_only": true,
+  "basic_auth": true
+}

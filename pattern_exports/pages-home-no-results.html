@@ -1,0 +1,524 @@
+<div class="side-nav hide-mobile hide-tablet">
+    <div class="side-nav__header">
+        <img src="/images/side-nav-logo.svg" alt="Partie Logo" class="logo">
+        <div class="side-nav__actions">
+            <button class="btn btn-bare btn-header-icon" onclick="openModal('#partie-pass-modal')">
+                <img src="/images/partie-pass.svg" alt="Partie Pass Icon" />
+            </button>
+            <a href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html" onclick="toggleNotificationsTray(event)" class="btn btn-bare">
+                <img src="/images/icons/24px/notifications-on.svg"  alt="Notifications Pending Icon"/>
+            </a>
+        </div>
+    </div>
+    <nav class="side-nav__links">
+            <a href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html" class="nav-item active">
+                    <img src="/images/icons/24px/home-filled.svg" class="nav-item__icon"  alt="Home Icon"/>
+                <span class="nav-item__title">Home</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/partie.svg" class="nav-item__icon"  alt="Partie Icon"/>
+                <span class="nav-item__title">Partie</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/chat.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                <span class="nav-item__title">Messages</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/account.svg" class="nav-item__icon"  alt="Account Icon"/>
+                <span class="nav-item__title">Account</span>
+            </a>
+            <a href="" class="nav-item ">
+                    <img src="/images/icons/24px/store.svg" class="nav-item__icon"  alt="Store Icon"/>
+                <span class="nav-item__title">Store</span>
+            </a>
+
+    </nav>
+    <div class="side-nav__profile " onclick="window.location = '&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html'">
+            <div class="profile-avatar">
+    <svg class="level-indicator" data-percentage="64" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/avatar-large.png" alt="Avatar Alt Text" class="avatar">
+    <div class="online-indicator"></div>
+</div>
+
+            <span class="username">RandomDash</span>
+            <span class="user-level">Level 64</span>
+            <button class="btn btn-bare" onclick="event.stopPropagation()">
+                <img src="/images/icons/32px/more-dots.svg" alt="Menu Icon">
+                <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+            </button>
+
+    </div>
+</div>
+
+<div class="tray notifications-tray  hide-mobile hide-tablet empty">
+    <div class="tray-header">
+        <h2>Notifications</h2>
+        <button class="btn btn-bare close" onclick="toggleNotificationsTray(event)">
+            <img src="/images/icons/24px/close-2.svg" alt="Close Icon">
+        </button>
+    </div>
+    <div class="tray-content">
+
+            <p class="headline">You don't have any notifications</p>
+            <p>Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+    </div>
+</div>
+
+<div class="page page-home show-search">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare link-account" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html"><img src="/images/icons/24px/user-placeholder.svg" alt="User Placeholder Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Home</h1>
+            <div class="actions--right">
+                    <button class="btn btn-bare btn-header-icon" onclick="openModal('#partie-pass-modal')">
+                        <img src="/images/partie-pass.svg" alt="Partie Pass Icon" />
+                    </button>
+                    <a class="btn btn-bare link-notifications" href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+            <div class="search-input search-settings">
+    <div class="content search__main">
+        <img class="o-30" src="/images/icons/16px/search.svg" alt="Search Icon">
+        <input type="text" name="search" id="search" placeholder="Search feed" />
+        <a href="#" class="cancel">Cancel</a>
+    </div>
+    <div class="content search__options">
+            <a href="#" data-filter="feed" onclick="updateSearchResults(event)" class="btn btn-bare active">Feed</a>
+            <a href="#" data-filter="profiles" onclick="updateSearchResults(event)" class="btn btn-bare">Profiles</a>
+            <a href="#" data-filter="parties" onclick="updateSearchResults(event)" class="btn btn-bare">Parties</a>
+            <a href="#" data-filter="clubs" onclick="updateSearchResults(event)" class="btn btn-bare">Clubs</a>
+            <a href="#" data-filter="likes" onclick="updateSearchResults(event)" class="btn btn-bare">Likes</a>
+
+    </div>
+</div>
+
+</header>
+
+    <main class="content content-feed">
+            <p class="no-results">
+                Oops! There are no results for <span class="search-term">"Asdfghj"</span>, but check out what’s trending below...
+            </p>
+            <div class="status status-cta v-hidden">
+    <div class="status-body">
+        <img src="&#x2F;images&#x2F;cta-image@3x.png" alt="Picture Alt Text">
+        <div class="status-text">
+            <span class="headline">Your monthly subscription</span>
+            <p>Track and maintain a Rating, attributable to your activity, progress, and reputation.</p>
+        </div>
+        <div class="status-actions">
+            <a href="#" class="btn bg-black">Subscribe</a>
+            <a href="#" class="btn btn-bare">Learn More</a>
+        </div>
+    </div>
+</div>
+
+        <div class="status status--partie v-hidden">
+    <div class="status-body">
+      <div class="game-cover"></div>
+      <div class="game-details">
+        <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox" />
+        <div class="tag bg-blue">PVE</div>
+        <div class="tag tag-icon bg-purple"><img src="/images/icons/microphone.svg" alt="Microphone Icon" /></div>
+        <span class="game-name">Apex Legends</span>
+      </div>
+    </div>
+    <div class="status-meta">
+      <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+          <img src="/images/avatar-dash.png" alt="Avatar Alt Text">
+          <div class="online-indicator"></div>
+      </a>
+      <a class="author-name" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Dash</a>
+      <div class="status-info">
+          <div class="tag tag-staff"><span>Staff</span></div>
+          <span class="time-ago">7 minutes ago</span>
+      </div>
+      <button class="btn bg-blue">Join</button>
+  </div>
+</div>
+            <div class="status v-hidden">
+    <div class="status-body">
+        <img src="&#x2F;images&#x2F;game-image.png" alt="Picture Alt Text" onclick="openLightboxModal('&#x2F;patterns&#x2F;02-pages-03-home-02-view-media\02-pages-03-home-02-view-media.rendered.html')">
+        <div class="status-text">
+            <p>Who&#39;s playing now? Send me a request!</p>
+        </div>
+</div>
+
+    <div class="status-meta">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <a class="author-name" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Antonnn</a>
+    <div class="status-info">
+            <div class="tag tag-staff"><span>Staff</span></div>
+        <span class="time-ago">7 minutes ago</span>
+    </div>
+    <button class="btn btn-likes ">
+        <img src="/images/icons/16px/like.svg" alt="Not Liked">
+    <span class="likes-count">81</span>
+</button>
+
+    <button class="btn btn-share">
+    <img src="/images/icons/16px/share.svg" alt="Share Icon">
+</button>
+
+    <button class="btn btn-menu" onclick="toggleFeedMenu(); activateUserActionsPopper(event)">
+    <img src="/images/icons/32px/more-dots.svg" alt="More Icon">
+    <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+</button>
+
+</div>
+
+</div>
+
+            <div class="status v-hidden">
+    <div class="status-body">
+        <img src="&#x2F;images&#x2F;game-video.png" alt="Picture Alt Text" onclick="openLightboxModal('&#x2F;patterns&#x2F;02-pages-03-home-02-view-media\02-pages-03-home-02-view-media.rendered.html')">
+</div>
+
+    <div class="status-meta">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-dash.png" alt="Avatar Alt Text">
+    </a>
+    <a class="author-name" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Dash</a>
+    <div class="status-info">
+        <span class="time-ago">7 minutes ago</span>
+    </div>
+    <button class="btn btn-likes ">
+        <img src="/images/icons/16px/like-on.svg" alt="Liked">
+    <span class="likes-count">403</span>
+</button>
+
+    <button class="btn btn-share">
+    <img src="/images/icons/16px/share.svg" alt="Share Icon">
+</button>
+
+    <button class="btn btn-menu" onclick="toggleFeedMenu(); activateUserActionsPopper(event)">
+    <img src="/images/icons/32px/more-dots.svg" alt="More Icon">
+    <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+</button>
+
+</div>
+
+</div>
+
+            <div class="status v-hidden">
+    <div class="status-body">
+        <div class="status-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras nunc nisi posuere vel placerat quis varius eu orci.</p>
+        </div>
+</div>
+
+    <div class="status-meta">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-johan.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <a class="author-name" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Johan404</a>
+    <div class="status-info">
+            <div class="tag tag-partner"><span>Partner</span></div>
+        <span class="time-ago">7 minutes ago</span>
+    </div>
+    <button class="btn btn-likes ">
+        <img src="/images/icons/16px/like.svg" alt="Not Liked">
+    <span class="likes-count">7</span>
+</button>
+
+    <button class="btn btn-share">
+    <img src="/images/icons/16px/share.svg" alt="Share Icon">
+</button>
+
+    <button class="btn btn-menu" onclick="toggleFeedMenu(); activateUserActionsPopper(event)">
+    <img src="/images/icons/32px/more-dots.svg" alt="More Icon">
+    <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+</button>
+
+</div>
+
+</div>
+
+            <div class="status v-hidden">
+    <div class="status-body">
+        <img src="&#x2F;images&#x2F;game-video.png" alt="Picture Alt Text" onclick="openLightboxModal('&#x2F;patterns&#x2F;02-pages-03-home-02-view-media\02-pages-03-home-02-view-media.rendered.html')">
+</div>
+
+    <div class="status-meta">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-dash.png" alt="Avatar Alt Text">
+    </a>
+    <a class="author-name" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Dash</a>
+    <div class="status-info">
+        <span class="time-ago">7 minutes ago</span>
+    </div>
+    <button class="btn btn-likes ">
+        <img src="/images/icons/16px/like-on.svg" alt="Liked">
+    <span class="likes-count">403</span>
+</button>
+
+    <button class="btn btn-share">
+    <img src="/images/icons/16px/share.svg" alt="Share Icon">
+</button>
+
+    <button class="btn btn-menu" onclick="toggleFeedMenu(); activateUserActionsPopper(event)">
+    <img src="/images/icons/32px/more-dots.svg" alt="More Icon">
+    <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+</button>
+
+</div>
+
+</div>
+
+            <div class="status v-hidden">
+    <div class="status-body">
+        <div class="status-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras nunc nisi posuere vel placerat quis varius eu orci.</p>
+        </div>
+</div>
+
+    <div class="status-meta">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-johan.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <a class="author-name" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Johan404</a>
+    <div class="status-info">
+            <div class="tag tag-partner"><span>Partner</span></div>
+        <span class="time-ago">7 minutes ago</span>
+    </div>
+    <button class="btn btn-likes ">
+        <img src="/images/icons/16px/like.svg" alt="Not Liked">
+    <span class="likes-count">7</span>
+</button>
+
+    <button class="btn btn-share">
+    <img src="/images/icons/16px/share.svg" alt="Share Icon">
+</button>
+
+    <button class="btn btn-menu" onclick="toggleFeedMenu(); activateUserActionsPopper(event)">
+    <img src="/images/icons/32px/more-dots.svg" alt="More Icon">
+    <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+</button>
+
+</div>
+
+</div>
+
+            <div class="status v-hidden">
+    <div class="status-body">
+        <img src="&#x2F;images&#x2F;game-image.png" alt="Picture Alt Text" onclick="openLightboxModal('&#x2F;patterns&#x2F;02-pages-03-home-02-view-media\02-pages-03-home-02-view-media.rendered.html')">
+        <div class="status-text">
+            <p>Who&#39;s playing now? Send me a request!</p>
+        </div>
+</div>
+
+    <div class="status-meta">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <a class="author-name" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Antonnn</a>
+    <div class="status-info">
+            <div class="tag tag-staff"><span>Staff</span></div>
+        <span class="time-ago">7 minutes ago</span>
+    </div>
+    <button class="btn btn-likes ">
+        <img src="/images/icons/16px/like.svg" alt="Not Liked">
+    <span class="likes-count">81</span>
+</button>
+
+    <button class="btn btn-share">
+    <img src="/images/icons/16px/share.svg" alt="Share Icon">
+</button>
+
+    <button class="btn btn-menu" onclick="toggleFeedMenu(); activateUserActionsPopper(event)">
+    <img src="/images/icons/32px/more-dots.svg" alt="More Icon">
+    <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+</button>
+
+</div>
+
+</div>
+
+            <div class="status v-hidden">
+    <div class="status-body">
+        <img src="&#x2F;images&#x2F;game-video.png" alt="Picture Alt Text" onclick="openLightboxModal('&#x2F;patterns&#x2F;02-pages-03-home-02-view-media\02-pages-03-home-02-view-media.rendered.html')">
+</div>
+
+    <div class="status-meta">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-dash.png" alt="Avatar Alt Text">
+    </a>
+    <a class="author-name" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Dash</a>
+    <div class="status-info">
+        <span class="time-ago">7 minutes ago</span>
+    </div>
+    <button class="btn btn-likes ">
+        <img src="/images/icons/16px/like-on.svg" alt="Liked">
+    <span class="likes-count">403</span>
+</button>
+
+    <button class="btn btn-share">
+    <img src="/images/icons/16px/share.svg" alt="Share Icon">
+</button>
+
+    <button class="btn btn-menu" onclick="toggleFeedMenu(); activateUserActionsPopper(event)">
+    <img src="/images/icons/32px/more-dots.svg" alt="More Icon">
+    <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+</button>
+
+</div>
+
+</div>
+
+            <div class="status v-hidden">
+    <div class="status-body">
+        <div class="status-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras nunc nisi posuere vel placerat quis varius eu orci.</p>
+        </div>
+</div>
+
+    <div class="status-meta">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-johan.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <a class="author-name" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Johan404</a>
+    <div class="status-info">
+            <div class="tag tag-partner"><span>Partner</span></div>
+        <span class="time-ago">7 minutes ago</span>
+    </div>
+    <button class="btn btn-likes ">
+        <img src="/images/icons/16px/like.svg" alt="Not Liked">
+    <span class="likes-count">7</span>
+</button>
+
+    <button class="btn btn-share">
+    <img src="/images/icons/16px/share.svg" alt="Share Icon">
+</button>
+
+    <button class="btn btn-menu" onclick="toggleFeedMenu(); activateUserActionsPopper(event)">
+    <img src="/images/icons/32px/more-dots.svg" alt="More Icon">
+    <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+</button>
+
+</div>
+
+</div>
+
+    </main>
+    <button class="btn btn-floating-cta" onclick="showFeedLoader()"></button>
+    <div class="tap-bar">
+    <nav>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html">
+                <img src="/images/icons/24px/home-filled.svg" alt="Home Icon">
+            <span class="t-nav">Home</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html">
+                <img src="/images/icons/24px/partie.svg" alt="Partie Icon">
+            <span class="t-nav">Partie</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html">
+                <img src="/images/icons/24px/chat.svg" alt="Chat Icon">
+            <span class="t-nav">Messages</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html">
+                <img src="/images/icons/24px/account.svg" alt="Account Icon">
+            <span class="t-nav">Account</span>
+        </a>
+    </nav>
+</div>
+
+    <div class="menu-drawer" onclick="event.stopPropagation()">
+    <div class="content">
+        <button class="btn btn-bare btn-menu-item">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/32px/mute.svg" alt="Mute Icon">
+                <img class="show-tablet show-desktop" src="/images/icons/32px/mute-blue.svg" alt="Mute Icon">
+                <span class="action-title">Mute</span>
+                <span class="action-description">Stop seeing posts but continue following</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/32px/remove.svg" alt="Remove Icon">
+                <img class="show-tablet show-desktop" src="/images/icons/32px/remove-blue.svg" alt="Remove Icon">
+                <span class="action-title">Unfollow</span>
+                <span class="action-description">Stop seeing posts and unfollow</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/32px/block.svg" alt="Block Icon">
+                <img class="show-tablet show-desktop" src="/images/icons/32px/block-blue.svg" alt="Block Icon">
+                <span class="action-title">Block</span>
+                <span class="action-description">Stop seeing posts and block account</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item btn-report">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/32px/report.svg" alt="Report Icon">
+                <img class="show-tablet show-desktop" src="/images/icons/32px/report-blue.svg" alt="Report Icon">
+                <span class="action-title">Report</span>
+                <span class="action-description">Report this account for abuse</span>
+            </div>
+        </button>
+    </div>
+</div>
+
+        <div class="modal lightbox-modal dynamic-height" id="lightbox-modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-container">
+    <div class="modal-header">
+      <button class="btn btn-bare link-more">
+        <img src="/images/icons/24px/more.svg" alt="More Icon">
+      </button>
+      <h2 class="modal-title">1/5</h2>
+      <button class="btn bg-black btn-close" onclick="closeModal()">
+        <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+      </button>
+    </div>
+    <div class="modal-content">
+      <div class="peppermint peppermint-inactive" id="modal-carousel">
+          <figure><img src="&#x2F;images&#x2F;in-game-1.jpg" alt="Carousel Image" /></figure>
+          <figure><img src="&#x2F;images&#x2F;in-game-2.jpg" alt="Carousel Image" /></figure>
+          <figure><img src="&#x2F;images&#x2F;in-game-3.jpg" alt="Carousel Image" /></figure>
+          <figure><img src="&#x2F;images&#x2F;in-game-4.jpg" alt="Carousel Image" /></figure>
+          <figure><img src="&#x2F;images&#x2F;in-game-5.jpg" alt="Carousel Image" /></figure>
+      </div>
+    </div>
+    <button class="btn btn-bare lightbox-back"><img src="/images/icons/prev.svg" alt="Back Icon" /></button>
+    <button class="btn btn-bare lightbox-next"><img src="/images/icons/next.svg" alt="Next Icon" /></button>
+  </div>
+</div>
+
+    <div class="modal partie-pass-modal dynamic-height" id="partie-pass-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-content">
+            <h2>The Partie Pass</h2>
+            <img src="/images/partie-pass.svg" alt="Partie Pass Illustration" class="partie-pass-icon" />
+            <p>Your referral code is entirely unique to you and auto-generated when you register to Partie.</p>
+            <p>You can share your referral code via SMS, email, and social media as many times as you like</p>
+            <p>You'll be notified when someone sucessfully redeems your referral code, which may unlock Partie "Favors" and other cool perks from time to time.</p>
+            <button class="btn bg-teal submit" onclick="closeModal()">Share</button>
+        </div>
+    </div>
+</div>
+</div>

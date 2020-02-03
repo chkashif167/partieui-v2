@@ -1,0 +1,33 @@
+{{> components-side-nav }}
+<div class="page page-chat page-partie-room show-user-list">
+    {{> components-page-header }}
+    {{> components-chat-side-bar }}
+    <main class="content">
+        <div class="user-list-container">
+            {{> components-chat-user-list }}
+        </div>
+
+        <div class="chat-messages">
+            {{#messages}}
+                {{#notification}}
+                    {{> components-chat-notification }}
+                {{/notification}}
+                {{^notification}}
+                    {{> components-chat-message }}
+                {{/notification}}
+            {{/messages}}
+        </div>
+        {{> components-chat-input }}
+    </main>
+
+    {{> components-participants-modal }}
+    {{> components-requests-modal }}
+    {{> components-invite-modal }}
+    {{> components-removal-modal }}
+    {{> components-chat-menu }}
+    {{> components-partie-settings-modal }}
+    {{> components-leave-partie-modal }}
+    {{> components-social-share-modal }}
+
+    {{> components-tap-bar }}
+</div>

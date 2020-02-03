@@ -1,0 +1,208 @@
+{
+  "bodyClass": "bg-dark has-side-nav",
+  "sideNavHome": true,
+  "tapBarHome": true,
+  "sideNavPassShare": true,
+  "includeSearchResults": true,
+  "pageHeader": {
+    "account": true,
+    "notifications": true,
+    "search": true,
+    "searchPlaceholder": "Search feed",
+    "title": "Home",
+    "passShare": true
+  },
+  "statusCta": {
+    "imagePath": "/images/cta-image@3x.png",
+    "headline": "Your monthly subscription",
+    "text": "Track and maintain a Rating, attributable to your activity, progress, and reputation.",
+    "btn1Text": "Subscribe",
+    "btn2Text": "Learn More"
+  },
+  "statusItems": [
+    {
+      "image": true,
+      "imagePath": "/images/game-image.png",
+      "hasText": true,
+      "text": "Who's playing now? Send me a request!",
+      "avatarPath": "/images/avatar-anton.png",
+      "authorOnline": true,
+      "authorName": "Antonnn",
+      "hasAuthorTag": true,
+      "tagType": "tag-staff",
+      "authorTag": "Staff",
+      "likesCount": 81,
+      "userLikes": false
+    },
+    {
+      "image": true,
+      "imagePath": "/images/game-video.png",
+      "hasText": false,
+      "text": "",
+      "avatarPath": "/images/avatar-dash.png",
+      "authorOnline": false,
+      "authorName": "Dash",
+      "hasAuthorTag": false,
+      "tagType": "",
+      "authorTag": "",
+      "likesCount": 403,
+      "userLikes": true
+    },
+    {
+      "image": false,
+      "imagePath": "",
+      "hasText": true,
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras nunc nisi posuere vel placerat quis varius eu orci.",
+      "avatarPath": "/images/avatar-johan.png",
+      "authorOnline": true,
+      "authorName": "Johan404",
+      "hasAuthorTag": true,
+      "tagType": "tag-partner",
+      "authorTag": "Partner",
+      "likesCount": 7,
+      "userLikes": false
+    },
+    {
+      "image": true,
+      "imagePath": "/images/game-video.png",
+      "hasText": false,
+      "text": "",
+      "avatarPath": "/images/avatar-dash.png",
+      "authorOnline": false,
+      "authorName": "Dash",
+      "hasAuthorTag": false,
+      "tagType": "",
+      "authorTag": "",
+      "likesCount": 403,
+      "userLikes": true
+    },
+    {
+      "image": false,
+      "imagePath": "",
+      "hasText": true,
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras nunc nisi posuere vel placerat quis varius eu orci.",
+      "avatarPath": "/images/avatar-johan.png",
+      "authorOnline": true,
+      "authorName": "Johan404",
+      "hasAuthorTag": true,
+      "tagType": "tag-partner",
+      "authorTag": "Partner",
+      "likesCount": 7,
+      "userLikes": false
+    },
+    {
+      "image": true,
+      "imagePath": "/images/game-image.png",
+      "hasText": true,
+      "text": "Who's playing now? Send me a request!",
+      "avatarPath": "/images/avatar-anton.png",
+      "authorOnline": true,
+      "authorName": "Antonnn",
+      "hasAuthorTag": true,
+      "tagType": "tag-staff",
+      "authorTag": "Staff",
+      "likesCount": 81,
+      "userLikes": false
+    },
+    {
+      "image": true,
+      "imagePath": "/images/game-video.png",
+      "hasText": false,
+      "text": "",
+      "avatarPath": "/images/avatar-dash.png",
+      "authorOnline": false,
+      "authorName": "Dash",
+      "hasAuthorTag": false,
+      "tagType": "",
+      "authorTag": "",
+      "likesCount": 403,
+      "userLikes": true
+    },
+    {
+      "image": false,
+      "imagePath": "",
+      "hasText": true,
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras nunc nisi posuere vel placerat quis varius eu orci.",
+      "avatarPath": "/images/avatar-johan.png",
+      "authorOnline": true,
+      "authorName": "Johan404",
+      "hasAuthorTag": true,
+      "tagType": "tag-partner",
+      "authorTag": "Partner",
+      "likesCount": 7,
+      "userLikes": false
+    }
+  ],
+  "searchResultsPeople": [
+    {
+      "avatarUrl": "/images/avatar-roman.png",
+      "online": true,
+      "userName": "RomanNin1",
+      "tagClass": "bg-orange",
+      "tagLabel": "Partner",
+      "followersCount": "56",
+      "following": false,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-alpha.png",
+      "online": false,
+      "userName": "AlphaEcho",
+      "followersCount": "81",
+      "following": false,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": true,
+      "userName": "User03993",
+      "followersCount": "827",
+      "following": false,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-rosalin.png",
+      "online": true,
+      "userName": "RosalinMU",
+      "tagClass": "bg-teal",
+      "tagLabel": "Staff",
+      "followersCount": "2,039",
+      "following": true,
+      "pending": true
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": false,
+      "userName": "xDeniCx",
+      "followersCount": "72",
+      "following": false,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-mete.png",
+      "online": true,
+      "userName": "MeTeMeNeo",
+      "followersCount": "88",
+      "following": false,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": false,
+      "userName": "Artur305",
+      "followersCount": "32",
+      "following": true,
+      "pending": true
+    }, {
+      "avatarUrl": "/images/avatar-anton.png",
+      "online": true,
+      "userName": "Biohaz007",
+      "followersCount": "23",
+      "following": false,
+      "add": true
+    }
+  ],
+  "lightboxModal": {
+    "mediaImages": [
+      { "imageUrl": "/images/in-game-1.jpg" },
+      { "imageUrl": "/images/in-game-2.jpg" },
+      { "imageUrl": "/images/in-game-3.jpg" },
+      { "imageUrl": "/images/in-game-4.jpg" },
+      { "imageUrl": "/images/in-game-5.jpg" }
+    ]
+  }
+}

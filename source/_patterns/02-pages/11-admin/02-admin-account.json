@@ -1,0 +1,237 @@
+{
+    "bodyClass": "bg-black has-side-nav",
+    "adminMenu": true,
+    "sideNavUsers": true,
+    "pageHeader": {
+      "back": true,
+      "notifications": true,
+      "menuButton": true,
+      "title": ""
+    },
+    "profileAdmin": true,
+    "days": [
+      {
+        "partieCount": "6",
+        "badgeCount": "10",
+        "maxCount": "30"
+      }, {
+        "partieCount": "23",
+        "badgeCount": "17",
+        "maxCount": "30"
+      },{
+        "partieCount": "13",
+        "badgeCount": "19",
+        "maxCount": "30"
+      },{
+        "partieCount": "26",
+        "badgeCount": "4",
+        "maxCount": "30"
+      },{
+        "partieCount": "3",
+        "badgeCount": "17",
+        "maxCount": "30"
+      },{
+        "partieCount": "30",
+        "badgeCount": "8",
+        "maxCount": "30"
+      },{
+        "partieCount": "7",
+        "badgeCount": "10",
+        "maxCount": "30"
+      }
+    ],
+    "weekStats": [
+      {
+        "statValue": "17 hrs",
+        "statLabel": "Time in Parties"
+      }, {
+        "statValue": "44",
+        "statLabel": "Parties Completed"
+      }, {
+        "statValue": "56",
+        "statLabel": "Badges Received"
+      }
+    ],
+    "totalStats": [
+      {
+        "statValue": "432 hrs"
+      }, {
+        "statValue": "217"
+      }, {
+        "statValue": "323"
+      }
+    ],
+    "followerCount": "239",
+    "followers": [
+      {
+        "avatarUrl": "/images/avatar-roman.png",
+        "online": true,
+        "userName": "RomanNin1",
+        "tagClass": "bg-orange",
+        "tagLabel": "Partner",
+        "followersCount": "56",
+        "following": false
+      }, {
+        "avatarUrl": "/images/avatar-alpha.png",
+        "online": false,
+        "userName": "AlphaEcho",
+        "followersCount": "81",
+        "following": false
+      }, {
+        "avatarUrl": "/images/avatar-placeholder.png",
+        "online": true,
+        "userName": "User03993",
+        "followersCount": "827",
+        "following": false
+      }, {
+        "avatarUrl": "/images/avatar-rosalin.png",
+        "online": true,
+        "userName": "RosalinMU",
+        "tagClass": "bg-teal",
+        "tagLabel": "Staff",
+        "followersCount": "2,039",
+        "following": true
+      }, {
+        "avatarUrl": "/images/avatar-placeholder.png",
+        "online": false,
+        "userName": "xDeniCx",
+        "followersCount": "72",
+        "following": false
+      }, {
+        "avatarUrl": "/images/avatar-mete.png",
+        "online": true,
+        "userName": "MeTeMeNeo",
+        "followersCount": "88",
+        "following": false
+      }, {
+        "avatarUrl": "/images/avatar-placeholder.png",
+        "online": false,
+        "userName": "Artur305",
+        "followersCount": "32",
+        "following": true
+      }, {
+        "avatarUrl": "/images/avatar-anton.png",
+        "online": true,
+        "userName": "Biohaz007",
+        "followersCount": "23",
+        "following": false
+      }
+    ],
+    "parties": [
+      {
+        "partieTitle": "PartieNameTitle",
+        "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+        "partieGame": "Apex Legends",
+        "xbox": true,
+        "partieTags": [{
+          "tagLabel": "PVE"
+        }]
+      }, {
+        "partieTitle": "PartieNameTitle",
+        "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+        "partieGame": "Counter Strike",
+        "steam": true,
+        "partieTags": [{
+          "tagLabel": "PVE"
+        }, {
+          "tagLabel": "PVP"
+        }]
+      }, {
+        "partieTitle": "PartieNameTitle",
+        "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+        "partieGame": "Halo Wars",
+        "xbox": true,
+        "partieTags": [{
+          "tagLabel": "PVE"
+        }]
+      }, {
+        "partieTitle": "PartieNameTitle",
+        "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+        "partieGame": "Forza Motorsport 7",
+        "xbox": true,
+        "partieTags": [{
+          "tagLabel": "PVE"
+        }]
+      }, {
+        "partieTitle": "PartieNameTitle",
+        "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+        "partieGame": "Apex Legends",
+        "xbox": true,
+        "partieTags": [{
+          "tagLabel": "PVE"
+        }]
+      }, {
+        "partieTitle": "PartieNameTitle",
+        "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+        "partieGame": "Counter Strike",
+        "steam": true,
+        "partieTags": [{
+          "tagLabel": "PVE"
+        }, {
+          "tagLabel": "PVP"
+        }]
+      }, {
+        "partieTitle": "PartieNameTitle",
+        "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+        "partieGame": "Halo Wars",
+        "xbox": true,
+        "partieTags": [{
+          "tagLabel": "PVE"
+        }]
+      }, {
+        "partieTitle": "PartieNameTitle",
+        "partieDescription": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.",
+        "partieGame": "Forza Motorsport 7",
+        "xbox": true,
+        "partieTags": [{
+          "tagLabel": "PVE"
+        }]
+      }
+    ],
+    "tokens": [
+      {
+        "tokenValue": 239
+      }, {
+        "empty": true,
+        "tokenValue": 0
+      }, {
+        "tokenValue": 43
+      }, {
+        "tokenValue": 32
+      }, {
+        "tokenValue": 5
+      }, {
+        "empty": true,
+        "tokenValue": 0
+      }
+    ],
+    "achievements": [
+      {
+        "percentComplete": 60
+      }, {
+        "percentComplete": 0
+      }, {
+        "percentComplete": 45
+      }, {
+        "percentComplete": 10
+      }, {
+        "percentComplete": 70
+      }, {
+        "percentComplete": 100,
+        "isComplete": true
+      }, {
+        "percentComplete": 90
+      }, {
+        "percentComplete": 0
+      }, {
+        "percentComplete": 32
+      }, {
+        "percentComplete": 84
+      }, {
+        "percentComplete": 14
+      }, {
+        "percentComplete": 89
+      }
+    ]
+  }
+  

@@ -1,0 +1,10 @@
+<div class="status-body">
+    {{#image}}
+        <img src="{{ imagePath }}" alt="Picture Alt Text" onclick="openLightboxModal('{{ link.pages-view-media }}')">
+    {{/image}}
+    {{#hasText}}
+        <div class="status-text">
+            <p>{{ text }}</p>
+        </div>
+    {{/hasText}}
+</div>

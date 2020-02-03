@@ -1,0 +1,29 @@
+{{> components-side-nav }}
+{{> components-notifications-tray }}
+{{> components-search-filters-tray }}
+{{> components-new-search-tray }}
+<div class="page page-partie-list show-search">
+    {{> components-page-header }}
+    <main class="content">
+        <section class="partie-templates" onclick="navigateOrTray('{{ link.pages-search-templates }}', '.search-filters-tray')">
+            <img src="/images/icons/16px/search-templates.svg" alt="Search Templates Icon" />
+            <span class="action-title">Search Templates</span>
+            <span class="templates-count">4 Games</span>
+        </section>
+        {{# parties }}
+            {{> components-partie-list-item }}
+        {{/parties}}
+    </main>
+    <a href="{{ link.pages-host-partie }}" class="btn btn-floating-cta"></a>
+    {{> components-tap-bar }}
+    {{> components-search-settings }}
+    {{> components-save-template-modal }}
+    {{> components-join-modal }}
+    {{> components-follow-requests-modal }}
+</div>
+
+<script>
+    window.onload = function() {
+        animateListItems(".partie-item")
+    }
+</script>

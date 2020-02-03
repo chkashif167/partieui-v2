@@ -1,0 +1,40 @@
+<div class="tap-bar">
+    <nav>
+        <a class="btn btn-bare btn-tap-bar" href="{{ link.pages-home }}">
+            {{#tapBarHome}}
+                <img src="/images/icons/24px/home-filled.svg" alt="Home Icon">
+            {{/tapBarHome}}
+            {{^tapBarHome}}
+                <img src="/images/icons/24px/home.svg" alt="Home Icon">
+            {{/tapBarHome}}
+            <span class="t-nav">Home</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="{{ link.pages-partie-list }}">
+            {{#tapBarPartie}}
+                <img src="/images/icons/24px/partie-filled.svg" alt="Partie Icon">
+            {{/tapBarPartie}}
+            {{^tapBarPartie}}
+                <img src="/images/icons/24px/partie.svg" alt="Partie Icon">
+            {{/tapBarPartie}}
+            <span class="t-nav">Partie</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="{{ link.pages-messages }}">
+            {{#tapBarChat}}
+                <img src="/images/icons/24px/chat-filled.svg" alt="Chat Icon">
+            {{/tapBarChat}}
+            {{^tapBarChat}}
+                <img src="/images/icons/24px/chat.svg" alt="Chat Icon">
+            {{/tapBarChat}}
+            <span class="t-nav">Messages</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="{{ link.pages-account }}">
+            {{#tapBarAccount}}
+                <img src="/images/icons/24px/account-filled.svg" alt="Account Icon">
+            {{/tapBarAccount}}
+            {{^tapBarAccount}}
+                <img src="/images/icons/24px/account.svg" alt="Account Icon">
+            {{/tapBarAccount}}
+            <span class="t-nav">Account</span>
+        </a>
+    </nav>
+</div>

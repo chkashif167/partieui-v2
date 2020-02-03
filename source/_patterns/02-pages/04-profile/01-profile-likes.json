@@ -1,0 +1,126 @@
+{
+    "bodyClass": "bg-dark has-side-nav",
+    "sideNavPartie": true,
+    "tapBarPartie": true,
+    "includeSearchResults": true,
+    "pageHeader": {
+      "back": true,
+      "backLink": "javascript:history.back()",
+      "title": "Likes"
+    },
+    "statusItems": [
+      {
+        "image": true,
+        "imagePath": "/images/game-image.png",
+        "hasText": true,
+        "text": "Who's playing now? Send me a request!",
+        "avatarPath": "/images/avatar-anton.png",
+        "authorOnline": true,
+        "authorName": "Antonnn",
+        "hasAuthorTag": true,
+        "tagType": "tag-staff",
+        "authorTag": "Staff",
+        "likesCount": 81,
+        "userLikes": true
+      },
+      {
+        "image": true,
+        "imagePath": "/images/game-video.png",
+        "hasText": false,
+        "text": "",
+        "avatarPath": "/images/avatar-dash.png",
+        "authorOnline": false,
+        "authorName": "Dash",
+        "hasAuthorTag": false,
+        "tagType": "",
+        "authorTag": "",
+        "likesCount": 403,
+        "userLikes": true
+      },
+      {
+        "image": false,
+        "imagePath": "",
+        "hasText": true,
+        "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras nunc nisi posuere vel placerat quis varius eu orci.",
+        "avatarPath": "/images/avatar-johan.png",
+        "authorOnline": true,
+        "authorName": "Johan404",
+        "hasAuthorTag": true,
+        "tagType": "tag-partner",
+        "authorTag": "Partner",
+        "likesCount": 7,
+        "userLikes": true
+      },
+      {
+        "image": true,
+        "imagePath": "/images/game-video.png",
+        "hasText": false,
+        "text": "",
+        "avatarPath": "/images/avatar-dash.png",
+        "authorOnline": false,
+        "authorName": "Dash",
+        "hasAuthorTag": false,
+        "tagType": "",
+        "authorTag": "",
+        "likesCount": 403,
+        "userLikes": true
+      },
+      {
+        "image": false,
+        "imagePath": "",
+        "hasText": true,
+        "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras nunc nisi posuere vel placerat quis varius eu orci.",
+        "avatarPath": "/images/avatar-johan.png",
+        "authorOnline": true,
+        "authorName": "Johan404",
+        "hasAuthorTag": true,
+        "tagType": "tag-partner",
+        "authorTag": "Partner",
+        "likesCount": 7,
+        "userLikes": true
+      },
+      {
+        "image": true,
+        "imagePath": "/images/game-image.png",
+        "hasText": true,
+        "text": "Who's playing now? Send me a request!",
+        "avatarPath": "/images/avatar-anton.png",
+        "authorOnline": true,
+        "authorName": "Antonnn",
+        "hasAuthorTag": true,
+        "tagType": "tag-staff",
+        "authorTag": "Staff",
+        "likesCount": 81,
+        "userLikes": true
+      },
+      {
+        "image": true,
+        "imagePath": "/images/game-video.png",
+        "hasText": false,
+        "text": "",
+        "avatarPath": "/images/avatar-dash.png",
+        "authorOnline": false,
+        "authorName": "Dash",
+        "hasAuthorTag": false,
+        "tagType": "",
+        "authorTag": "",
+        "likesCount": 403,
+        "userLikes": true
+      },
+      {
+        "image": false,
+        "imagePath": "",
+        "hasText": true,
+        "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras nunc nisi posuere vel placerat quis varius eu orci.",
+        "avatarPath": "/images/avatar-johan.png",
+        "authorOnline": true,
+        "authorName": "Johan404",
+        "hasAuthorTag": true,
+        "tagType": "tag-partner",
+        "authorTag": "Partner",
+        "likesCount": 7,
+        "userLikes": true
+      }
+    ]
+  }
+  

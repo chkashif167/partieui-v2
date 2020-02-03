@@ -1,0 +1,43 @@
+<div class="page page-notifications {{^notificationItems}}empty{{/notificationItems}} {{#clearNotifications}}clear-all{{/clearNotifications}}">
+    {{> components-page-header}}
+    <div class="clear">
+        <div class="content">
+            <span>Clear All Notifications?</span>
+            <button class="btn bg-purple">Clear All</button>
+        </div>
+    </div>
+    <main class="content">
+        {{# clearNotifications }}
+            <div class="clear-notifications hide-mobile">
+                <span>Clear All Notifications?</span>
+                <button class="btn bg-purple">Clear All</button>
+            </div>
+        {{/clearNotifications}}
+
+        {{# showRequests }}
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+        {{/showRequests}}
+
+        {{# notificationItems }}
+            {{> components-notification-item }}
+        {{/notificationItems}}
+
+        {{^notificationItems}}
+            <img src="/images/logo-lockup.svg" alt="Partie Logo" class="logo">
+            <p class="headline">You don't have any notifications</p>
+            <p>Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        {{/notificationItems}}
+    </main>
+    {{> components-follow-requests-modal }}
+</div>

@@ -1,0 +1,16 @@
+<div class="page page-create-account">
+    {{> components-page-header(back: true, backLink: "link.pages-landing", close: true, title: "Create Account") }}
+    <main class="content">
+        <form class="form" action="">
+            {{> elements-input(inputName: "username", inputType: "text", label: "User Name", placeholder: "Enter a unique username", required: true) }}
+            {{> elements-input(inputName: "firstname", inputType: "text", label: "First Name", placeholder: "Enter your first name", required: true) }}
+            {{> elements-input(inputName: "lastname", inputType: "text", label: "Last Name", placeholder: "Enter your last name", required: true) }}
+            {{> elements-input(inputName: "email", inputType: "email", label: "Email", placeholder: "Enter a valid email address", required: true) }}
+            {{> elements-input(inputName: "dob", inputType: "date", label: "Date of Birth", placeholder: "Tap to select your date of birth", required: true) }}
+            {{> elements-input(inputName: "phone", inputType: "phone", label: "Phone", placeholder: "Enter a phone number unique to your account", required: true) }}
+            {{> elements-input(inputName: "password", inputType: "password", label: "Password", placeholder: "Type a strong password", password: true, required: true) }}
+            <p>By signing up you <a href="#">morbi tristique</a> senectus et netus et <a href="#">malesuada fames ac</a> turpis egestas.</p>
+            {{> elements-link-button:bg-blue(text: "Create Account", url: "link.pages-verify-account") }}
+        </form>
+    </main>
+</div>

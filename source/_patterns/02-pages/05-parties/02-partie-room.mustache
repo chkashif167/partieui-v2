@@ -1,0 +1,56 @@
+{{> components-side-nav }}
+<div class="page page-chat page-partie-room show-user-list">
+    {{> components-page-header }}
+    {{> components-chat-side-bar }}
+    <main class="content">
+        <div class="user-list-container">
+            {{> components-chat-user-list }}
+        </div>
+
+        <div class="chat-messages">
+            {{#messages}}
+                {{#notification}}
+                    {{> components-chat-notification }}
+                {{/notification}}
+                {{^notification}}
+                    {{> components-chat-message }}
+                {{/notification}}
+            {{/messages}}
+        </div>
+        {{> components-chat-input }}
+    </main>
+
+    {{> components-participants-modal }}
+    {{> components-requests-modal }}
+    {{> components-invite-modal }}
+    {{> components-removal-modal }}
+    {{> components-chat-menu }}
+    {{> components-partie-settings-modal }}
+    {{> components-leave-partie-modal }}
+    {{> components-social-share-modal }}
+
+    {{#showRatingModal}}
+        {{> components-rate-partie-modal }}
+    {{/showRatingModal}}
+
+    {{#showFeedbackModal}}
+        {{> components-feedback-modal }}
+    {{/showFeedbackModal}}
+
+    {{> components-tap-bar }}
+</div>
+
+<template id="new-chat-message">
+    <div class="chat-message v-hidden" style="position: relative;">
+        <a class="avatar" href="{{ link.pages-public-profile }}">
+            <img src="/images/avatar-dash.png" alt="Avatar Alt Text">
+        </a>
+        <div class="chat-message-meta">
+            <a class="chat-message-author" href="{{ link.pages-public-profile }}">Arthur Flores</a>
+            <span class="chat-message-details">9:41 PM</span>
+        </div>
+        <div class="chat-message-content">
+            Lorem ipsum dolor sit amet, consecte!
+        </div>
+    </div>
+</template>

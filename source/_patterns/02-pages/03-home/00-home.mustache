@@ -1,0 +1,26 @@
+{{> components-side-nav }}
+{{> components-notifications-tray }}
+<div class="page page-home show-search">
+    {{> components-page-header}}
+    <main class="content content-feed">
+        {{#noSearchResults }}
+            <p class="no-results">
+                Oops! There are no results for <span class="search-term">"Asdfghj"</span>, but check out what’s trending below...
+            </p>
+        {{/noSearchResults}}
+        {{#statusCta}}
+            {{> components-status-cta }}
+        {{/statusCta}}
+        {{> components-status-partie }}
+        {{#statusItems }}
+            {{> components-status }}
+        {{/statusItems}}
+    </main>
+    <button class="btn btn-floating-cta" onclick="showFeedLoader()"></button>
+    {{> components-tap-bar }}
+    {{> components-user-feed-menu }}
+    {{#lightboxModal}}
+        {{> components-lightbox-modal }}
+    {{/lightboxModal}}
+    {{> components-partie-pass-modal }}
+</div>

@@ -1,0 +1,42 @@
+<div class="partner-progress {{#partnerProgressFinished}}finished{{/partnerProgressFinished}}">
+    {{^partnerPendingReview}}
+        <div class="progress-primary" onclick="document.querySelector('.partner-progress').classList.toggle('expanded')">
+            <img src="/images/icons/24px/partie-filled-blue-muted.svg" alt="Partie Logo">
+            <span class="progress-title">Partner Progress</span>
+            <div class="progress-indicator">
+                <span class="progress-percent">{{ partnerProgressPercent }}%</span>
+                <div class="progress-bar" data-progress-percent="{{ partnerProgressPercent }}"></div>
+            </div>
+        </div>
+    {{/partnerPendingReview}}
+
+    {{#partnerPendingReview}}
+        <div class="progress-primary">
+            <img src="/images/icons/24px/partie-filled-blue-muted.svg" alt="Partie Logo">
+            <span class="progress-title">Partner Progress</span>
+            <div class="progress-indicator">
+                <span class="progress-percent">Pending Review</span>
+            </div>
+        </div>
+    {{/partnerPendingReview}}
+
+
+    {{#partnerProgressFinished}}
+        <div class="progress-finished">
+            <p>Congrats! You can now apply to become a partner.</p>
+            <button class="btn bg-teal">Apply</button>
+        </div>
+    {{/partnerProgressFinished}}
+
+    {{^partnerProgressFinished}}
+        <div class="progress-checklist">
+            {{#progressChecklistItems}}
+                {{> components-progress-checklist-item }}
+            {{/progressChecklistItems}}
+        </div>
+    {{/partnerProgressFinished}}
+
+    <button class="btn btn-bare btn-fill progress-collapse" onclick="document.querySelector('.partner-progress.expanded').classList.remove('expanded')">
+        <img src="/images/icons/16px/arrow.svg" alt="Collapse Icon">
+    </button>
+</div>

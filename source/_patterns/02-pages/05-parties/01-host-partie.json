@@ -1,0 +1,118 @@
+{
+  "bodyClass": "bg-dark has-side-nav",
+  "sideNavPartie": true,
+  "tapBarPartie": true,
+  "pageHeader": {
+    "back": true,
+    "notifications": true,
+    "title": "Host Partie",
+    "search": true,
+    "searchPlaceholder": "Search game titles",
+    "searchSettings": true
+  },
+  "games": [
+    {
+      "imageNumber": 1,
+      "title": "PUBG",
+      "partieCount": 123,
+      "exactMatch": true
+    }, {
+      "imageNumber": 2,
+      "title": "Apex Legends",
+      "partieCount": 456,
+      "exactMatch": true
+    }, {
+      "imageNumber": 3,
+      "title": "Destiny 2: Forsaken",
+      "partieCount": 789,
+      "matchPercent": 96
+    }, {
+      "imageNumber": 4,
+      "title": "Rocket League",
+      "partieCount": 321,
+      "matchPercent": 74,
+      "matchClass": "moderate-match"
+    }, {
+      "imageNumber": 1,
+      "title": "PUBG",
+      "partieCount": 123,
+      "matchPercent": 68,
+      "matchClass": "moderate-match"
+    }, {
+      "imageNumber": 2,
+      "title": "Apex Legends",
+      "partieCount": 456,
+      "matchPercent": 42,
+      "matchClass": "weak-match"
+    }, {
+      "imageNumber": 1,
+      "title": "PUBG",
+      "partieCount": 123,
+      "exactMatch": true
+    }, {
+      "imageNumber": 2,
+      "title": "Apex Legends",
+      "partieCount": 456,
+      "exactMatch": true
+    }, {
+      "imageNumber": 3,
+      "title": "Destiny 2: Forsaken",
+      "partieCount": 789,
+      "matchPercent": 96
+    }, {
+      "imageNumber": 4,
+      "title": "Rocket League",
+      "partieCount": 321,
+      "matchPercent": 74,
+      "matchClass": "moderate-match"
+    }, {
+      "imageNumber": 1,
+      "title": "PUBG",
+      "partieCount": 123,
+      "matchPercent": 68,
+      "matchClass": "moderate-match"
+    }, {
+      "imageNumber": 2,
+      "title": "Apex Legends",
+      "partieCount": 456,
+      "matchPercent": 42,
+      "matchClass": "weak-match"
+    }
+  ],
+  "exactToggles": [
+    {
+      "label": "Exact Matches Only",
+      "helpText": "Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle."
+    }
+  ],
+  "platformToggles": [
+    {
+      "steam": true,
+      "label": "Steam"
+    }, {
+      "xbox": true,
+      "label": "Xbox"
+    }, {
+      "playstation": true,
+      "label": "Playstation"
+    }
+  ],
+  "gameTypeModal": {
+    "modalTitle": "Select Game Type",
+    "modalOptions": {
+      "checkboxItems": [
+        {
+          "label": "Duos",
+          "className": "checked"
+        }, {
+          "label": "Squads",
+          "className": "checked"
+        }, {
+          "label": "Raid"
+        }, {
+          "label": "Heroes"
+        }
+      ]
+    }
+  }
+}

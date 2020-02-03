@@ -1,0 +1,25 @@
+{
+  "bodyClass": "bg-dark has-side-nav",
+  "sideNavPartie": true,
+  "tapBarPartie": true,
+  "pageHeader": {
+    "back": true,
+    "backLink": "javascript:history.back()",
+    "title": "Search filters"
+  },
+  "searchTemplates": [
+    {
+      "title": "Form xp",
+      "game": "Destiny 2",
+      "type": "Nightfall"
+    }, {
+      "title": "OW For Fun",
+      "game": "Overwatch",
+      "type": "Quick Play"
+    }, {
+      "title": "Apex Custome",
+      "game": "Apex Legends",
+      "type": "Custom"
+    }
+  ]
+}

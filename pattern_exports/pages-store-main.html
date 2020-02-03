@@ -1,0 +1,348 @@
+<div class="side-nav hide-mobile hide-tablet">
+    <div class="side-nav__header">
+        <img src="/images/side-nav-logo.svg" alt="Partie Logo" class="logo">
+        <div class="side-nav__actions">
+            <a href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html" onclick="toggleNotificationsTray(event)" class="btn btn-bare">
+                <img src="/images/icons/24px/notifications-on.svg"  alt="Notifications Pending Icon"/>
+            </a>
+        </div>
+    </div>
+    <nav class="side-nav__links">
+            <a href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/home.svg" class="nav-item__icon"  alt="Home Icon"/>
+                <span class="nav-item__title">Home</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/partie.svg" class="nav-item__icon"  alt="Partie Icon"/>
+                <span class="nav-item__title">Partie</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/chat.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                <span class="nav-item__title">Messages</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/account.svg" class="nav-item__icon"  alt="Account Icon"/>
+                <span class="nav-item__title">Account</span>
+            </a>
+            <a href="" class="nav-item active">
+                    <img src="/images/icons/24px/store-filled.svg" class="nav-item__icon"  alt="Store Icon"/>
+                <span class="nav-item__title">Store</span>
+            </a>
+
+    </nav>
+    <div class="side-nav__profile " onclick="window.location = '&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html'">
+            <div class="profile-avatar">
+    <svg class="level-indicator" data-percentage="64" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/avatar-large.png" alt="Avatar Alt Text" class="avatar">
+    <div class="online-indicator"></div>
+</div>
+
+            <span class="username">RandomDash</span>
+            <span class="user-level">Level 64</span>
+            <button class="btn btn-bare" onclick="event.stopPropagation()">
+                <img src="/images/icons/32px/more-dots.svg" alt="Menu Icon">
+                <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+            </button>
+
+    </div>
+</div>
+
+<div class="page page-store show-search">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare link-account" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html"><img src="/images/icons/24px/user-placeholder.svg" alt="User Placeholder Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Partie Store</h1>
+            <div class="actions--right">
+                    <a class="btn btn-bare link-notifications" href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+            <div class="search-input search-settings">
+    <div class="content search__main">
+        <img class="o-30" src="/images/icons/16px/search.svg" alt="Search Icon">
+        <input type="text" name="search" id="search" placeholder="Search Store" />
+        <a href="#" class="cancel">Cancel</a>
+    </div>
+    <div class="content search__options">
+            <a href="#" data-filter="feed" onclick="updateSearchResults(event)" class="btn btn-bare active">Feed</a>
+            <a href="#" data-filter="profiles" onclick="updateSearchResults(event)" class="btn btn-bare">Profiles</a>
+            <a href="#" data-filter="parties" onclick="updateSearchResults(event)" class="btn btn-bare">Parties</a>
+            <a href="#" data-filter="clubs" onclick="updateSearchResults(event)" class="btn btn-bare">Clubs</a>
+            <a href="#" data-filter="likes" onclick="updateSearchResults(event)" class="btn btn-bare">Likes</a>
+
+    </div>
+</div>
+
+</header>
+
+    <main class="content">
+            <div class="product-category-group">
+    <div class="group-heading">
+        <h3>Featured</h3>
+        <a href="&#x2F;patterns&#x2F;02-pages-09-store-01-store-view-all\02-pages-09-store-01-store-view-all.rendered.html" onclick="viewAllProducts(event)">View All</a>
+    </div>
+    <div class="product-listing">
+        <div class="scroll-container">
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+        </div>
+    </div>
+</div>
+
+            <div class="product-category-group">
+    <div class="group-heading">
+        <h3>Popular</h3>
+        <a href="&#x2F;patterns&#x2F;02-pages-09-store-01-store-view-all\02-pages-09-store-01-store-view-all.rendered.html" onclick="viewAllProducts(event)">View All</a>
+    </div>
+    <div class="product-listing">
+        <div class="scroll-container">
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+        </div>
+    </div>
+</div>
+
+            <div class="product-category-group">
+    <div class="group-heading">
+        <h3>New Releases</h3>
+        <a href="&#x2F;patterns&#x2F;02-pages-09-store-01-store-view-all\02-pages-09-store-01-store-view-all.rendered.html" onclick="viewAllProducts(event)">View All</a>
+    </div>
+    <div class="product-listing">
+        <div class="scroll-container">
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+                <div class="product-card">
+    <a href="&#x2F;patterns&#x2F;02-pages-09-store-02-product\02-pages-09-store-02-product.rendered.html" class="cover">
+        <div class="img-container"></div>
+        <div class="card-overlay">
+            <p class="t-caption">Lorem ipsum dolor product name</p>
+        </div>
+    </a>
+</div>
+
+        </div>
+    </div>
+</div>
+
+    </main>
+    <div class="tap-bar">
+    <nav>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html">
+                <img src="/images/icons/24px/home.svg" alt="Home Icon">
+            <span class="t-nav">Home</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html">
+                <img src="/images/icons/24px/partie.svg" alt="Partie Icon">
+            <span class="t-nav">Partie</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html">
+                <img src="/images/icons/24px/chat.svg" alt="Chat Icon">
+            <span class="t-nav">Messages</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html">
+                <img src="/images/icons/24px/account.svg" alt="Account Icon">
+            <span class="t-nav">Account</span>
+        </a>
+    </nav>
+</div>
+
+    <div class="modal" id="new-releases-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">New Releases</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+                <div class="product-list">
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                        <a href="" class="product-listing-item cover">
+    <div class="img-container"></div>
+    <p class="description">Lorem ipsum dolor product name</p>
+    <span class="price">$1.99</span>
+</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

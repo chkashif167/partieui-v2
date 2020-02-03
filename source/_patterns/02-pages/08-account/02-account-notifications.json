@@ -1,0 +1,46 @@
+{
+  "tapBarAccount": true,
+  "pageHeader": {
+    "back": true,
+    "notifications": true,
+    "title": "Notifications Manager"
+  },
+  "notificationSettings": [
+    {
+      "label": "Follow Requests",
+      "description": "Notify me of new follow requests",
+      "emailEnabled": false,
+      "pushEnabled": true
+    }, {
+      "label": "New Parties",
+      "description": "Notify me when friends start a Partie",
+      "emailEnabled": true,
+      "pushEnabled": true
+    }, {
+      "label": "Messages",
+      "description": "Notify me of new messages",
+      "emailEnabled": false,
+      "pushEnabled": true
+    }, {
+      "label": "Lorem Ipsum",
+      "description": "Insert short description",
+      "emailEnabled": false,
+      "pushEnabled": false
+    }, {
+      "label": "Lorem Ipsum Dolor",
+      "description": "Another type of notification",
+      "emailEnabled": true,
+      "pushEnabled": false
+    }, {
+      "label": "Dolor Ipsum Lorem",
+      "description": "Send this user more notifications",
+      "emailEnabled": false,
+      "pushEnabled": true
+    }, {
+      "label": "Ipsum Dolor Lorem",
+      "description": "Another notification right here",
+      "emailEnabled": false,
+      "pushEnabled": false
+    }
+  ]
+}

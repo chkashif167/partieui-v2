@@ -1,0 +1,29 @@
+<div class="person-listing participant">
+    <a class="avatar" href="{{ link.pages-public-profile }}">
+        <img src="{{ avatarUrl }}" alt="Avatar Alt Text">
+        {{#online}}
+            <div class="online-indicator"></div>
+        {{/online}}
+    </a>
+    <div class="person-name">
+        <a href="{{ link.pages-public-profile }}">{{ userName }}</a>
+        {{#tagLabel}}
+            <div class="tag {{ tagClass }}"><span>{{ tagLabel }}</span></div>
+        {{/tagLabel}}
+    </div>
+    <div class="person-info">
+        <span class="followers">{{ followersCount }} Followers</span>
+    </div>
+    {{#remove}}
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+    {{/remove}}
+    {{#add}}
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt="Add"></button>
+    {{/add}}
+    {{#pending}}
+        <button class="btn btn-outline btn-fit">Pending...</button>
+    {{/pending}}
+    {{#approve}}
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/check.svg" alt="Approve"></button>
+    {{/approve}}
+</div>

@@ -1,0 +1,14 @@
+{
+  "profileSelf": true,
+  "sideNavPartie": false,
+  "sideNavProfile": true,
+  "pageHeader": {
+    "menuButton": false
+  },
+  "userTags": [
+    {
+      "tagClass": "bg-orange",
+      "tagLabel": "Partner"
+    }
+  ]
+}

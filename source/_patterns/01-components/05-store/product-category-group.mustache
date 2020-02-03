@@ -1,0 +1,13 @@
+<div class="product-category-group">
+    <div class="group-heading">
+        <h3>{{ title }}</h3>
+        <a href="{{ link.pages-store-view-all }}" onclick="viewAllProducts(event)">View All</a>
+    </div>
+    <div class="product-listing">
+        <div class="scroll-container">
+            {{#items}}
+                {{> components-product-card }}
+            {{/items}}
+        </div>
+    </div>
+</div>

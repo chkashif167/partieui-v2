@@ -1,0 +1,88 @@
+<div class="tray new-search-tray hide-mobile hide-tablet">
+    <div class="tray-header">
+        <h2>Search filters</h2>
+        <button class="btn btn-bare close" onclick="toggleTray('.new-search-tray')">
+            <img src="/images/icons/24px/close-2.svg" alt="Close Icon">
+        </button>
+    </div>
+    <div class="tray-content">
+        <div class="scroll-container">
+            <div class="form-control custom-select">
+                <label for="game-type">Game </label>
+                {{#gameName}}
+                    <div class="select-value">{{ gameName }}</div>
+                {{/gameName}}
+                {{^gameName}}
+                    <div class="select-placeholder">Select game</div>
+                {{/gameName}}
+            </div>
+            <div class="form-control custom-select">
+                <label for="game-type">Platform</label>
+                {{#platform}}
+                    <div class="select-value">{{ platform }}</div>
+                {{/platform}}
+                {{^platform}}
+                    <div class="select-placeholder">Select platform</div>
+                {{/platform}}
+            </div>
+            <div class="form-control custom-select">
+                <label for="game-type">Game Type</label>
+                {{#gameType}}
+                    <div class="select-value">{{ gameType }}</div>
+                {{/gameType}}
+                {{^gameType}}
+                    <div class="select-placeholder">Select game type</div>
+                {{/gameType}}
+            </div>
+            <div class="form-control custom-select">
+                <label for="game-type">Role / Class</label>
+                {{#roleClass}}
+                    <div class="select-value">{{ roleClass }}</div>
+                {{/roleClass}}
+                {{^roleClass}}
+                    <div class="select-placeholder">Select role / class</div>
+                {{/roleClass}}
+            </div>
+            <div class="form-control custom-select">
+                <label for="game-type">Expertise</label>
+                {{#expertise}}
+                    <div class="select-value">{{ expertise }}</div>
+                {{/expertise}}
+                {{^expertise}}
+                    <div class="select-placeholder">Select Expertise</div>
+                {{/expertise}}
+            </div>
+            {{> elements-input(inputName: "partie-objective", label: "Objective", inputType: "text", placeholder: "#farm #grind #Temple") }}
+            <div class="setting-toggle pt-0">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Mic</a></span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                        <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+                        <img src="/images/icons/misc/check.svg" alt="Check Icon">
+                    </label>
+                </div>
+            </div>
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Save as template</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                        <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+                        <img src="/images/icons/misc/check.svg" alt="Check Icon">
+                    </label>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-outline">Reset</button>
+                <button class="btn bg-blue" onclick="openModal('#save-template-modal')">Apply filter</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="modal show-search" id="new-message-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Message Friends</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        {{> components-search }}
+        <div class="modal-content">
+            <div class="content-scrollable">
+                {{#friends}}
+                    {{> components-participant }}
+                {{/friends}}
+            </div>
+        </div>
+    </div>
+</div>

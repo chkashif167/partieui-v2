@@ -1,0 +1,16 @@
+<div class="chat-user-list">
+    <div class="users" onclick="openModal('#participants-modal')">
+        <span class="user-names">HostName, Username, Username, Username, Username</span>
+        <span class="users-more">+4 more</span>
+    </div>
+    <div class="user-actions">
+        {{^publicView}}
+            <button class="btn btn-circle bg-teal" onclick="openModal('#requests-modal')"><span>8</span></button>
+            <button class="btn btn-bare" onclick="openModal('#invite-modal')"><img src="/images/icons/24px/add.svg"
+                                                                                   alt="Add Icon"></button>
+        {{/publicView}}
+        {{#publicView}}
+            <span class="room-privacy">Private <img src="/images/icons/16px/lock-green.svg" alt="Lock Icon"></span>
+        {{/publicView}}
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="person-listing notification-item">
+    <a class="avatar" href="{{ link.pages-public-profile }}">
+        <img src="{{ avatarUrl }}" alt="Avatar Alt Text">
+        {{#online}}
+            <div class="online-indicator"></div>
+        {{/online}}
+    </a>
+    <div class="person-name">
+        <a href="{{ link.pages-public-profile }}">{{ userName }}</a>
+        {{#tagLabel}}
+            <div class="tag {{ tagClass }}"><span>{{ tagLabel }}</span></div>
+        {{/tagLabel}}
+    </div>
+    <div class="person-info">
+        <span class="followers">{{ followersCount }} Followers</span>
+    </div>
+    <div class="btn-group request-actions">
+        <button class="btn btn-bare"><img src="/images/icons/32px/remove.svg" class="remove-icon" alt="Remove Icon"></button>
+        <button class="btn btn-bare"><img src="/images/icons/32px/check.svg" alt="Check Icon"></button>
+    </div>
+</div>

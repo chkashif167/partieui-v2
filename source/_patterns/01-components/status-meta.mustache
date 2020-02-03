@@ -1,0 +1,18 @@
+<div class="status-meta">
+    <a class="avatar" href="{{ link.pages-public-profile }}">
+        <img src="{{ avatarPath }}" alt="Avatar Alt Text">
+        {{#authorOnline}}
+            <div class="online-indicator"></div>
+        {{/authorOnline}}
+    </a>
+    <a class="author-name" href="{{ link.pages-public-profile }}">{{ authorName }}</a>
+    <div class="status-info">
+        {{#hasAuthorTag}}
+            <div class="tag {{ tagType }}"><span>{{ authorTag }}</span></div>
+        {{/hasAuthorTag}}
+        <span class="time-ago">7 minutes ago</span>
+    </div>
+    {{> elements-like-button }}
+    {{> elements-share-button }}
+    {{> elements-menu-button }}
+</div>

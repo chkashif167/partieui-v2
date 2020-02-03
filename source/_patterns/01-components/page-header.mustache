@@ -1,0 +1,49 @@
+<header class="{{ headerClass }}">
+    {{#pageHeader}}
+        <div class="content">
+            <div class="actions--left">
+                {{#back}}
+                    <a class="btn btn-bare link-back" href="{{ backLink }}"><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+                {{/back}}
+                {{#account}}
+                    <a class="btn btn-bare link-account" href="{{ link.pages-public-profile-personal }}"><img src="/images/icons/24px/user-placeholder.svg" alt="User Placeholder Icon"></a>
+                {{/account}}
+            </div>
+            <h1 class="h2 t-center">{{ title }}</h1>
+            <div class="actions--right">
+                {{#passShare}}
+                    <button class="btn btn-bare btn-header-icon" onclick="openModal('#partie-pass-modal')">
+                        <img src="/images/partie-pass.svg" alt="Partie Pass Icon" />
+                    </button>
+                {{/passShare}}
+                {{#menuButton}}
+                    <button class="btn btn-bare link-more" onclick="toggleFeedMenu(); activateUserActionsPopper(event);">
+                        <img src="/images/icons/24px/more.svg" alt="More Icon">
+                        <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+                    </button>
+                {{/menuButton}}
+                {{#notifications}}
+                    <a class="btn btn-bare link-notifications" href="{{ link.pages-notifications }}"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+                {{/notifications}}
+                {{#submit}}
+                    <a href="#" class="btn btn-bare btn-disabled link-post" id="post" onclick="postStatus(event)"><img src="/images/icons/24px/post.svg" alt="Post Icon"></a>
+                {{/submit}}
+                {{#close}}
+                    <a href="{{ link.pages-home }}" class="btn btn-bare link-close"><img src="/images/icons/24px/close.svg" alt="Close Icon"></a>
+                {{/close}}
+                {{#textLink}}
+                    <a href="#" class="btn btn-bare link-text"><span class="btn-inner">{{ textLink }}</span></a>
+                {{/textLink}}
+            </div>
+        </div>
+        {{#subtitle}}
+            <p class="header-subtitle t-center">{{ subtitle }}</p>
+        {{/subtitle}}
+        {{#search}}
+            {{> components-search }}
+        {{/search}}
+        {{#userList}}
+            {{> components-chat-user-list }}
+        {{/userList}}
+    {{/pageHeader}}
+</header>

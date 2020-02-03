@@ -1,0 +1,24 @@
+{{> components-side-nav }}
+<div class="page page-host-partie show-search">
+    {{> components-page-header }}
+    <main class="content">
+        <section class="partie-templates" onclick="window.location = '{{ link.pages-partie-templates }}'">
+            <img src="/images/icons/16px/search-templates.svg" alt="Templates Icon" />
+            <span class="action-title">Templates</span>
+            <span class="templates-count">4 Games</span>
+        </section>
+        <div class="game-list">
+            {{# games }}
+                {{> components-game-list-item }}
+            {{/games}}
+        </div>
+    </main>
+    {{> components-search-settings }}
+    {{> components-partie-setup-modal }}
+</div>
+
+<script>
+    window.onload = function() {
+        animateListItems(".game-list-item")
+    }
+</script>

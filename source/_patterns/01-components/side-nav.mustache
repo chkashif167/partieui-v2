@@ -1,0 +1,105 @@
+<div class="side-nav hide-mobile hide-tablet">
+    <div class="side-nav__header">
+        <img src="/images/side-nav-logo.svg" alt="Partie Logo" class="logo">
+        <div class="side-nav__actions">
+        {{#sideNavPassShare}}
+            <button class="btn btn-bare btn-header-icon" onclick="openModal('#partie-pass-modal')">
+                <img src="/images/partie-pass.svg" alt="Partie Pass Icon" />
+            </button>
+        {{/sideNavPassShare}}
+        {{^adminMenu}}
+            <a href="{{ link.pages-notifications }}" onclick="toggleNotificationsTray(event)" class="btn btn-bare">
+                <img src="/images/icons/24px/notifications-on.svg"  alt="Notifications Pending Icon"/>
+            </a>
+        {{/adminMenu}}
+        </div>
+    </div>
+    <nav class="side-nav__links">
+        {{^adminMenu}}
+            <a href="{{ link.pages-home }}" class="nav-item {{#sideNavHome}}active{{/sideNavHome}}">
+                {{#sideNavHome}}
+                    <img src="/images/icons/24px/home-filled.svg" class="nav-item__icon"  alt="Home Icon"/>
+                {{/sideNavHome}}
+                {{^sideNavHome}}
+                    <img src="/images/icons/24px/home.svg" class="nav-item__icon"  alt="Home Icon"/>
+                {{/sideNavHome}}
+                <span class="nav-item__title">Home</span>
+            </a>
+            <a href="{{ link.pages-partie-list }}" class="nav-item {{#sideNavPartie}}active{{/sideNavPartie}}">
+                {{#sideNavPartie}}
+                    <img src="/images/icons/24px/partie-filled.svg" class="nav-item__icon"  alt="Partie Icon"/>
+                {{/sideNavPartie}}
+                {{^sideNavPartie}}
+                    <img src="/images/icons/24px/partie.svg" class="nav-item__icon"  alt="Partie Icon"/>
+                {{/sideNavPartie}}
+                <span class="nav-item__title">Partie</span>
+            </a>
+            <a href="{{ link.pages-messages }}" class="nav-item {{#sideNavMessages}}active{{/sideNavMessages}}">
+                {{#sideNavMessages}}
+                    <img src="/images/icons/24px/chat-filled.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                {{/sideNavMessages}}
+                {{^sideNavMessages}}
+                    <img src="/images/icons/24px/chat.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                {{/sideNavMessages}}
+                <span class="nav-item__title">Messages</span>
+            </a>
+            <a href="{{ link.pages-account }}" class="nav-item {{#sideNavAccount}}active{{/sideNavAccount}}">
+                {{#sideNavAccount}}
+                    <img src="/images/icons/24px/account-filled.svg" class="nav-item__icon"  alt="Account Icon"/>
+                {{/sideNavAccount}}
+                {{^sideNavAccount}}
+                    <img src="/images/icons/24px/account.svg" class="nav-item__icon"  alt="Account Icon"/>
+                {{/sideNavAccount}}
+                <span class="nav-item__title">Account</span>
+            </a>
+            <a href="{{ link.pages-store }}" class="nav-item {{#sideNavStore}}active{{/sideNavStore}}">
+                {{#sideNavStore}}
+                    <img src="/images/icons/24px/store-filled.svg" class="nav-item__icon"  alt="Store Icon"/>
+                {{/sideNavStore}}
+                {{^sideNavStore}}
+                    <img src="/images/icons/24px/store.svg" class="nav-item__icon"  alt="Store Icon"/>
+                {{/sideNavStore}}
+                <span class="nav-item__title">Store</span>
+            </a>
+        {{/adminMenu}}
+
+        {{#adminMenu}}
+            <a href="{{ link.pages-admin-users }}" class="nav-item {{#sideNavUsers}}active{{/sideNavUsers}}">
+                {{#sideNavUsers}}
+                    <img src="/images/icons/24px/users-filled.svg" class="nav-item__icon"  alt="Users Icon"/>
+                {{/sideNavUsers}}
+                {{^sideNavUsers}}
+                    <img src="/images/icons/24px/users.svg" class="nav-item__icon"  alt="Users Icon"/>
+                {{/sideNavUsers}}
+                <span class="nav-item__title">Users</span>
+            </a>
+            <a href="{{ link.pages-admin-messages }}" class="nav-item {{#sideNavMessages}}active{{/sideNavMessages}}">
+                {{#sideNavMessages}}
+                    <img src="/images/icons/24px/chat-filled.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                {{/sideNavMessages}}
+                {{^sideNavMessages}}
+                    <img src="/images/icons/24px/chat.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                {{/sideNavMessages}}
+                <span class="nav-item__title">Messages</span>
+            </a>
+        {{/adminMenu}}
+    </nav>
+    <div class="side-nav__profile {{#sideNavProfile}}active{{/sideNavProfile}}" {{^adminMenu}}onclick="window.location = '{{ link.pages-public-profile-personal }}'"{{/adminMenu}}>
+        {{^adminMenu}}
+            {{> components-profile-avatar }}
+            <span class="username">RandomDash</span>
+            <span class="user-level">Level 64</span>
+            <button class="btn btn-bare" onclick="event.stopPropagation()">
+                <img src="/images/icons/32px/more-dots.svg" alt="Menu Icon">
+                <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+            </button>
+        {{/adminMenu}}
+
+        {{#adminMenu}}
+            <a href="#" class="admin-logout">
+                <img src="/images/icons/misc/log-out.svg" class="nav-item__icon" alt="Log Out Icon">
+                <span class="nav-item__title">Log Out</span>
+            </a>
+        {{/adminMenu}}
+    </div>
+</div>

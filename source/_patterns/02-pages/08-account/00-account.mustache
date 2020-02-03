@@ -1,0 +1,269 @@
+{{> components-side-nav }}
+<div class="page page-account">
+    {{> components-page-header}}
+    {{#isPartner}}
+        {{> components-earnings-tracker }}
+    {{/isPartner}}
+    {{^isPartner}}
+        {{> components-partner-progress }}
+    {{/isPartner}}
+    <main class="content">
+        <div class="account-option referral-link">
+            <img src="/images/icons/16px/link-blue-muted.svg" alt="Link Icon">
+            <span class="option-title">Referral Link</span>
+            <span class="link">https://partie.com/?id=939dzgx</span>
+            <button class="btn bg-black">Share</button>
+        </div>
+        <div class="account-option active" id="preferences-link" onclick="accountNavigation('#preferences', 'Preferences', null, '{{ link.pages-preferences }}')">
+            <img src="/images/icons/16px/settings-blue-muted.svg" alt="Preferences Icon">
+            <span class="option-title">Preferences</span>
+        </div>
+        <div class="account-option" id="notifications-link" onclick="accountNavigation('#notifications', 'Notifications Manager', null, '{{ link.pages-account-notifications }}')">
+            <img src="/images/icons/16px/notifications-blue-muted.svg" alt="Notifications Icon">
+            <span class="option-title">Notifications Manager</span>
+        </div>
+        <div class="account-option" id="privacy-link" onclick="accountNavigation('#privacy', 'Privacy & Safety', null, '{{ link.pages-privacy }}')">
+            <img src="/images/icons/16px/lock-blue-muted.svg" alt="Privacy Icon">
+            <span class="option-title">Privacy &amp; Safety</span>
+        </div>
+        <div class="account-option" id="terms-link" onclick="accountNavigation('#terms', 'Terms', '#terms-modal')">
+            <img src="/images/icons/16px/terms-blue-muted.svg" alt="Terms Icon">
+            <span class="option-title">Terms</span>
+        </div>
+        <div class="account-option" onclick="accountNavigation('#terms', 'Terms', '#terms-modal')">
+            <img src="/images/icons/16px/community-blue-muted.svg" alt="Community Icon">
+            <span class="option-title">Community Guidelines</span>
+        </div>
+        <div class="account-option" onclick="accountNavigation('#terms', 'Terms', '#terms-modal')">
+            <img src="/images/icons/16px/help-blue-muted.svg" alt="Help Icon">
+            <span class="option-title">Help</span>
+        </div>
+        <div class="account-option" onclick="accountNavigation('#terms', 'Terms', '#terms-modal')">
+            <img src="/images/icons/16px/about-blue-muted.svg" alt="About Icon">
+            <span class="option-title">About</span>
+        </div>
+    </main>
+    <section class="settings-header hide-mobile">
+        <h2>
+        {{^partnerPendingReview}}Preferences{{/partnerPendingReview}}
+        {{#partnerPendingReview}}Partner Application{{/partnerPendingReview}}
+        </h2>
+    </section>
+    <section class="settings-pages">
+        <div class="settings-page active {{#partnerPendingReview}}page-partner-application{{/partnerPendingReview}}" id="preferences">
+            {{^partnerPendingReview}}
+            <div class="preference-item">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Contacts Syncing</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" onchange="toggleSettingClass(event)">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Allow Partie access to your contacts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item" onclick="openModal('#region-modal')">
+                <span class="preference-label">Region Lock</span>
+                <span class="preference-current">United States, Japan</span>
+            </div>
+            <div class="preference-item" onclick="openModal('#language-modal')">
+                <span class="preference-label">Language</span>
+                <span class="preference-current">English</span>
+            </div>
+            {{/partnerPendingReview}}
+
+            {{#partnerPendingReview}}
+            <section class="content partner-intro">
+                <h3>Partnership Guidelines</h3>
+                <p>We actively seek and review applications for outstanding Partner candidates who will create positive and engaging Parties in our community as well as uphold the quality and values of our platform.</p>
+                <button class="btn btn-outline">Read More</button>
+            </section>
+            <section class="content bg-black user-data">
+                <div class="form-control">
+                    <label>User Name</label>
+                    <p class="static-prefill">yellowbear776</p>
+                </div>
+                <div class="form-control">
+                    <label>Email</label>
+                    <p class="static-prefill">wesley.white@example.com</p>
+                </div>
+                <div class="form-control">
+                    <label>Country</label>
+                    <p class="static-prefill">France</p>
+                </div>
+                <div class="form-control">
+                    <label>Language</label>
+                    <p class="static-prefill">English</p>
+                </div>
+                <div class="form-control">
+                    <label>Full Name</label>
+                    <p class="static-prefill">Jorge Edwards</p>
+                </div>
+            </section>
+            <section class="content application-data">
+                <div class="form-control">
+                    <label>Details</label>
+                    <input type="text" name="details" placeholder="Tell us about yourself" />
+                </div>
+                <p>Tell us about yourself and why you should be considered for Partnership status.</p>
+                <p>Do you already have an established audience on YouTube, Twitter or elsewhere? If so, please provide links in the fields below.</p>
+                <div class="form-control">
+                    <label>Link</label>
+                    <input type="text" name="details" placeholder="Insert link here" />
+                </div>
+                <div class="form-control">
+                    <label>Link</label>
+                    <input type="text" name="details" placeholder="Insert link here" />
+                </div>
+                <div class="form-control">
+                    <label>Link</label>
+                    <input type="text" name="details" placeholder="Insert link here" />
+                </div>
+                <div class="form-control">
+                    <label>Link</label>
+                    <input type="text" name="details" placeholder="Insert link here" />
+                </div>
+            </section>
+            <section class="content application-actions">
+                <img src="/images/recaptcha.png" srcset="/images/recaptcha@2x.png 2x, /images/recaptcha@3x.png 3x" class="recaptcha" />
+                <button class="btn bg-blue">Submit</button>
+            </section>
+            {{/partnerPendingReview}}
+        </div>
+        <div class="settings-page" id="notifications">
+            {{#notificationSettings}}
+                <div class="preference-item">
+                    <div class="notification-setting">
+                        <span class="setting-title">{{ label }}</span>
+                        <span class="setting-description">{{ description }}</span>
+                        <div class="setting-actions">
+                            <button class="btn btn-bare {{#emailEnabled}}enabled{{/emailEnabled}}" onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/email.svg" alt="Email Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/email-green.svg" alt="Email Icon" class="icon-enabled">
+                            </button>
+                            <button class="btn btn-bare {{#pushEnabled}}enabled{{/pushEnabled}}" onclick="toggleClass(event, 'enabled')">
+                                <img src="/images/icons/24px/mobile.svg" alt="Mobile Icon" class="icon-disabled">
+                                <img src="/images/icons/24px/mobile-green.svg" alt="Mobile Icon" class="icon-enabled">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {{/notificationSettings}}
+        </div>
+        <div class="settings-page" id="privacy">
+            <div class="preference-item">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Appear Offline</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" onchange="toggleSettingClass(event)">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Lorem ipsum dolor description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Allow Direct messages</span>
+                        </div>
+                        <label class="switch on">
+                            <input type="checkbox" onchange="toggleSettingClass(event)" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Lorem ipsum dolor description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Follower Require Approval</span>
+                        </div>
+                        <label class="switch on">
+                            <input type="checkbox" onchange="toggleSettingClass(event)" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Lorem ipsum dolor description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Content Age Screening</span>
+                        </div>
+                        <label class="switch on">
+                            <input type="checkbox" onchange="toggleSettingClass(event)" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Lorem ipsum dolor description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item" onclick="openModal('#post-visibility-modal')">
+                <div class="setting-toggle">
+                    <div class="toggle-main">
+                        <div class="label-group">
+                            <span class="setting-toggle-label">Post Visibility</span>
+                        </div>
+                    </div>
+                    <div class="toggle-help">
+                        <p>Public</p>
+                    </div>
+                </div>
+            </div>
+            <div class="preference-item short" onclick="openModal('#muted-modal')">
+                <span class="preference-label">Muted Accounts</span>
+            </div>
+            <div class="preference-item short" onclick="openModal('#blocked-modal')">
+                <span class="preference-label">Blocked Accounts</span>
+            </div>
+        </div>
+        <div class="settings-page" id="terms">
+            <h3 class="section-heading">Section Title</h3>
+            <p>90's health goth hella squid palo santo, brooklyn chillwave austin letterpress flexitarian. Crucifix tote bag cardigan, hell of tofu XOXO bespoke meditation hammock vinyl jianbing subway tile keffiyeh. Intelligentsia sustainable woke, twee scenester gastropub prism pickled vinyl. Crucifix unicorn flexitarian pinterest meh chicharrones. Occupy chia freegan, schlitz cloud bread humblebrag quinoa banjo.</p>
+            <p>Wayfarers kogi bicycle rights, seitan paleo swag raw denim edison bulb synth literally banjo. Knausgaard swag scenester meditation, microdosing wolf bespoke lo-fi fashion axe salvia. Helvetica snackwave hella lo-fi kale chips tumblr subway tile viral selfies pabst deep v man braid drinking vinegar. +1 activated charcoal small batch flannel ennui, mumblecore cred blue bottle meggings pop-up actually whatever locavore. 3 wolf moon air plant pok pok before they sold out franzen.</p>
+            <h3 class="section-heading">Section Title II</h3>
+            <p>Cornhole fixie distillery synth slow-carb, biodiesel marfa hammock lomo whatever meggings everyday carry deep v pickled echo park. PBR&B four loko kinfolk mixtape pork belly viral craft beer bespoke put a bird on it YOLO kogi tofu seitan. Chartreuse tattooed twee listicle, schlitz slow-carb VHS asymmetrical meggings tumeric yr af gentrify bicycle rights. Cardigan crucifix palo santo helvetica ethical. Umami locavore echo park af vegan tumeric kale chips unicorn taxidermy scenester lo-fi.</p>
+            <p>Vape lumbersexual echo park, brooklyn lomo iceland lo-fi keytar next level 8-bit la croix banh mi. Flexitarian direct trade forage, everyday carry vexillologist authentic seitan activated charcoal try-hard. Biodiesel meditation adaptogen migas poutine bicycle rights cliche messenger bag. 3 wolf moon vexillologist artisan, aesthetic before they sold out knausgaard direct trade hashtag typewriter mlkshk copper mug cold-pressed.</p>
+        </div>
+    </section>
+    {{> components-tap-bar }}
+    {{> components-terms-modal }}
+    {{#blocked}}
+        {{> components-manage-accounts-modal }}
+    {{/blocked}}
+    {{#muted}}
+        {{> components-manage-accounts-modal }}
+    {{/muted}}
+    {{#post}}
+        {{> components-post-visibility-modal }}
+    {{/post}}
+    {{#regionModal}}
+        {{> components-preference-modal }}
+    {{/regionModal}}
+    {{#languageModal}}
+        {{> components-preference-modal }}
+    {{/languageModal}}
+</div>

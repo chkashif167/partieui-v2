@@ -1,0 +1,33 @@
+{
+  "days": [
+    {
+      "partieCount": "6",
+      "badgeCount": "10",
+      "maxCount": "30"
+    }, {
+      "partieCount": "23",
+      "badgeCount": "17",
+      "maxCount": "30"
+    },{
+      "partieCount": "13",
+      "badgeCount": "19",
+      "maxCount": "30"
+    },{
+      "partieCount": "26",
+      "badgeCount": "4",
+      "maxCount": "30"
+    },{
+      "partieCount": "3",
+      "badgeCount": "17",
+      "maxCount": "30"
+    },{
+      "partieCount": "30",
+      "badgeCount": "8",
+      "maxCount": "30"
+    },{
+      "partieCount": "7",
+      "badgeCount": "10",
+      "maxCount": "30"
+    }
+  ]
+}

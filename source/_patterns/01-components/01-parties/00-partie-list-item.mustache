@@ -1,0 +1,37 @@
+<div class="partie-item partie-item--detailed {{#isFull}}partie-full{{/isFull}} {{#removeButton}}has-remove{{/removeButton}} {{#hidden}}v-hidden{{/hidden}}" onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="{{ partieImage }}" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">{{ filledSpots }} / {{ totalSpots }}</span>
+            <span class="time-remaining {{#waiting}}waiting{{/waiting}}">
+                {{#waiting}}Waiting...{{/waiting}}
+                {{^waiting}}00:56:01{{/waiting}}
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">{{ partieTitle }}</span>
+        <p class="partie-description">{{ partieDescription }}</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                {{#xbox}}
+                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                {{/xbox}}
+                {{#steam}}
+                    <img src="/images/icons/16px/steam-blue-muted.svg" alt="Steam Icon">
+                {{/steam}}
+                {{#partieTags}}
+                    <div class="tag bg-blue">{{ tagLabel }}</div>
+                {{/partieTags}}
+            </div>
+            <span class="partie-game">{{ partieGame }}</span>
+        </div>
+    </div>
+    {{#removeButton}}
+        <button class="btn btn-bare remove">
+            <img src="/images/icons/32px/remove.svg" alt="Remove Icon">
+        </button>
+    {{/removeButton}}
+</div>

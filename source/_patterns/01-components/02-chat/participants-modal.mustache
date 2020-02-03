@@ -1,0 +1,18 @@
+<div class="modal" id="participants-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">9 Participants</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+                {{#participants}}
+                    {{> components-participant }}
+                {{/participants}}
+            </div>
+        </div>
+    </div>
+</div>

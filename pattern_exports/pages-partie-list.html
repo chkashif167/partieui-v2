@@ -1,0 +1,885 @@
+<div class="side-nav hide-mobile hide-tablet">
+    <div class="side-nav__header">
+        <img src="/images/side-nav-logo.svg" alt="Partie Logo" class="logo">
+        <div class="side-nav__actions">
+            <a href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html" onclick="toggleNotificationsTray(event)" class="btn btn-bare">
+                <img src="/images/icons/24px/notifications-on.svg"  alt="Notifications Pending Icon"/>
+            </a>
+        </div>
+    </div>
+    <nav class="side-nav__links">
+            <a href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/home.svg" class="nav-item__icon"  alt="Home Icon"/>
+                <span class="nav-item__title">Home</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html" class="nav-item active">
+                    <img src="/images/icons/24px/partie-filled.svg" class="nav-item__icon"  alt="Partie Icon"/>
+                <span class="nav-item__title">Partie</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/chat.svg" class="nav-item__icon"  alt="Messages Icon"/>
+                <span class="nav-item__title">Messages</span>
+            </a>
+            <a href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html" class="nav-item ">
+                    <img src="/images/icons/24px/account.svg" class="nav-item__icon"  alt="Account Icon"/>
+                <span class="nav-item__title">Account</span>
+            </a>
+            <a href="" class="nav-item ">
+                    <img src="/images/icons/24px/store.svg" class="nav-item__icon"  alt="Store Icon"/>
+                <span class="nav-item__title">Store</span>
+            </a>
+
+    </nav>
+    <div class="side-nav__profile " onclick="window.location = '&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html'">
+            <div class="profile-avatar">
+    <svg class="level-indicator" data-percentage="64" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/avatar-large.png" alt="Avatar Alt Text" class="avatar">
+    <div class="online-indicator"></div>
+</div>
+
+            <span class="username">RandomDash</span>
+            <span class="user-level">Level 64</span>
+            <button class="btn btn-bare" onclick="event.stopPropagation()">
+                <img src="/images/icons/32px/more-dots.svg" alt="Menu Icon">
+                <img src="/images/icons/32px/more-active.svg" alt="More Icon" class="active-icon">
+            </button>
+
+    </div>
+</div>
+
+<div class="tray notifications-tray  hide-mobile hide-tablet ">
+    <div class="tray-header">
+        <h2>Notifications</h2>
+        <button class="btn btn-bare close" onclick="toggleNotificationsTray(event)">
+            <img src="/images/icons/24px/close-2.svg" alt="Close Icon">
+        </button>
+    </div>
+    <div class="tray-content">
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+            <div class="person-listing notification-item">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RomanNin1</a>
+            <div class="tag bg-orange"><span>Partner</span></div>
+    </div>
+    <div class="person-info">
+            <img src="/images/icons/24px/partie-filled-teal.svg" alt="Partie Icon"> <span class="notification-message">is hosting a Partie</span>
+        
+        
+    </div>
+        <button class="btn bg-black">View</button>
+</div>
+
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+            <div class="person-listing notification-item">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">AlphaEcho</a>
+    </div>
+    <div class="person-info">
+            <span class="notification-message">Sent a follow request</span>
+        
+        
+    </div>
+        <div class="btn-group request-actions">
+            <button class="btn btn-bare"><img src="/images/icons/32px/remove.svg" class="remove-icon" alt="Remove Icon"></button>
+            <button class="btn btn-bare"><img src="/images/icons/32px/check.svg" alt="Check Icon"></button>
+        </div>
+</div>
+
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+            <div class="person-listing notification-item">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">User03993</a>
+    </div>
+    <div class="person-info">
+            <span class="notification-message t-green">Accepted follow request</span>
+        
+        
+    </div>
+</div>
+
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+            <div class="person-listing notification-item">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">RosalinMU</a>
+            <div class="tag bg-teal"><span>Staff</span></div>
+    </div>
+    <div class="person-info">
+        <span class="notification-message">Sent a Partie invite</span>
+        
+    </div>
+        <button class="btn bg-teal">Join</button>
+</div>
+
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+            <div class="person-listing notification-item">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">xDeniCx</a>
+    </div>
+    <div class="person-info">
+        
+        <span class="notification-message">Sent you a message</span>
+    </div>
+        <button class="btn btn-bare"><img src="/images/icons/24px/chat.svg" alt="Chat Icon"></button>
+</div>
+
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+            <div class="person-listing notification-item">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">MeTeMeNeo</a>
+    </div>
+    <div class="person-info">
+            <img src="/images/icons/24px/partie-filled-teal.svg" alt="Partie Icon"> <span class="notification-message">is hosting a Partie</span>
+        
+        
+    </div>
+        <button class="btn bg-black">View</button>
+</div>
+
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+            <div class="person-listing notification-item">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Artur305</a>
+    </div>
+    <div class="person-info">
+            <span class="notification-message">Sent a follow request</span>
+        
+        
+    </div>
+        <div class="btn-group request-actions">
+            <button class="btn btn-bare"><img src="/images/icons/32px/remove.svg" class="remove-icon" alt="Remove Icon"></button>
+            <button class="btn btn-bare"><img src="/images/icons/32px/check.svg" alt="Check Icon"></button>
+        </div>
+</div>
+
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+            <div class="person-listing notification-item">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">Biohaz007</a>
+    </div>
+    <div class="person-info">
+            <span class="notification-message t-green">Accepted follow request</span>
+        
+        
+    </div>
+</div>
+
+            <div class="person-listing notification-item">
+                <div class="btn btn-circle bg-teal">
+                    <span>12</span>
+                </div>
+                <div class="person-name">
+                    <span>Follow Requests</span>
+                </div>
+                <div class="person-info">
+                    <span class="notification-message">Approve or ignore request</span>
+                </div>
+                <button class="btn bg-black" onclick="openModal('#follow-requests-modal')">View</button>
+            </div>
+            <div class="person-listing notification-item">
+    <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </a>
+    <div class="person-name">
+        <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">xDeniCx</a>
+    </div>
+    <div class="person-info">
+        <span class="notification-message">Sent a Partie invite</span>
+        
+    </div>
+        <button class="btn bg-teal">Join</button>
+</div>
+
+
+    </div>
+</div>
+
+<div class="tray search-filters-tray hide-mobile hide-tablet">
+    <div class="tray-header">
+        <h2>Search filters</h2>
+        <button class="btn btn-bare close" onclick="toggleTray('.search-filters-tray')">
+            <img src="/images/icons/24px/close-2.svg" alt="Close Icon">
+        </button>
+    </div>
+    <div class="tray-content">
+        <div class="scroll-container">
+                <div class="person-listing search-template-item">
+                    <div class="person-name">
+                        <span>Form xp</span>
+                    </div>
+                    <div class="person-info">
+                        <span>Destiny 2 | Nightfall</span>
+                    </div>
+                    <button class="btn btn-bare remove">
+                        <img src="/images/icons/32px/remove.svg" alt="Remove Icon">
+                    </button>
+                </div>
+                <div class="person-listing search-template-item">
+                    <div class="person-name">
+                        <span>OW For Fun</span>
+                    </div>
+                    <div class="person-info">
+                        <span>Overwatch | Quick Play</span>
+                    </div>
+                    <button class="btn btn-bare remove">
+                        <img src="/images/icons/32px/remove.svg" alt="Remove Icon">
+                    </button>
+                </div>
+                <div class="person-listing search-template-item">
+                    <div class="person-name">
+                        <span>Apex Custome</span>
+                    </div>
+                    <div class="person-info">
+                        <span>Apex Legends | Custom</span>
+                    </div>
+                    <button class="btn btn-bare remove">
+                        <img src="/images/icons/32px/remove.svg" alt="Remove Icon">
+                    </button>
+                </div>
+        </div>
+    </div>
+</div>
+<div class="tray new-search-tray hide-mobile hide-tablet">
+    <div class="tray-header">
+        <h2>Search filters</h2>
+        <button class="btn btn-bare close" onclick="toggleTray('.new-search-tray')">
+            <img src="/images/icons/24px/close-2.svg" alt="Close Icon">
+        </button>
+    </div>
+    <div class="tray-content">
+        <div class="scroll-container">
+            <div class="form-control custom-select">
+                <label for="game-type">Game </label>
+                    <div class="select-placeholder">Select game</div>
+            </div>
+            <div class="form-control custom-select">
+                <label for="game-type">Platform</label>
+                    <div class="select-placeholder">Select platform</div>
+            </div>
+            <div class="form-control custom-select">
+                <label for="game-type">Game Type</label>
+                    <div class="select-placeholder">Select game type</div>
+            </div>
+            <div class="form-control custom-select">
+                <label for="game-type">Role / Class</label>
+                    <div class="select-placeholder">Select role / class</div>
+            </div>
+            <div class="form-control custom-select">
+                <label for="game-type">Expertise</label>
+                    <div class="select-placeholder">Select Expertise</div>
+            </div>
+            <div class="form-control ">
+    <label for="partie-objective">Objective</label>
+    <input type="text" name="" placeholder="#farm #grind #Temple" value=""/>
+</div>
+
+            <div class="setting-toggle pt-0">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Mic</a></span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                        <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+                        <img src="/images/icons/misc/check.svg" alt="Check Icon">
+                    </label>
+                </div>
+            </div>
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Save as template</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                        <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+                        <img src="/images/icons/misc/check.svg" alt="Check Icon">
+                    </label>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-outline">Reset</button>
+                <button class="btn bg-blue" onclick="openModal('#save-template-modal')">Apply filter</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page page-partie-list show-search">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare link-account" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile-personal\02-pages-04-profile-00-public-profile-personal.rendered.html"><img src="/images/icons/24px/user-placeholder.svg" alt="User Placeholder Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Partie</h1>
+            <div class="actions--right">
+                    <a class="btn btn-bare link-notifications" href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+            <div class="search-input search-settings">
+    <div class="content search__main">
+        <img class="o-30" src="/images/icons/16px/search.svg" alt="Search Icon">
+        <input type="text" name="search" id="search" placeholder="Search Parties" />
+        <a href="#" class="cancel">Cancel</a>
+            <button class="btn btn-bare btn-settings" onclick="openPartieSearch('&#x2F;patterns&#x2F;02-pages-05-parties-04-new-search\02-pages-05-parties-04-new-search.rendered.html')"><img
+                    src="/images/icons/24px/settings.svg"
+                    alt="Settings Icon"></button>
+    </div>
+    <div class="content search__options">
+            <a href="#" data-filter="feed" onclick="updateSearchResults(event)" class="btn btn-bare active">Feed</a>
+            <a href="#" data-filter="profiles" onclick="updateSearchResults(event)" class="btn btn-bare">Profiles</a>
+            <a href="#" data-filter="parties" onclick="updateSearchResults(event)" class="btn btn-bare">Parties</a>
+            <a href="#" data-filter="clubs" onclick="updateSearchResults(event)" class="btn btn-bare">Clubs</a>
+            <a href="#" data-filter="likes" onclick="updateSearchResults(event)" class="btn btn-bare">Likes</a>
+
+    </div>
+</div>
+
+</header>
+
+    <main class="content">
+        <section class="partie-templates" onclick="navigateOrTray('&#x2F;patterns&#x2F;02-pages-05-parties-03-search-templates\02-pages-05-parties-03-search-templates.rendered.html', '.search-filters-tray')">
+            <img src="/images/icons/16px/search-templates.svg" alt="Search Templates Icon" />
+            <span class="action-title">Search Templates</span>
+            <span class="templates-count">4 Games</span>
+        </section>
+            <div class="partie-item partie-item--detailed   v-hidden" onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="&#x2F;images&#x2F;partie-1.png" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">12 / 20</span>
+            <span class="time-remaining ">
+                
+                00:56:01
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">PartieNameTitle</span>
+        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                    <div class="tag bg-blue">PVE</div>
+            </div>
+            <span class="partie-game">Apex Legends</span>
+        </div>
+    </div>
+</div>
+
+            <div class="partie-item partie-item--detailed partie-full  v-hidden" onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="&#x2F;images&#x2F;partie-2.png" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">8 / 8</span>
+            <span class="time-remaining ">
+                
+                00:56:01
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">PartieNameTitle</span>
+        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                    <img src="/images/icons/16px/steam-blue-muted.svg" alt="Steam Icon">
+                    <div class="tag bg-blue">PVE</div>
+                    <div class="tag bg-blue">PVP</div>
+            </div>
+            <span class="partie-game">Counter Strike</span>
+        </div>
+    </div>
+</div>
+
+            <div class="partie-item partie-item--detailed   v-hidden" onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="&#x2F;images&#x2F;partie-3.png" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">2 / 6</span>
+            <span class="time-remaining waiting">
+                Waiting...
+                
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">PartieNameTitle</span>
+        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                    <div class="tag bg-blue">PVE</div>
+            </div>
+            <span class="partie-game">Halo Wars</span>
+        </div>
+    </div>
+</div>
+
+            <div class="partie-item partie-item--detailed   v-hidden" onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="&#x2F;images&#x2F;partie-4.png" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">5 / 6</span>
+            <span class="time-remaining ">
+                
+                00:56:01
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">PartieNameTitle</span>
+        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                    <div class="tag bg-blue">PVE</div>
+            </div>
+            <span class="partie-game">Forza Motorsport 7</span>
+        </div>
+    </div>
+</div>
+
+            <div class="partie-item partie-item--detailed   v-hidden" onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="&#x2F;images&#x2F;partie-1.png" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">12 / 20</span>
+            <span class="time-remaining ">
+                
+                00:56:01
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">PartieNameTitle</span>
+        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                    <div class="tag bg-blue">PVE</div>
+            </div>
+            <span class="partie-game">Apex Legends</span>
+        </div>
+    </div>
+</div>
+
+            <div class="partie-item partie-item--detailed partie-full  v-hidden" onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="&#x2F;images&#x2F;partie-2.png" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">8 / 8</span>
+            <span class="time-remaining ">
+                
+                00:56:01
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">PartieNameTitle</span>
+        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                    <img src="/images/icons/16px/steam-blue-muted.svg" alt="Steam Icon">
+                    <div class="tag bg-blue">PVE</div>
+                    <div class="tag bg-blue">PVP</div>
+            </div>
+            <span class="partie-game">Counter Strike</span>
+        </div>
+    </div>
+</div>
+
+            <div class="partie-item partie-item--detailed   v-hidden" onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="&#x2F;images&#x2F;partie-3.png" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">2 / 6</span>
+            <span class="time-remaining waiting">
+                Waiting...
+                
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">PartieNameTitle</span>
+        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                    <div class="tag bg-blue">PVE</div>
+            </div>
+            <span class="partie-game">Halo Wars</span>
+        </div>
+    </div>
+</div>
+
+            <div class="partie-item partie-item--detailed   v-hidden" onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="&#x2F;images&#x2F;partie-4.png" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">5 / 6</span>
+            <span class="time-remaining ">
+                
+                00:56:01
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">PartieNameTitle</span>
+        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                    <div class="tag bg-blue">PVE</div>
+            </div>
+            <span class="partie-game">Forza Motorsport 7</span>
+        </div>
+    </div>
+</div>
+
+    </main>
+    <a href="&#x2F;patterns&#x2F;02-pages-05-parties-01-host-partie\02-pages-05-parties-01-host-partie.rendered.html" class="btn btn-floating-cta"></a>
+    <div class="tap-bar">
+    <nav>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-03-home-00-home\02-pages-03-home-00-home.rendered.html">
+                <img src="/images/icons/24px/home.svg" alt="Home Icon">
+            <span class="t-nav">Home</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-05-parties-00-partie-list\02-pages-05-parties-00-partie-list.rendered.html">
+                <img src="/images/icons/24px/partie-filled.svg" alt="Partie Icon">
+            <span class="t-nav">Partie</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-07-messages-00-messages\02-pages-07-messages-00-messages.rendered.html">
+                <img src="/images/icons/24px/chat.svg" alt="Chat Icon">
+            <span class="t-nav">Messages</span>
+        </a>
+        <a class="btn btn-bare btn-tap-bar" href="&#x2F;patterns&#x2F;02-pages-08-account-00-account\02-pages-08-account-00-account.rendered.html">
+                <img src="/images/icons/24px/account.svg" alt="Account Icon">
+            <span class="t-nav">Account</span>
+        </a>
+    </nav>
+</div>
+
+    <div class="modal search-settings-modal dynamic-height" id="search-settings-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Search Settings</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+                <div class="setting-toggle">
+    <div class="toggle-main">
+        <div class="label-group">
+            <span class="setting-toggle-label">Exact Matches Only</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleSettingClass(event)">
+            <span class="slider round"></span>
+            <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+            <img src="/images/icons/misc/check.svg" alt="Check Icon">
+        </label>
+    </div>
+        <div class="toggle-help">
+            <p>Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle.</p>
+        </div>
+</div>
+
+
+                <div class="setting-toggle">
+    <div class="toggle-main">
+        <div class="label-group">
+                <img src="/images/icons/16px/steam-blue-muted.svg" class="disabled" alt="Steam Logo">
+                <img src="/images/icons/16px/steam.svg" class="enabled" alt="Steam Logo">
+            <span class="setting-toggle-label">Steam</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleSettingClass(event)">
+            <span class="slider round"></span>
+            <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+            <img src="/images/icons/misc/check.svg" alt="Check Icon">
+        </label>
+    </div>
+</div>
+
+                <div class="setting-toggle">
+    <div class="toggle-main">
+        <div class="label-group">
+                <img src="/images/icons/16px/xbox-blue-muted.svg" class="disabled" alt="Xbox Logo">
+                <img src="/images/icons/16px/xbox.svg" class="enabled" alt="Xbox Logo">
+            <span class="setting-toggle-label">Xbox</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleSettingClass(event)">
+            <span class="slider round"></span>
+            <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+            <img src="/images/icons/misc/check.svg" alt="Check Icon">
+        </label>
+    </div>
+</div>
+
+                <div class="setting-toggle">
+    <div class="toggle-main">
+        <div class="label-group">
+                <img src="/images/icons/16px/playstation-blue-muted.svg" class="disabled" alt="Playstation Logo">
+                <img src="/images/icons/16px/playstation.svg" class="enabled" alt="Playstation Logo">
+            <span class="setting-toggle-label">Playstation</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleSettingClass(event)">
+            <span class="slider round"></span>
+            <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+            <img src="/images/icons/misc/check.svg" alt="Check Icon">
+        </label>
+    </div>
+</div>
+
+            <button class="btn bg-blue mv-24" onclick="closeModal()">Save</button>
+        </div>
+    </div>
+</div>
+
+    <div class="modal save-template-modal dynamic-height" id="save-template-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Save Template</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal('#save-template-modal')">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content pt-24 pb-24">
+            <div class="form-control ">
+    <label for="template-name">Template name</label>
+    <input type="text" name="" placeholder="Enter name" value=""/>
+</div>
+
+
+            <button class="btn bg-blue btn-fit" onclick="closeModal('#save-template-modal')">Save</button>
+        </div>
+    </div>
+</div>
+    <div class="modal join-modal dynamic-height" id="join-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <div class="header-content">
+                <h2 class="modal-title">Join Partie</h2>
+                <span class="h2">6 / 20</span>
+            </div>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="partie-item">
+                <span class="partie-title">PartieNameTitle</span>
+                <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+                <div class="partie-meta">
+                    <div class="partie-badges">
+                        <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                        <div class="tag bg-blue">PVE</div>
+                    </div>
+                    <span class="partie-game">Apex Legends</span>
+                </div>
+            </div>
+            <div class="person-listing partie-host">
+                <a class="avatar" href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">
+                    <img src="/images/avatar-mete.png" alt="Avatar Alt Text">
+                    <div class="online-indicator"></div>
+                </a>
+                <div class="person-name">
+                    <a href="&#x2F;patterns&#x2F;02-pages-04-profile-00-public-profile\02-pages-04-profile-00-public-profile.rendered.html">MeTeMeNeo</a>
+                    <div class="tag bg-blue"><span>Host</span></div>
+                </div>
+                <div class="person-info">
+                    <span class="followers">88 Followers</span>
+                </div>
+                <button class="btn btn-fit bg-black">Follow</button>
+            </div>
+            <div class="loading-indicator">
+                <img src="/images/loader.png" srcset="/images/loader@2x.png 2x, /images/loader@3x.png 3x" alt="Loading Indicator" class="loader">
+                <p class="t-caption">Waiting for host...</p>
+            </div>
+            <button class="btn bg-teal mv-24 hide-tablet hide-desktop" onclick="showLoadingIndicator()">Send Request</button>
+            <div class="btn-group mv-24 hide-mobile">
+                <button class="btn btn-outline" onclick="closeModal()">Cancel</button>
+                <button class="btn bg-teal" onclick="showLoadingIndicator()">Send Request</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal" id="follow-requests-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Follow Requests</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script>
+    window.onload = function() {
+        animateListItems(".partie-item")
+    }
+</script>

@@ -1,0 +1,206 @@
+<div class="page page-preferences">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare link-back" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Preferences</h1>
+            <div class="actions--right">
+                    <a class="btn btn-bare link-notifications" href="&#x2F;patterns&#x2F;02-pages-06-notifications-00-notifications\02-pages-06-notifications-00-notifications.rendered.html"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+        <div class="preference-item">
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Contacts Syncing</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-help">
+                    <p>Allow Partie access to your contacts</p>
+                </div>
+            </div>
+        </div>
+        <div class="preference-item" onclick="openModal('#region-modal')">
+            <span class="preference-label">Region Lock</span>
+            <span class="preference-current">United States, Japan</span>
+        </div>
+        <div class="preference-item" onclick="openModal('#language-modal')">
+            <span class="preference-label">Language</span>
+            <span class="preference-current">English</span>
+        </div>
+    </main>
+        <div class="modal preference-modal dynamic-height" id="region-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Choose your region</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal('#region-modal')">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+                <div class="checkbox-group">
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">United States</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Japan</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Country</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Country</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Country</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+</div>
+
+            <button class="btn bg-blue btn-fit" onclick="closeModal('#region-modal')">Save</button>
+        </div>
+    </div>
+</div>
+
+        <div class="modal preference-modal dynamic-height" id="language-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Choose your language</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal('#language-modal')">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+                <div class="checkbox-group">
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">English</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Spanish</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Russian</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Japanese</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+        <div class="checkbox-item ">
+            <label class="checkbox ">
+        <span class="label">Italian</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="marker">
+        <g>
+            <circle cx="16" cy="16" r="15" stroke="#F8F6FF" stroke-width="2"/>
+            <path d="M10.6 15.2C10.1582 14.8686 9.53137 14.9582 9.2 15.4C8.86863 15.8418 8.95817 16.4686 9.4 16.8L10.6 15.2ZM15.3333 20L14.7333 20.8C15.1592 21.1194 15.7607 21.0492 16.1016 20.6402L15.3333 20ZM22.7682 12.6402C23.1218 12.2159 23.0645 11.5853 22.6402 11.2318C22.2159 10.8782 21.5853 10.9355 21.2318 11.3598L22.7682 12.6402ZM9.4 16.8L14.7333 20.8L15.9333 19.2L10.6 15.2L9.4 16.8ZM16.1016 20.6402L22.7682 12.6402L21.2318 11.3598L14.5651 19.3598L16.1016 20.6402Z" fill="#F8F6FF"/>
+        </g>
+    </svg>
+</label>
+
+        </div>
+</div>
+
+            <button class="btn bg-blue btn-fit" onclick="closeModal('#language-modal')">Save</button>
+        </div>
+    </div>
+</div>
+
+</div>
